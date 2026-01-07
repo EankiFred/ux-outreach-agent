@@ -1,0 +1,36 @@
+{
+  "company_name": "Figma",
+  "fit": {
+    "fit_score": 85,
+    "decision_summary": "Figma eignet sich gut für einen Agentic Decision‑Support Prototyp, weil es viele wiederkehrende, nicht‑triviale Governance‑ und Betriebsentscheidungen (Designsysteme, Seat-/Plan‑Zuteilung, AI‑Credit‑Management) mit reichlich potentiellen Signalen hat. Ein schlanker 2–4 Wochen Prototyp ist realistisch, wenn man sich auf Metadaten/Telemetrie und eine in‑App Plugin/externes Dashboard‑Ansatz beschränkt und sensible Roh‑Designinhalte vermeidet.",
+    "why_good_fit": [
+      "Mehrere wiederkehrende Entscheidungsdomänen existieren (Designsystem‑Governance, Bibliotheksfreigaben, Seat/Plan‑Optimierung, AI‑Credit‑Management) mit klaren Stakeholdern und Abwägungen.",
+      "Es gibt plausible, unmittelbare Signale: Komponenten‑Nutzung, Datei‑Abhängigkeiten, Edit/Kommentar‑Aktivität, Version‑History, Lizenz-/Seat‑Zähler und AI‑Credit‑Logs über API/Plugins.",
+      "Figma unterstützt Plugins und APIs, so dass ein Prototyp auf Metadaten/aggregierten Metriken ohne tiefe Produktintegration schnell gebaut werden kann.",
+      "Decision‑Support (nicht Automatisierung) passt gut: Empfehlungen mit erklärbaren Signalen, Scorecard und Mensch‑im‑Schleifen‑Bestätigung sind praktikabel.",
+      "Risiken lassen sich mittelfristig technisch und organisatorisch dämpfen (anonymisierte/aggregierte Daten, scoped permissions, read‑only admin APIs)."
+    ],
+    "why_not": [
+      "Designinhalte sind oft vertraulich – Zugriff auf Rohdaten ist heikel; Prototyp sollte auf Metadaten/aggregaten Kennzahlen basieren.",
+      "Für aussagekräftige Signale können Enterprise‑Admin‑Berechtigungen oder Billing/Seat‑Daten nötig sein, die nicht immer kurzfristig verfügbar sind.",
+      "Technische Details der internen Telemetrie/Architektur sind unklar (on‑prem vs. cloud, API‑Rate‑Limits), was Integrationsaufwand beeinflusst."
+    ],
+    "recommended_use_case": "2–4 Wochen Prototyp: 'Designsystem‑Library Approval Advisor' — ein Dashboard/Plugin, das für Admins/Design Ops empfiehlt, welche Libraries als organisationale Default/Approved markiert werden sollten. Input: komponenten‑Nutzung pro Datei/Team, Abhängigkeitsgraph (Files → Components), Aktualisierungsfrequenz, Konflikt‑/fork‑Statistiken, Kommentar‑/Review‑Signale und optional Lizenz/Seat‑Daten. Output: priorisierte Empfehlungsliste (Approve/Hold/Deprecate) mit erklärbaren Metriken pro Empfehlung, Unsicherheitsindikator und Aktionen‑Checklist für menschliche Entscheider.",
+    "target_roles": [
+      "Head of Design / Design Ops Lead",
+      "Produktmanagement / Design System Manager",
+      "Engineering Manager (Dev Mode Owner)"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Welche API‑Zugriffe sind möglich für eine Pilotgruppe (File metadata, component usage, activity logs, billing/seat metrics, AI‑credit logs)?",
+      "Können wir für den Prototyp anonymisierte/aggregierte Telemetrie‑Dumps oder ein Test‑Org mit representative Daten erhalten?",
+      "Gibt es Enterprise‑Admin‑Berechtigungen oder Einschränkungen (SSO, SCIM, Rate limits), die einen schnellen Plugin/Dashboard‑Zugriff verhindern?",
+      "Welche Datenschutz/Compliance‑Constraints (z. B. NDAs, IP‑Handling) gelten für Zugriff auf Design‑Metadaten in Pilotprojekten?",
+      "Welche Stakeholder würden die finale Entscheidung treffen und können sie innerhalb der 2–4 Wochen aktiv Feedback geben?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 85,\n  \"decision_summary\": \"Figma eignet sich gut für einen Agentic Decision‑Support Prototyp, weil es viele wiederkehrende, nicht‑triviale Governance‑ und Betriebsentscheidungen (Designsysteme, Seat-/Plan‑Zuteilung, AI‑Credit‑Management) mit reichlich potentiellen Signalen hat. Ein schlanker 2–4 Wochen Prototyp ist realistisch, wenn man sich auf Metadaten/Telemetrie und eine in‑App Plugin/externes Dashboard‑Ansatz beschränkt und sensible Roh‑Designinhalte vermeidet.\",\n  \"why_good_fit\": [\n    \"Mehrere wiederkehrende Entscheidungsdomänen existieren (Designsystem‑Governance, Bibliotheksfreigaben, Seat/Plan‑Optimierung, AI‑Credit‑Management) mit klaren Stakeholdern und Abwägungen.\",\n    \"Es gibt plausible, unmittelbare Signale: Komponenten‑Nutzung, Datei‑Abhängigkeiten, Edit/Kommentar‑Aktivität, Version‑History, Lizenz-/Seat‑Zähler und AI‑Credit‑Logs über API/Plugins.\",\n    \"Figma unterstützt Plugins und APIs, so dass ein Prototyp auf Metadaten/aggregierten Metriken ohne tiefe Produktintegration schnell gebaut werden kann.\",\n    \"Decision‑Support (nicht Automatisierung) passt gut: Empfehlungen mit erklärbaren Signalen, Scorecard und Mensch‑im‑Schleifen‑Bestätigung sind praktikabel.\",\n    \"Risiken lassen sich mittelfristig technisch und organisatorisch dämpfen (anonymisierte/aggregierte Daten, scoped permissions, read‑only admin APIs).\"\n  ],\n  \"why_not\": [\n    \"Designinhalte sind oft vertraulich – Zugriff auf Rohdaten ist heikel; Prototyp sollte auf Metadaten/aggregaten Kennzahlen basieren.\",\n    \"Für aussagekräftige Signale können Enterprise‑Admin‑Berechtigungen oder Billing/Seat‑Daten nötig sein, die nicht immer kurzfristig verfügbar sind.\",\n    \"Technische Details der internen Telemetrie/Architektur sind unklar (on‑prem vs. cloud, API‑Rate‑Limits), was Integrationsaufwand beeinflusst.\"\n  ],\n  \"recommended_use_case\": \"2–4 Wochen Prototyp: 'Designsystem‑Library Approval Advisor' — ein Dashboard/Plugin, das für Admins/Design Ops empfiehlt, welche Libraries als organisationale Default/Approved markiert werden sollten. Input: komponenten‑Nutzung pro Datei/Team, Abhängigkeitsgraph (Files → Components), Aktualisierungsfrequenz, Konflikt‑/fork‑Statistiken, Kommentar‑/Review‑Signale und optional Lizenz/Seat‑Daten. Output: priorisierte Empfehlungsliste (Approve/Hold/Deprecate) mit erklärbaren Metriken pro Empfehlung, Unsicherheitsindikator und Aktionen‑Checklist für menschliche Entscheider.\",\n  \"target_roles\": [\n    \"Head of Design / Design Ops Lead\",\n    \"Produktmanagement / Design System Manager\",\n    \"Engineering Manager (Dev Mode Owner)\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Welche API‑Zugriffe sind möglich für eine Pilotgruppe (File metadata, component usage, activity logs, billing/seat metrics, AI‑credit logs)?\",\n    \"Können wir für den Prototyp anonymisierte/aggregierte Telemetrie‑Dumps oder ein Test‑Org mit representative Daten erhalten?\",\n    \"Gibt es Enterprise‑Admin‑Berechtigungen oder Einschränkungen (SSO, SCIM, Rate limits), die einen schnellen Plugin/Dashboard‑Zugriff verhindern?\",\n    \"Welche Datenschutz/Compliance‑Constraints (z. B. NDAs, IP‑Handling) gelten für Zugriff auf Design‑Metadaten in Pilotprojekten?\",\n    \"Welche Stakeholder würden die finale Entscheidung treffen und können sie innerhalb der 2–4 Wochen aktiv Feedback geben?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {}
+}

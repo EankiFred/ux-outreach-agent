@@ -1,0 +1,42 @@
+{
+  "company_name": "DACHSER",
+  "fit": {
+    "fit_score": 82,
+    "decision_summary": "DACHSER ist grundsätzlich sehr geeignet für einen Agentic Decision‑Support‑Prototyp: das Unternehmen trifft laufend komplexe, wiederkehrende Entscheidungen (Routing, Priorisierung von temperaturempfindlichen Sendungen, Kapazitätsallokation) und verfügt plausibel über relevante Datensysteme (TMS, WMS, Telematik, Tracking). Ein fokussierter, human‑in‑the‑loop Prototyp in 2–4 Wochen ist realistisch, sofern einfache Datenexportschnittstellen und fachliche Ansprechpartner verfügbar sind.",
+    "why_good_fit": [
+      "Wiederkehrende, nicht‑triviale Entscheidungen sind zentral (z. B. Priorisierung/Umleitung bei Verzögerungen, Temperature‑Risk‑Tradeoffs, Kapazitätsvergabe über Depots).",
+      "Voraussichtliche Verfügbarkeit relevanter Signale: TMS/WMS‑Exporte, Sendungs‑Tracking, Telematik/GPS, SLA‑/Kundendaten und Lagerbestandsinformationen.",
+      "Klare, wirtschaftliche KPIs (On‑time, Verderb/Qualität, CO₂, Kosten pro Sendung), die Decision‑Support unmittelbar messbar machen.",
+      "Interne IT-/Digitalisierungs‑ und eLogistics‑Kompetenz reduziert Integrationsbarrieren für einen Prototypen mit begrenztem Scope.",
+      "Medium‑Risk Ansatz mit Human‑in‑the‑Loop und erklärbaren Regeln/Scoring passt zur geforderten Risk‑Tolerance."
+    ],
+    "why_not": [
+      "Unklarheit über Verfügbarkeit, Umfang und Qualität konkreter Datenexports/APIs (z. B. Historische Verzögerungen, Sensor‑Telemetrie, SLA‑Labeling).",
+      "Integrationsaufwand in Produktiv‑TMS/WMS und heterogene Systeme über Länder/Standorte kann Aufwand und Risiken erhöhen.",
+      "Operative/Compliance‑Besonderheiten (z. B. Zollprozesse, temperaturkritische Regularien) könnten zusätzliche Anforderungen erzeugen, die das Prototyp‑Scope erweitern."
+    ],
+    "recommended_use_case": "2–4 Wochen Prototyp: 'Exception‑Triage für temperaturgeführte Sendungen' — Input: Exportierte historische/Live‑Sendungslisten (Shipment ID, origin/destination, ETA, current ETA deviation, temperature flag, carrier, SLA/Priority, depot capacity, basic telematik/temperature alerts). Output: täglich priorisierte Liste von Sendungen mit hohem Risiko (Score), vorgeschlagene Aktionen (reroute, expedite, cross‑dock, notify Kunde), erklärbare Gründe & Konfidenz sowie einfache KPI‑Dashboard (Anzahl at‑risk, potenzieller Verderb, Kosten‑vs‑Service). Implementation ohne tiefe Systemintegration: CSV/REST ingestion, rule+light ML scoring, UI prototyp (table + explanations) and checklist for operators.",
+    "target_roles": [
+      "Head of Operations / COO",
+      "Head of Digital / IT (eLogistics)",
+      "Global Control Tower Manager (Operations Control)"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Können Sie Beispiel‑Datenexports (anonymisierte CSV/JSON) aus TMS, WMS und Telematik für ~3 Monate bereitstellen? (Shipment attributes, timestamps, ETA updates, temperature alerts, SLA/Priority)",
+      "Gibt es bereits definierte Priorisierungs‑/SLA‑Regeln oder Service‑Level‑Matrixen, die wir für Erklärungen und Scoring verwenden sollen?",
+      "Wer sind die operativen Entscheider/SMEs, die während der 2–4 Wochen verfügbar sein müssen (Control Tower Operator, Depot Manager, Data Owner)?",
+      "Gibt es rechtliche/Compliance‑Restriktionen bzgl. Datenexport, insbesondere für Kunden‑ oder Sensordaten (Datenschutz, Drittländer)?",
+      "Welche Metriken definieren Erfolg des Prototyps nach 4 Wochen (z. B. Genauigkeit der Priorisierung, Zeitersparnis pro Entscheidung, Reduktion potenzieller Verderbsfälle)?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 82,\n  \"decision_summary\": \"DACHSER ist grundsätzlich sehr geeignet für einen Agentic Decision‑Support‑Prototyp: das Unternehmen trifft laufend komplexe, wiederkehrende Entscheidungen (Routing, Priorisierung von temperaturempfindlichen Sendungen, Kapazitätsallokation) und verfügt plausibel über relevante Datensysteme (TMS, WMS, Telematik, Tracking). Ein fokussierter, human‑in‑the‑loop Prototyp in 2–4 Wochen ist realistisch, sofern einfache Datenexportschnittstellen und fachliche Ansprechpartner verfügbar sind.\",\n  \"why_good_fit\": [\n    \"Wiederkehrende, nicht‑triviale Entscheidungen sind zentral (z. B. Priorisierung/Umleitung bei Verzögerungen, Temperature‑Risk‑Tradeoffs, Kapazitätsvergabe über Depots).\",\n    \"Voraussichtliche Verfügbarkeit relevanter Signale: TMS/WMS‑Exporte, Sendungs‑Tracking, Telematik/GPS, SLA‑/Kundendaten und Lagerbestandsinformationen.\",\n    \"Klare, wirtschaftliche KPIs (On‑time, Verderb/Qualität, CO₂, Kosten pro Sendung), die Decision‑Support unmittelbar messbar machen.\",\n    \"Interne IT-/Digitalisierungs‑ und eLogistics‑Kompetenz reduziert Integrationsbarrieren für einen Prototypen mit begrenztem Scope.\",\n    \"Medium‑Risk Ansatz mit Human‑in‑the‑Loop und erklärbaren Regeln/Scoring passt zur geforderten Risk‑Tolerance.\"\n  ],\n  \"why_not\": [\n    \"Unklarheit über Verfügbarkeit, Umfang und Qualität konkreter Datenexports/APIs (z. B. Historische Verzögerungen, Sensor‑Telemetrie, SLA‑Labeling).\",\n    \"Integrationsaufwand in Produktiv‑TMS/WMS und heterogene Systeme über Länder/Standorte kann Aufwand und Risiken erhöhen.\",\n    \"Operative/Compliance‑Besonderheiten (z. B. Zollprozesse, temperaturkritische Regularien) könnten zusätzliche Anforderungen erzeugen, die das Prototyp‑Scope erweitern.\"\n  ],\n  \"recommended_use_case\": \"2–4 Wochen Prototyp: 'Exception‑Triage für temperaturgeführte Sendungen' — Input: Exportierte historische/Live‑Sendungslisten (Shipment ID, origin/destination, ETA, current ETA deviation, temperature flag, carrier, SLA/Priority, depot capacity, basic telematik/temperature alerts). Output: täglich priorisierte Liste von Sendungen mit hohem Risiko (Score), vorgeschlagene Aktionen (reroute, expedite, cross‑dock, notify Kunde), erklärbare Gründe & Konfidenz sowie einfache KPI‑Dashboard (Anzahl at‑risk, potenzieller Verderb, Kosten‑vs‑Service). Implementation ohne tiefe Systemintegration: CSV/REST ingestion, rule+light ML scoring, UI prototyp (table + explanations) and checklist for operators.\",\n  \"target_roles\": [\n    \"Head of Operations / COO\",\n    \"Head of Digital / IT (eLogistics)\",\n    \"Global Control Tower Manager (Operations Control)\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Können Sie Beispiel‑Datenexports (anonymisierte CSV/JSON) aus TMS, WMS und Telematik für ~3 Monate bereitstellen? (Shipment attributes, timestamps, ETA updates, temperature alerts, SLA/Priority)\",\n    \"Gibt es bereits definierte Priorisierungs‑/SLA‑Regeln oder Service‑Level‑Matrixen, die wir für Erklärungen und Scoring verwenden sollen?\",\n    \"Wer sind die operativen Entscheider/SMEs, die während der 2–4 Wochen verfügbar sein müssen (Control Tower Operator, Depot Manager, Data Owner)?\",\n    \"Gibt es rechtliche/Compliance‑Restriktionen bzgl. Datenexport, insbesondere für Kunden‑ oder Sensordaten (Datenschutz, Drittländer)?\",\n    \"Welche Metriken definieren Erfolg des Prototyps nach 4 Wochen (z. B. Genauigkeit der Priorisierung, Zeitersparnis pro Entscheidung, Reduktion potenzieller Verderbsfälle)?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Medium",
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard",
+    "exclude_local_services": true
+  }
+}

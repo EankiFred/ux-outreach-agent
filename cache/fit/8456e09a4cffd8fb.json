@@ -1,0 +1,27 @@
+{
+  "company_name": "Linear",
+  "fit": {
+    "fit_score": 20,
+    "decision_summary": "Auf Basis der vorliegenden Informationen ist eine belastbare Beurteilung nicht möglich — zentrale Fakten zu Produkt, Kunden, Daten und Stakeholdern fehlen. Empfehlung: zuerst eine kurze Discovery (1–2 Wochen); bei positiver Klärung ist ein fokussierter 2–4‑wöchiger Prototyp realistisch (z. B. Roadmap-/Investitions-Priorisierung).",
+    "why_good_fit": [
+      "Ein Agentic Decision‑Support bringt typischerweise hohen Hebel, wenn Entscheidungen funktionsübergreifend und informationsreich sind (Konzentration von Daten + viele Stakeholder).",
+      "Bei mittelständischen Wachstumsteams existiert oft Bedarf an schneller, strukturierter Entscheidungsaufbereitung statt Vollautomatisierung.",
+      "Ein schlanker Prototyp (Szenarien, Priorisierungsmodell, klares UI für Entscheidende) kann in 2–4 Wochen greifbare Erkenntnisse liefern, sofern notwendige Daten und Entscheider verfügbar sind.",
+      "Technisch sind Decision‑Support‑Prototypen vergleichsweise risikoarm: sie urteilen nicht autonom, sondern aggregieren und strukturieren Informationen zur Entscheidungsfindung."
+    ],
+    "why_not": [
+      "Kernprodukt(e), Geschäftsmodell und Zielkunden sind nicht dokumentiert — ohne das lassen sich relevante Entscheidungsfragen nicht bestimmen.",
+      "Keine Aussagen zur Datenlage (Qualität, Quellen, Verfügbarkeit) — fehlende Daten kann ein Showstopper sein.",
+      "Unklar, wer Entscheidungs‑Owner und Sponsor im Unternehmen wäre; Budget- und Governance‑Risiken sind deshalb nicht einschätzbar.",
+      "Keine Hinweise auf Unternehmenskultur / Change‑Bereitschaft; Agentic‑Ansätze benötigen Akzeptanz bei Führungskräften und Datenverantwortlichen."
+    ],
+    "recommended_use_case": "Prototyp: Management‑Tool zur Priorisierung von Produkt‑/Investitionsinitiativen (6–12 Initiativen). Input: erwarteter Umsatz-/Impact‑Score, Aufwandsschätzung, Risiken, Abhängigkeiten. Output: priorisierte Liste + 3 Szenarien (optimistisch / wahrscheinlich / konservativ) und Begründungen für Entscheidungen zur schnellen Verhandlung im Führungskreis.",
+    "target_roles": [
+      "CEO / Geschäftsführer",
+      "Head of Product / Produktmanagement",
+      "Head of Finance / Commercial Director"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 20,\n  \"decision_summary\": \"Auf Basis der vorliegenden Informationen ist eine belastbare Beurteilung nicht möglich — zentrale Fakten zu Produkt, Kunden, Daten und Stakeholdern fehlen. Empfehlung: zuerst eine kurze Discovery (1–2 Wochen); bei positiver Klärung ist ein fokussierter 2–4‑wöchiger Prototyp realistisch (z. B. Roadmap-/Investitions-Priorisierung).\",\n  \"why_good_fit\": [\n    \"Ein Agentic Decision‑Support bringt typischerweise hohen Hebel, wenn Entscheidungen funktionsübergreifend und informationsreich sind (Konzentration von Daten + viele Stakeholder).\",\n    \"Bei mittelständischen Wachstumsteams existiert oft Bedarf an schneller, strukturierter Entscheidungsaufbereitung statt Vollautomatisierung.\",\n    \"Ein schlanker Prototyp (Szenarien, Priorisierungsmodell, klares UI für Entscheidende) kann in 2–4 Wochen greifbare Erkenntnisse liefern, sofern notwendige Daten und Entscheider verfügbar sind.\",\n    \"Technisch sind Decision‑Support‑Prototypen vergleichsweise risikoarm: sie urteilen nicht autonom, sondern aggregieren und strukturieren Informationen zur Entscheidungsfindung.\"\n  ],\n  \"why_not\": [\n    \"Kernprodukt(e), Geschäftsmodell und Zielkunden sind nicht dokumentiert — ohne das lassen sich relevante Entscheidungsfragen nicht bestimmen.\",\n    \"Keine Aussagen zur Datenlage (Qualität, Quellen, Verfügbarkeit) — fehlende Daten kann ein Showstopper sein.\",\n    \"Unklar, wer Entscheidungs‑Owner und Sponsor im Unternehmen wäre; Budget- und Governance‑Risiken sind deshalb nicht einschätzbar.\",\n    \"Keine Hinweise auf Unternehmenskultur / Change‑Bereitschaft; Agentic‑Ansätze benötigen Akzeptanz bei Führungskräften und Datenverantwortlichen.\"\n  ],\n  \"recommended_use_case\": \"Prototyp: Management‑Tool zur Priorisierung von Produkt‑/Investitionsinitiativen (6–12 Initiativen). Input: erwarteter Umsatz-/Impact‑Score, Aufwandsschätzung, Risiken, Abhängigkeiten. Output: priorisierte Liste + 3 Szenarien (optimistisch / wahrscheinlich / konservativ) und Begründungen für Entscheidungen zur schnellen Verhandlung im Führungskreis.\",\n  \"target_roles\": [\n    \"CEO / Geschäftsführer\",\n    \"Head of Product / Produktmanagement\",\n    \"Head of Finance / Commercial Director\"\n  ]\n}",
+  "from_cache": false
+}

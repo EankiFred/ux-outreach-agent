@@ -1,0 +1,27 @@
+{
+  "company_name": "Seba",
+  "fit": {
+    "fit_score": 0,
+    "decision_summary": "Auf Basis der vorliegenden Informationen lässt sich kein belastbares Fit für einen Agentic Decision‑Support Prototyp bestätigen, weil zentrale Unternehmens- und Produktinformationen fehlen. Es besteht fachlich erkennbares Potenzial (Hochwasser-/Monitoring‑Kontext), das nach Klärung offener Punkte weiterverfolgt werden sollte.",
+    "why_good_fit": [
+      "Hohe Entscheidungs-Komplexität bei Zielkunden (Wasserbehörden, Katastrophenschutz, Wetterdienste) — mehrere Stakeholder, Zeitdruck und kontextabhängige Prioritäten.",
+      "Produktfeld ist datengetrieben (Messgeräte/Sensoren liefern relevante Echtzeit- bzw. Zeitreihen‑Daten), was eine Grundlage für datenbasierte Entscheidungsunterstützung darstellt.",
+      "Kunden mit hohem operativen Bedarf (Einsatzpriorisierung, Hochwasserwarnung) profitieren typischerweise von prägnanten, begründeten Handlungsempfehlungen.",
+      "Vorhandene Produkt+Service-Organisation (Geräte + Dienstleistungen) erleichtert die Integration eines prototypischen Entscheidungswerkzeugs in Vertriebs- und Serviceprozesse."
+    ],
+    "why_not": [
+      "Wesentliche Informationen fehlen: Unternehmensgröße ist unklar — ohne Größe/Organisationsstruktur keine verlässliche Einschätzung zu Ressourcen und Entscheidungswegen.",
+      "Technische Details unklar: Detaillierte Produkt‑/Sensor‑Spezifikationen und Umfang der angebotenen Softwarefunktionen sind nicht bekannt; damit lässt sich Datenzugang/Integrationsaufwand nicht beurteilen.",
+      "Finanz- und Beschaffungsinformationen fehlen: Preismodell und Verantwortlichkeiten/Budget‑Ownership für digitale Prototypen sind nicht angegeben. Ohne diese Angaben ist Business‑Case und Prototyp‑Scope nicht festlegbar.",
+      "Aufgrund der oben genannten Informationslücken wird der Fit‑Score nicht positiv bewertet (fit_score = 0) bis die fehlenden Punkte geklärt sind."
+    ],
+    "recommended_use_case": "Prototyp: Entscheidungsunterstützung für Hochwasserereignisse — Aggregation von Sensordaten und Wetterprognosen, automatische Erkennung kritischer Schwellen, Priorisierte Maßnahmenliste (z. B. Meldeketten, Messstellen‑Priorisierung, Einsatzempfehlungen) mit erklärender Begründung und Datennachweis. Ziel: schnelles, begründetes Handlungsbild für Einsatzleiter und Behörden innerhalb eines 2–4 Wochen Proof‑of‑Concept mit definierten Datenschnittstellen.",
+    "target_roles": [
+      "CTO / Leiter Produktentwicklung",
+      "Leiter Produktmanagement / Head of Product",
+      "Leiter Vertrieb / Key Account Management"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 0,\n  \"decision_summary\": \"Auf Basis der vorliegenden Informationen lässt sich kein belastbares Fit für einen Agentic Decision‑Support Prototyp bestätigen, weil zentrale Unternehmens- und Produktinformationen fehlen. Es besteht fachlich erkennbares Potenzial (Hochwasser-/Monitoring‑Kontext), das nach Klärung offener Punkte weiterverfolgt werden sollte.\",\n  \"why_good_fit\": [\n    \"Hohe Entscheidungs-Komplexität bei Zielkunden (Wasserbehörden, Katastrophenschutz, Wetterdienste) — mehrere Stakeholder, Zeitdruck und kontextabhängige Prioritäten.\",\n    \"Produktfeld ist datengetrieben (Messgeräte/Sensoren liefern relevante Echtzeit- bzw. Zeitreihen‑Daten), was eine Grundlage für datenbasierte Entscheidungsunterstützung darstellt.\",\n    \"Kunden mit hohem operativen Bedarf (Einsatzpriorisierung, Hochwasserwarnung) profitieren typischerweise von prägnanten, begründeten Handlungsempfehlungen.\",\n    \"Vorhandene Produkt+Service-Organisation (Geräte + Dienstleistungen) erleichtert die Integration eines prototypischen Entscheidungswerkzeugs in Vertriebs- und Serviceprozesse.\"\n  ],\n  \"why_not\": [\n    \"Wesentliche Informationen fehlen: Unternehmensgröße ist unklar — ohne Größe/Organisationsstruktur keine verlässliche Einschätzung zu Ressourcen und Entscheidungswegen.\",\n    \"Technische Details unklar: Detaillierte Produkt‑/Sensor‑Spezifikationen und Umfang der angebotenen Softwarefunktionen sind nicht bekannt; damit lässt sich Datenzugang/Integrationsaufwand nicht beurteilen.\",\n    \"Finanz- und Beschaffungsinformationen fehlen: Preismodell und Verantwortlichkeiten/Budget‑Ownership für digitale Prototypen sind nicht angegeben. Ohne diese Angaben ist Business‑Case und Prototyp‑Scope nicht festlegbar.\",\n    \"Aufgrund der oben genannten Informationslücken wird der Fit‑Score nicht positiv bewertet (fit_score = 0) bis die fehlenden Punkte geklärt sind.\"\n  ],\n  \"recommended_use_case\": \"Prototyp: Entscheidungsunterstützung für Hochwasserereignisse — Aggregation von Sensordaten und Wetterprognosen, automatische Erkennung kritischer Schwellen, Priorisierte Maßnahmenliste (z. B. Meldeketten, Messstellen‑Priorisierung, Einsatzempfehlungen) mit erklärender Begründung und Datennachweis. Ziel: schnelles, begründetes Handlungsbild für Einsatzleiter und Behörden innerhalb eines 2–4 Wochen Proof‑of‑Concept mit definierten Datenschnittstellen.\",\n  \"target_roles\": [\n    \"CTO / Leiter Produktentwicklung\",\n    \"Leiter Produktmanagement / Head of Product\",\n    \"Leiter Vertrieb / Key Account Management\"\n  ]\n}",
+  "from_cache": false
+}

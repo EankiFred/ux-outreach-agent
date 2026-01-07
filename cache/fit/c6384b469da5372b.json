@@ -1,0 +1,43 @@
+{
+  "company_name": "Linear - Plan and build products",
+  "fit": {
+    "fit_score": 80,
+    "decision_summary": "Linear eignet sich gut für einen Agentic Decision-Support-Prototyp (nicht Automatisierung), insbesondere für Issue-Triage und Priorisierungsentscheidungen: es gibt wiederkehrende, nicht-triviale Entscheidungen und technische Signale via API/Integrationen. Ein schlanker 4–6‑Wochen‑Prototyp ist realistisch; kritische Unsicherheiten betreffen Datenzugang, Datenschutz/Compliance und vorhandene AI‑Infrastruktur.",
+    "why_good_fit": [
+      "Wiederkehrende, gewichtete Entscheidungen existieren (Triage, Priorisierung, Zuweisung, Roadmap-Abwägungen) mit mehrere Stakeholder und Unsicherheit.",
+      "Klare technische Signale sind verfügbar (Issue-Metadaten, Aktivitäts-Timestamps, Integrationen zu Git/Figma, Linear Insights, API), also brauchbare Inputs für Entscheidungsunterstützung.",
+      "Lineares Produkt- und Issue-Modell erlaubt kompakte, gut messbare KPIs (z. B. Time-to-triage, Reassign-Rate, SLA‑Einhaltung) zur Evaluation des Prototyps.",
+      "Die Plattform erwähnt bereits AI-Agenten/Automatisierungen und eine API — reduziert Integrationsaufwand für einen datengetriebenen Prototyp.",
+      "Human-in-the-loop ist naheliegend: Vorschläge mit Begründung und Konfidenz, Nutzerentscheid bleibt, minimiert Produkt- & Haftungsrisiken."
+    ],
+    "why_not": [
+      "Unklarer Zugang zu historischen, bereinigten Labels (z. B. ‚richtige‘ Priorität/Assignee) — Trainings-/Evaluation‑Daten könnten knapp sein.",
+      "Datenschutz-/Compliance-Anforderungen und Datenverarbeitungsregeln sind nicht spezifiziert; das kann Modellauswahl und Hosting stark einschränken.",
+      "Genauer Umfang bereits existierender AI‑Funktionen und Beschränkungen der API (Rate‑Limits, Webhook‑Hooks, Berechtigungen) ist nicht bekannt.",
+      "Adoptions‑/Vertrauensrisiko: Vorschläge ohne nachvollziehbare Begründung werden von PMs/Engineering möglicherweise abgelehnt."
+    ],
+    "recommended_use_case": "Triage Decision Support Agent (4–6 Wochen): Ein in‑UI Suggestion Panel für neue oder untriagierte Issues, das für jedes Issue (1) Prioritätsempfehlung (P0/P1/P2), (2) vorgeschlagene Assignee/Team, (3) vorgeschlagenes Milestone/Project und (4) 1–2 kurze, explainable Begründungen liefert plus Konfidenzscore und Links zu Evidenz (ähnliche Issues, recent activity, CODEOWNERS). Mensch entscheidet (Accept/Modify/Reject). Implementierung: Datenzugriff über Linear API auf historische Issues + heuristische Regeln + leichte ML/nearest-neighbour für similarity; LLM nur für verständliche, evtl. humorvolle (user‑configurable) Begründungen und zur Formatierung; keine tiefen Systemintegrationen notwendig.",
+    "target_roles": [
+      "Product Manager",
+      "Engineering Manager",
+      "Triage/Support Lead"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Können wir API‑Zugriff auf ein realistisches, anonymisiertes Sample historischer Issues inkl. Metadaten, Events und Outcome‑Labels (z. B. finale Priorität/Assignee/Milestone) erhalten?",
+      "Gibt es organisatorische oder rechtliche Restrictions für das Training/Hosting von Modellen (z. B. kein Exfiltrate zu externen LLM‑Providern, Data‑residency, SOC/GDPR‑Constraints)?",
+      "Welche UI‑Integrationspunkte sind möglich (in‑app suggestion panel, webhooks, browser extension, permission model) ohne lange Produktänderungen?",
+      "Welche Erfolgsmetriken akzeptiert das Team für einen MVE in 4–6 Wochen (z. B. % angenommener Vorschläge, Reduktion Time‑to‑triage, User‑Satisfaction)?",
+      "Gibt es bekannte API Rate‑Limits, auf deren Basis wir die Anfrage‑Architektur und Caching/Batching planen müssen?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 80,\n  \"decision_summary\": \"Linear eignet sich gut für einen Agentic Decision-Support-Prototyp (nicht Automatisierung), insbesondere für Issue-Triage und Priorisierungsentscheidungen: es gibt wiederkehrende, nicht-triviale Entscheidungen und technische Signale via API/Integrationen. Ein schlanker 4–6‑Wochen‑Prototyp ist realistisch; kritische Unsicherheiten betreffen Datenzugang, Datenschutz/Compliance und vorhandene AI‑Infrastruktur.\",\n  \"why_good_fit\": [\n    \"Wiederkehrende, gewichtete Entscheidungen existieren (Triage, Priorisierung, Zuweisung, Roadmap-Abwägungen) mit mehrere Stakeholder und Unsicherheit.\",\n    \"Klare technische Signale sind verfügbar (Issue-Metadaten, Aktivitäts-Timestamps, Integrationen zu Git/Figma, Linear Insights, API), also brauchbare Inputs für Entscheidungsunterstützung.\",\n    \"Lineares Produkt- und Issue-Modell erlaubt kompakte, gut messbare KPIs (z. B. Time-to-triage, Reassign-Rate, SLA‑Einhaltung) zur Evaluation des Prototyps.\",\n    \"Die Plattform erwähnt bereits AI-Agenten/Automatisierungen und eine API — reduziert Integrationsaufwand für einen datengetriebenen Prototyp.\",\n    \"Human-in-the-loop ist naheliegend: Vorschläge mit Begründung und Konfidenz, Nutzerentscheid bleibt, minimiert Produkt- & Haftungsrisiken.\"\n  ],\n  \"why_not\": [\n    \"Unklarer Zugang zu historischen, bereinigten Labels (z. B. ‚richtige‘ Priorität/Assignee) — Trainings-/Evaluation‑Daten könnten knapp sein.\",\n    \"Datenschutz-/Compliance-Anforderungen und Datenverarbeitungsregeln sind nicht spezifiziert; das kann Modellauswahl und Hosting stark einschränken.\",\n    \"Genauer Umfang bereits existierender AI‑Funktionen und Beschränkungen der API (Rate‑Limits, Webhook‑Hooks, Berechtigungen) ist nicht bekannt.\",\n    \"Adoptions‑/Vertrauensrisiko: Vorschläge ohne nachvollziehbare Begründung werden von PMs/Engineering möglicherweise abgelehnt.\"\n  ],\n  \"recommended_use_case\": \"Triage Decision Support Agent (4–6 Wochen): Ein in‑UI Suggestion Panel für neue oder untriagierte Issues, das für jedes Issue (1) Prioritätsempfehlung (P0/P1/P2), (2) vorgeschlagene Assignee/Team, (3) vorgeschlagenes Milestone/Project und (4) 1–2 kurze, explainable Begründungen liefert plus Konfidenzscore und Links zu Evidenz (ähnliche Issues, recent activity, CODEOWNERS). Mensch entscheidet (Accept/Modify/Reject). Implementierung: Datenzugriff über Linear API auf historische Issues + heuristische Regeln + leichte ML/nearest-neighbour für similarity; LLM nur für verständliche, evtl. humorvolle (user‑configurable) Begründungen und zur Formatierung; keine tiefen Systemintegrationen notwendig.\",\n  \"target_roles\": [\n    \"Product Manager\",\n    \"Engineering Manager\",\n    \"Triage/Support Lead\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Können wir API‑Zugriff auf ein realistisches, anonymisiertes Sample historischer Issues inkl. Metadaten, Events und Outcome‑Labels (z. B. finale Priorität/Assignee/Milestone) erhalten?\",\n    \"Gibt es organisatorische oder rechtliche Restrictions für das Training/Hosting von Modellen (z. B. kein Exfiltrate zu externen LLM‑Providern, Data‑residency, SOC/GDPR‑Constraints)?\",\n    \"Welche UI‑Integrationspunkte sind möglich (in‑app suggestion panel, webhooks, browser extension, permission model) ohne lange Produktänderungen?\",\n    \"Welche Erfolgsmetriken akzeptiert das Team für einen MVE in 4–6 Wochen (z. B. % angenommener Vorschläge, Reduktion Time‑to‑triage, User‑Satisfaction)?\",\n    \"Gibt es bekannte API Rate‑Limits, auf deren Basis wir die Anfrage‑Architektur und Caching/Batching planen müssen?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "Joke",
+    "risk_tolerance": "High",
+    "prototype_horizon": "4–6 weeks",
+    "detail_level": "More detailed",
+    "exclude_local_services": false
+  }
+}

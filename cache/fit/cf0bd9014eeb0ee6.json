@@ -1,0 +1,42 @@
+{
+  "company_name": "www.forest-ai.org",
+  "fit": {
+    "fit_score": 78,
+    "decision_summary": "Forest AI adressiert eine klare Entscheidungsdomäne (Modell‑Validierung / Release‑Gate) mit wiederkehrenden, nicht‑trivialen Trade‑offs und bringt bereits Plattform‑ und Datenteile mit, die einen Decision‑Support‑Prototyp in 4–6 Wochen plausibel machen. Entscheidend sind jedoch Zugriffsrechte auf versiegelte Datensätze, Deployment‑Optionen und Lizenzbedingungen.",
+    "why_good_fit": [
+      "Existenz versiegelter, domänenspezifischer Evaluationsdaten (Insurance, Medical) liefert hochwertige Signale für Bewertungsentscheidungen.",
+      "PeerBench Plattform + Open‑Source SDK reduziert Integrationsaufwand; ermöglicht prototypische Aufnahme von Evaluations‑Outputs ohne tiefe Systemintegration.",
+      "Kernentscheidungstypen (Modellwahl, Release/Reject, Listing auf Marktplatz, Bewertung von Bias/Drift) sind wiederkehrend, stakeholdersensitiv und humanin‑the‑loop geeignet.",
+      "Decision‑Support statt Automatisierung passt zur Medium Risk‑Tolerance: Empfehlungen mit Unsicherheitsangaben und Entscheidungsregeln sind sinnvoll und praktikabel.",
+      "UX‑Opportunities (Dashboards, Audits, Onboarding, Rechteverwaltung) sind konkret adressierbar in einem 4–6 Wochen‑MVP."
+    ],
+    "why_not": [
+      "Unklarheit, ob und wie schnell man auf die proprietären/versiegelten Datensätze zugreifen darf (rechtliche/vertragliche Hürden könnten Prototyp verzögern).",
+      "Unklare Deployment‑Optionen (SaaS vs. On‑Prem) sind besonders in Medical/Insurance kritisch und können Integrationsaufwand erhöhen.",
+      "Ungewissheit über Marketplace‑Status und Preismodell: unbezahlbare oder restriktive Lizenzen könnten Nutzbarkeit des Prototyps einschränken."
+    ],
+    "recommended_use_case": "4–6 Wochen MVP: \"Release‑Gate Decision Support\" — Eingangsannahme: mehrere Modell‑Evaluationsreports (CSV/API) von PeerBench/SDK. Output: ein klares, menschlich lesbares Entscheidungsdossier pro Modell mit Rangfolge, Unsicherheitsschätzungen, Fairness/Drift‑Flags, erklärenden Metriken (Top‑3 Gründe für Empfehlung) und einer eindeutigen Handlungsempfehlung (Accept / Further Tests / Reject). Minimaler UI: Web‑Dashboard + PDF‑Report und Slack/Email Benachrichtigung. Integration: nur Leseschnittstelle zu Evaluationsoutputs, keine Produktiv‑Systemänderungen nötig.",
+    "target_roles": [
+      "Head of ML / Chief Data Scientist",
+      "ML Engineering / MLOps Lead",
+      "Compliance / Risk Officer"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Gibt es eine Möglichkeit, Sample‑Evaluationsdatasets oder ein anonymisiertes Schema der versiegelten Datensätze für den Prototyp zu erhalten (Beispiel‑CSV oder API‑Sandbox)?",
+      "Welche Deployment‑Optionen werden angeboten (SaaS, VPC‑SaaS, On‑Prem) und sind On‑Prem/isolierte Umgebungen für Regulated‑Customers möglich?",
+      "Wie ist das Enterprise‑Lizenzmodell und welche Kosten/Restriktionen gelten für Verwendung der proprietären Eval‑Daten im Prototyp/Proof‑of‑Concept?",
+      "Welche API/Output‑Formate liefert PeerBench/SDK aktuell (CSV, JSON, GraphQL, Webhooks) und sind Standard‑Metriken/Schema dokumentiert?",
+      "Ist der Marktplatz bereits live und wenn ja: welche Metadaten/Performance‑Belege werden für Listings bereitgestellt (damit ein Decision‑Support‑Prototyp Marketplace‑Entscheidungen abbilden kann)?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 78,\n  \"decision_summary\": \"Forest AI adressiert eine klare Entscheidungsdomäne (Modell‑Validierung / Release‑Gate) mit wiederkehrenden, nicht‑trivialen Trade‑offs und bringt bereits Plattform‑ und Datenteile mit, die einen Decision‑Support‑Prototyp in 4–6 Wochen plausibel machen. Entscheidend sind jedoch Zugriffsrechte auf versiegelte Datensätze, Deployment‑Optionen und Lizenzbedingungen.\",\n  \"why_good_fit\": [\n    \"Existenz versiegelter, domänenspezifischer Evaluationsdaten (Insurance, Medical) liefert hochwertige Signale für Bewertungsentscheidungen.\",\n    \"PeerBench Plattform + Open‑Source SDK reduziert Integrationsaufwand; ermöglicht prototypische Aufnahme von Evaluations‑Outputs ohne tiefe Systemintegration.\",\n    \"Kernentscheidungstypen (Modellwahl, Release/Reject, Listing auf Marktplatz, Bewertung von Bias/Drift) sind wiederkehrend, stakeholdersensitiv und humanin‑the‑loop geeignet.\",\n    \"Decision‑Support statt Automatisierung passt zur Medium Risk‑Tolerance: Empfehlungen mit Unsicherheitsangaben und Entscheidungsregeln sind sinnvoll und praktikabel.\",\n    \"UX‑Opportunities (Dashboards, Audits, Onboarding, Rechteverwaltung) sind konkret adressierbar in einem 4–6 Wochen‑MVP.\"\n  ],\n  \"why_not\": [\n    \"Unklarheit, ob und wie schnell man auf die proprietären/versiegelten Datensätze zugreifen darf (rechtliche/vertragliche Hürden könnten Prototyp verzögern).\",\n    \"Unklare Deployment‑Optionen (SaaS vs. On‑Prem) sind besonders in Medical/Insurance kritisch und können Integrationsaufwand erhöhen.\",\n    \"Ungewissheit über Marketplace‑Status und Preismodell: unbezahlbare oder restriktive Lizenzen könnten Nutzbarkeit des Prototyps einschränken.\"\n  ],\n  \"recommended_use_case\": \"4–6 Wochen MVP: \\\"Release‑Gate Decision Support\\\" — Eingangsannahme: mehrere Modell‑Evaluationsreports (CSV/API) von PeerBench/SDK. Output: ein klares, menschlich lesbares Entscheidungsdossier pro Modell mit Rangfolge, Unsicherheitsschätzungen, Fairness/Drift‑Flags, erklärenden Metriken (Top‑3 Gründe für Empfehlung) und einer eindeutigen Handlungsempfehlung (Accept / Further Tests / Reject). Minimaler UI: Web‑Dashboard + PDF‑Report und Slack/Email Benachrichtigung. Integration: nur Leseschnittstelle zu Evaluationsoutputs, keine Produktiv‑Systemänderungen nötig.\",\n  \"target_roles\": [\n    \"Head of ML / Chief Data Scientist\",\n    \"ML Engineering / MLOps Lead\",\n    \"Compliance / Risk Officer\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Gibt es eine Möglichkeit, Sample‑Evaluationsdatasets oder ein anonymisiertes Schema der versiegelten Datensätze für den Prototyp zu erhalten (Beispiel‑CSV oder API‑Sandbox)?\",\n    \"Welche Deployment‑Optionen werden angeboten (SaaS, VPC‑SaaS, On‑Prem) und sind On‑Prem/isolierte Umgebungen für Regulated‑Customers möglich?\",\n    \"Wie ist das Enterprise‑Lizenzmodell und welche Kosten/Restriktionen gelten für Verwendung der proprietären Eval‑Daten im Prototyp/Proof‑of‑Concept?\",\n    \"Welche API/Output‑Formate liefert PeerBench/SDK aktuell (CSV, JSON, GraphQL, Webhooks) und sind Standard‑Metriken/Schema dokumentiert?\",\n    \"Ist der Marktplatz bereits live und wenn ja: welche Metadaten/Performance‑Belege werden für Listings bereitgestellt (damit ein Decision‑Support‑Prototyp Marketplace‑Entscheidungen abbilden kann)?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Medium",
+    "prototype_horizon": "4–6 weeks",
+    "detail_level": "More detailed",
+    "exclude_local_services": true
+  }
+}

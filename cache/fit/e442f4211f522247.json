@@ -1,0 +1,42 @@
+{
+  "company_name": "LeMO Zeitstrahl - NS-Regime - NS-Organisationen - Schutzstaffel",
+  "fit": {
+    "fit_score": 70,
+    "decision_summary": "LeMO verfügt über eine klare, inhaltsschwere Entscheidungsdomäne (Redaktion / Bildungsangebote / Priorisierung von Inhalten) mit wiederkehrenden Abwägungen zwischen Tiefe, Zielgruppenansprache und Sensibilität. Ein schlanker Agentic Decision‑Support Prototyp (kein automatisches Publizieren) zur Unterstützung redaktioneller Priorisierung oder zur Auswahl von Lehrmaterialien ist innerhalb von 2–4 Wochen realistisch, wenn Basisdaten bereitgestellt werden.",
+    "why_good_fit": [
+      "Klare, wiederkehrende Entscheidungen bei Redaktion/Didaktik: welche Inhalte aktualisieren, didaktisch aufbereiten oder prominent machen (Stakeholder: Kurator:innen, Lehrkräfte, Öffentlichkeitsarbeit).",
+      "Bestehender, strukturierter Content (Kapitel, Zeitstrahl, Objekte, Jahresangaben) bietet gute Signalquellen für heuristische Regeln und einfache ML/Scoring-Modelle.",
+      "Geringer Integrationsbedarf für einen Prototyp: kann als Offline-Pipeline/Dashboard mit exportierten Metadaten und Beispiel-Analytics demonstriert werden.",
+      "Decision‑Support (nicht Automatisierung) passt zur Sensitivität des Themas: Empfehlungen mit erklärbaren Begründungen + Human‑in‑the‑loop sind angebracht.",
+      "Mit mittlerem Risiko handhabbar: Fokus auf Priorisierungs- oder Empfehlungs-Scoring vermeidet rechtliche/ethische Probleme, wenn Quellen/Belege sichtbar bleiben."
+    ],
+    "why_not": [
+      "Wesentliche Betriebsdaten (z. B. Webanalytics, Content-Metadaten-Exports, Redaktionsworkflow-Logs) sind in den vorliegenden Infos nicht bestätigt und müssten verfügbar gemacht werden.",
+      "Themenbezogene Risiken (Falschdarstellung, sensitivematerialien) erfordern strenge Review-Prozesse; das vergrößert Aufwand bei Produktion und Abnahme.",
+      "Fehlende Informationen zur Trägerschaft/Entscheidungshoheit könnten Governance- und Freigabeprozesse verzögern."
+    ],
+    "recommended_use_case": "Editorial Prioritization Assistant (2–4 Wochen prototypisch): Ein interaktives Dashboard, das redaktionelle Entscheidungen unterstützt, indem es Seiten/Objekte nach Priorität rankt (z. B. Update‑Notwendigkeit, Nutzerinteresse, curricularer Relevanz, fehlende Metadaten, Sensitivitäts-Flags). Output sind erklärbare Empfehlungskarten (Warum: Metriken & Hinweise), konkrete nächste Schritte (z. B. „Überarbeiten Text“, „hochauflösende Aufnahme anfordern“, „Lehrmaterialpaket erstellen“) und ein einfache Feedback‑Schleife für Redakteur:innen.",
+    "target_roles": [
+      "Leitende/r Digitalredakteur/in / Sammlungsleiter/in",
+      "Bildungsprogramm‑Manager/in (Lehre & Vermittlung)",
+      "Kurator/in / Fachreferent/in"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Sind strukturierte Content‑Metadaten (CSV/JSON-Export aller Kapitel, Objekte, Tags, Datumsangaben, vorhandene Unterrichtsmaterialien) verfügbar?",
+      "Gibt es Zugriff auf Webanalytics/Search-Logs (Seitenaufrufe, Suchanfragen, Absprungraten) oder können Beispiel‑/Anonymisierte Datensamples geliefert werden?",
+      "Wie laufen redaktionelle Priorisierungsentscheidungen heute (Workflows, Frequenz, beteiligte Rollen, Entscheidungs-KPIs)?",
+      "Welche Governance-/Reviewer-Regeln bestehen für Änderungen an historischen Inhalten (Freigabeprozess, Sensitivitätsprüfung)?",
+      "Gibt es klare Datenschutz- oder Nutzungsbeschränkungen für Nutzungsdaten und für die Veröffentlichung automatisiert erzeugter Empfehlungen?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 70,\n  \"decision_summary\": \"LeMO verfügt über eine klare, inhaltsschwere Entscheidungsdomäne (Redaktion / Bildungsangebote / Priorisierung von Inhalten) mit wiederkehrenden Abwägungen zwischen Tiefe, Zielgruppenansprache und Sensibilität. Ein schlanker Agentic Decision‑Support Prototyp (kein automatisches Publizieren) zur Unterstützung redaktioneller Priorisierung oder zur Auswahl von Lehrmaterialien ist innerhalb von 2–4 Wochen realistisch, wenn Basisdaten bereitgestellt werden.\",\n  \"why_good_fit\": [\n    \"Klare, wiederkehrende Entscheidungen bei Redaktion/Didaktik: welche Inhalte aktualisieren, didaktisch aufbereiten oder prominent machen (Stakeholder: Kurator:innen, Lehrkräfte, Öffentlichkeitsarbeit).\",\n    \"Bestehender, strukturierter Content (Kapitel, Zeitstrahl, Objekte, Jahresangaben) bietet gute Signalquellen für heuristische Regeln und einfache ML/Scoring-Modelle.\",\n    \"Geringer Integrationsbedarf für einen Prototyp: kann als Offline-Pipeline/Dashboard mit exportierten Metadaten und Beispiel-Analytics demonstriert werden.\",\n    \"Decision‑Support (nicht Automatisierung) passt zur Sensitivität des Themas: Empfehlungen mit erklärbaren Begründungen + Human‑in‑the‑loop sind angebracht.\",\n    \"Mit mittlerem Risiko handhabbar: Fokus auf Priorisierungs- oder Empfehlungs-Scoring vermeidet rechtliche/ethische Probleme, wenn Quellen/Belege sichtbar bleiben.\"\n  ],\n  \"why_not\": [\n    \"Wesentliche Betriebsdaten (z. B. Webanalytics, Content-Metadaten-Exports, Redaktionsworkflow-Logs) sind in den vorliegenden Infos nicht bestätigt und müssten verfügbar gemacht werden.\",\n    \"Themenbezogene Risiken (Falschdarstellung, sensitivematerialien) erfordern strenge Review-Prozesse; das vergrößert Aufwand bei Produktion und Abnahme.\",\n    \"Fehlende Informationen zur Trägerschaft/Entscheidungshoheit könnten Governance- und Freigabeprozesse verzögern.\"\n  ],\n  \"recommended_use_case\": \"Editorial Prioritization Assistant (2–4 Wochen prototypisch): Ein interaktives Dashboard, das redaktionelle Entscheidungen unterstützt, indem es Seiten/Objekte nach Priorität rankt (z. B. Update‑Notwendigkeit, Nutzerinteresse, curricularer Relevanz, fehlende Metadaten, Sensitivitäts-Flags). Output sind erklärbare Empfehlungskarten (Warum: Metriken & Hinweise), konkrete nächste Schritte (z. B. „Überarbeiten Text“, „hochauflösende Aufnahme anfordern“, „Lehrmaterialpaket erstellen“) und ein einfache Feedback‑Schleife für Redakteur:innen.\",\n  \"target_roles\": [\n    \"Leitende/r Digitalredakteur/in / Sammlungsleiter/in\",\n    \"Bildungsprogramm‑Manager/in (Lehre & Vermittlung)\",\n    \"Kurator/in / Fachreferent/in\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Sind strukturierte Content‑Metadaten (CSV/JSON-Export aller Kapitel, Objekte, Tags, Datumsangaben, vorhandene Unterrichtsmaterialien) verfügbar?\",\n    \"Gibt es Zugriff auf Webanalytics/Search-Logs (Seitenaufrufe, Suchanfragen, Absprungraten) oder können Beispiel‑/Anonymisierte Datensamples geliefert werden?\",\n    \"Wie laufen redaktionelle Priorisierungsentscheidungen heute (Workflows, Frequenz, beteiligte Rollen, Entscheidungs-KPIs)?\",\n    \"Welche Governance-/Reviewer-Regeln bestehen für Änderungen an historischen Inhalten (Freigabeprozess, Sensitivitätsprüfung)?\",\n    \"Gibt es klare Datenschutz- oder Nutzungsbeschränkungen für Nutzungsdaten und für die Veröffentlichung automatisiert erzeugter Empfehlungen?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Medium",
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard",
+    "exclude_local_services": true
+  }
+}

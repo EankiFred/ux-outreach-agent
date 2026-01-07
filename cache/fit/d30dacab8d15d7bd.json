@@ -1,0 +1,32 @@
+{
+  "company_name": "NewFace",
+  "fit": {
+    "fit_score": 25,
+    "decision_summary": "NewFace hat eine klare, wiederkehrende Menge an Produkt-/Leistungsentscheidungen (Welche Services bewerben, Pakete zusammenstellen, Kapazitäts‑ vs. Margenabwägungen), aber die Datenlage ist unklar und die Domäne ist lokal und klein. Ein schlanker, human-in-the-loop Prototyp zur Priorisierung von Services/Marketing‑Experimenten ist in 2–4 Wochen machbar, liefert aber nur begrenzten Hebel ohne weiterführende Daten/Integration.",
+    "why_good_fit": [
+      "Kleine Stakeholder-Zahl erlaubt schnelle Abstimmung (aber begrenzter Hebel)."
+    ],
+    "why_not": [
+      "Begrenzte Entscheidungskomplexität und geringe Datenbasis für echten Decision Support.",
+      "Der Use-Case wäre eher klassische Automatisierung/CRM/Booking-Optimierung als agentische Entscheidungsvorbereitung."
+    ],
+    "recommended_use_case": "Nicht empfohlen (Scope passt eher zu klassischer Termin-/Marketing-Optimierung statt agentischem Decision Support).",
+    "target_roles": [
+      "Owner / Management"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Gibt es überhaupt strukturierte Daten (Booking/POS/CRM) und echten Entscheidungsdruck jenseits Terminplanung?",
+      "Was wäre der messbare Business-Hebel, der einen Prototyp rechtfertigt?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 45,\n  \"decision_summary\": \"NewFace hat eine klare, wiederkehrende Menge an Produkt-/Leistungsentscheidungen (Welche Services bewerben, Pakete zusammenstellen, Kapazitäts‑ vs. Margenabwägungen), aber die Datenlage ist unklar und die Domäne ist lokal und klein. Ein schlanker, human-in-the-loop Prototyp zur Priorisierung von Services/Marketing‑Experimenten ist in 2–4 Wochen machbar, liefert aber nur begrenzten Hebel ohne weiterführende Daten/Integration.\",\n  \"why_good_fit\": [\n    \"Entscheidungen über Service‑Priorisierung, Pakete und Promotions sind regelmäßig und haben echte Abwägungen (Kapazität vs. Umsatz vs. Kundenzufriedenheit).\",\n    \"Relevante Signale dürften existieren oder lassen sich schnell erfassen (Terminlisten / manuelle Buchungszahlen, Preise, ungefähre Margen, Online‑Rezensionen, Instagram/Galerie).\",\n    \"Prototyp kann minimalinvasiv gebaut werden (Interaktives Frageformular + einfache Rechenlogik / Scoring, erklärbare Prioritäten und vorgeschlagene Experimente) und benötigt keine tiefe Systemintegration.\",\n    \"Geringe regulatorische/Compliance‑Risiken im Vergleich zu sensibleren Branchen; Medium Risk‑Tolerance passt zur experimentellen Priorisierung.\",\n    \"Klare Human‑in‑the‑loop Natur: Empfehlungen mit Begründung, Entscheider behalten Kontrolle und können Inputs manuell anpassen.\"\n  ],\n  \"why_not\": [\n    \"Wahrscheinlich begrenzter Datenumfang und -qualität; ohne historische Termindaten oder POS/Zahlen wird die Empfehlung spekulativ.\",\n    \"Kleine, lokale Struktur reduziert potenziellen ROI; viele Entscheidungen sind taktisch/operativ und weniger strategisch/skalierbar.\",\n    \"Unklarheit über vorhandene Systeme (Online‑Buchung, Kassensystem), Personalanzahl und -fähigkeiten erschwert präzise Modellierung.\",\n    \"Ohne schnelle Möglichkeit zur Messung von Experimentergebnissen (Tracking) bleiben Aussagen über Impact und Confidence schwach.\"\n  ],\n  \"recommended_use_case\": \"2–4‑Wochen Prototyp: „Service Prioritization Assistant“ — ein interaktives Tool, das Inhaber/Manager in 10–15 Minuten per Formular zu Kapazität, durchschnittlichen Wochenbuchungen pro Leistung, groben Margen/Preisen, Personal‑Skills und gewünschten Zielen (Umsatz/Neukunden/Kundenzufriedenheit) abfragt. Das Tool berechnet ein erklärbares Scoring pro Service (Nachfrage vs. Kapazitäts‑Konflikt vs. Margin vs. strategische Ziele), liefert eine priorisierte Liste (Top‑3 Maßnahmen: Bewerben, Paket, Preisexperiment), schlägt konkrete kleine Tests vor (Kommunikationstext, Laufzeit, Zielgruppe) und zeigt erwarteten Impact + Unsicherheit. Keine tiefe Integration nötig; Ergebnisse sind auditierbar und human‑in‑the‑loop.\",\n  \"target_roles\": [\n    \"Inhaber / Geschäftsleitung\",\n    \"Salon‑Manager / Head Stylist\",\n    \"Marketing / Booking‑Verantwortlicher\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Nutzen Sie ein Online‑Buchungssystem oder ein POS/Kassensystem? Wenn ja: Welches und liefert es historische Termindaten (CSV/Export)?\",\n    \"Wie viele Serviceplätze (Stühle/Behandlungsräume) und wie viele Mitarbeiter mit buchbaren Slots gibt es?\",\n    \"Haben Sie grobe Zahlen zu durchschnittlichen Buchungen pro Woche je Leistung, Preise und ungefähre Margen (oder Verkaufspreise)?\",\n    \"Welche digitalen Kanäle und Traffic‑Daten sind verfügbar (Instagram, Google My Business, Website‑Analytics)?\",\n    \"Sind Sie bereit, für den Prototyp manuelle Inputs/Schätzungen zu liefern und anschließende einfache A/B‑Tests/Tracking für 4–8 Wochen durchzuführen?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "Product / roadmap / prioritization decisions",
+    "risk_tolerance": "Medium",
+    "exclude_local_services": true,
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard"
+  }
+}

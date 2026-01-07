@@ -1,0 +1,43 @@
+{
+  "company_name": "Linear - Plan and build products",
+  "fit": {
+    "fit_score": 82,
+    "decision_summary": "Linear ist grundsätzlich gut geeignet für einen Agentic Decision‑Support Prototyp: es gibt wiederkehrende, nicht‑triviale Entscheidungen (Backlog-/Cycle‑Priorisierung, Roadmap‑Tradeoffs) und zugängliche Signale (Issues, Cycles, Integrationen, Telemetrie über GitHub). Bei niedrigem Risk‑Profil ist ein 4–6‑wöchiger, read‑only Prototyp realistisch, solange der Prototyp nur Vorschläge liefert und keine automatischen Änderungen vornimmt.",
+    "why_good_fit": [
+      "Klare, wiederkehrende Entscheidungspunkte: Priorisierung für Cycles/Releases, Scope‑vs‑Time‑Tradeoffs, SLA‑Triage.",
+      "Viele nutzbare Datensignale verfügbar: Issue‑Metadaten, Cycle/Throughput‑Metriken, GitHub‑Links, Integrationen (Figma, Slack) und Telemetrie‑Potential.",
+      "Technisch praktikabel: GraphQL/SDKs + Integrationen ermöglichen read‑only Datenzugriff ohne massive Systemänderungen.",
+      "Zielnutzer (Product/Engineering‑Teams) sind genau die Rollen, die Decision‑Support benötigen und akzeptieren erklärbare Vorschläge.",
+      "Low‑risk Umsetzung möglich: prototypische UI, erklärende Evidenz und Mensch‑in‑the‑loop statt automatischer Aktionen minimieren Risiken."
+    ],
+    "why_not": [
+      "Unklarheiten zu vorhandenen AI‑Agent‑Berechtigungen und welchen Daten/Operationen interne Agents bereits ausführen dürfen.",
+      "Nicht definitiv bekannt, ob kundenseitige Telemetrie / Support‑Feedback leicht verfügbar ist (wichtig für Impact‑Signale).",
+      "Enterprise‑Sicherheitsanforderungen (SSO, Audit‑Logs, Datenzugriffsrichtlinien) könnten zusätzliche Abstimmungen erfordern.",
+      "Akzeptanzrisiko: Teams können Vorschläge ablehnen, wenn Erklärungen oder Quellen fehlen — UX/Onboarding muss extra berücksichtigt werden."
+    ],
+    "recommended_use_case": "Cycle Prioritization Assistant (4–6 Wochen): Ein read‑only Prototyp, der für den kommenden Cycle eine priorisierte Liste von Kandidatenissues erzeugt. Inputs: Issue‑Metadaten (priority, labels, estimates, blockers), Cycle‑Throughput & velocity, offene PRs/Review‑Status, SLA-/customer‑report Signale (falls vorhanden). Output: gerankte Liste mit Kurzbegründung pro Item (Impact‑Indikator, Aufwandsschätzung, Abhängigkeiten), Confidence‑Score und verlinkter Evidenz (Kommentare, PRs, Figma). Interaktion: PM bestätigt/adjustiert Auswahl; keine automatischen Status‑Änderungen. Implementation: Backend zieht via Linear API (GraphQL) + optionale GitHub/feedback‑stubs; kleines UI‑Panel oder Slack‑Summary für Review.",
+    "target_roles": [
+      "Product Manager",
+      "Engineering Manager",
+      "Head of Product"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Können wir Zugriff auf eine Demo/ Sandbox‑Organisation oder ein anonymisiertes Datenset bekommen (read‑only API‑Token) für Prototyping?",
+      "Welche Integrationen/Datenquellen sind im Zielscope wirklich verfügbar (GitHub PR‑Status, Kunden‑Tickets, crash/usage Telemetry, Figma links)?",
+      "Welche Berechtigungs‑ und Compliance‑vorgaben gelten für einen Prototyp (SSO/SCIM, Audit‑Logs, Datenspeicherung, HIPAA/GDPR‑Constraints)?",
+      "Wollen Stakeholder ausschließlich read‑only Empfehlungen (niedriges Risiko) oder sind teilautomatische Aktionen akzeptabel nach Review?",
+      "Welche Erfolgskriterien/KPIs sollen wir in 4–6 Wochen demonstrieren (z. B. Übereinstimmung mit PM‑Prioritäten, Zeitersparnis bei Planung, Akzeptanzrate)?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 82,\n  \"decision_summary\": \"Linear ist grundsätzlich gut geeignet für einen Agentic Decision‑Support Prototyp: es gibt wiederkehrende, nicht‑triviale Entscheidungen (Backlog-/Cycle‑Priorisierung, Roadmap‑Tradeoffs) und zugängliche Signale (Issues, Cycles, Integrationen, Telemetrie über GitHub). Bei niedrigem Risk‑Profil ist ein 4–6‑wöchiger, read‑only Prototyp realistisch, solange der Prototyp nur Vorschläge liefert und keine automatischen Änderungen vornimmt.\",\n  \"why_good_fit\": [\n    \"Klare, wiederkehrende Entscheidungspunkte: Priorisierung für Cycles/Releases, Scope‑vs‑Time‑Tradeoffs, SLA‑Triage.\",\n    \"Viele nutzbare Datensignale verfügbar: Issue‑Metadaten, Cycle/Throughput‑Metriken, GitHub‑Links, Integrationen (Figma, Slack) und Telemetrie‑Potential.\",\n    \"Technisch praktikabel: GraphQL/SDKs + Integrationen ermöglichen read‑only Datenzugriff ohne massive Systemänderungen.\",\n    \"Zielnutzer (Product/Engineering‑Teams) sind genau die Rollen, die Decision‑Support benötigen und akzeptieren erklärbare Vorschläge.\",\n    \"Low‑risk Umsetzung möglich: prototypische UI, erklärende Evidenz und Mensch‑in‑the‑loop statt automatischer Aktionen minimieren Risiken.\"\n  ],\n  \"why_not\": [\n    \"Unklarheiten zu vorhandenen AI‑Agent‑Berechtigungen und welchen Daten/Operationen interne Agents bereits ausführen dürfen.\",\n    \"Nicht definitiv bekannt, ob kundenseitige Telemetrie / Support‑Feedback leicht verfügbar ist (wichtig für Impact‑Signale).\",\n    \"Enterprise‑Sicherheitsanforderungen (SSO, Audit‑Logs, Datenzugriffsrichtlinien) könnten zusätzliche Abstimmungen erfordern.\",\n    \"Akzeptanzrisiko: Teams können Vorschläge ablehnen, wenn Erklärungen oder Quellen fehlen — UX/Onboarding muss extra berücksichtigt werden.\"\n  ],\n  \"recommended_use_case\": \"Cycle Prioritization Assistant (4–6 Wochen): Ein read‑only Prototyp, der für den kommenden Cycle eine priorisierte Liste von Kandidatenissues erzeugt. Inputs: Issue‑Metadaten (priority, labels, estimates, blockers), Cycle‑Throughput & velocity, offene PRs/Review‑Status, SLA-/customer‑report Signale (falls vorhanden). Output: gerankte Liste mit Kurzbegründung pro Item (Impact‑Indikator, Aufwandsschätzung, Abhängigkeiten), Confidence‑Score und verlinkter Evidenz (Kommentare, PRs, Figma). Interaktion: PM bestätigt/adjustiert Auswahl; keine automatischen Status‑Änderungen. Implementation: Backend zieht via Linear API (GraphQL) + optionale GitHub/feedback‑stubs; kleines UI‑Panel oder Slack‑Summary für Review.\",\n  \"target_roles\": [\n    \"Product Manager\",\n    \"Engineering Manager\",\n    \"Head of Product\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Können wir Zugriff auf eine Demo/ Sandbox‑Organisation oder ein anonymisiertes Datenset bekommen (read‑only API‑Token) für Prototyping?\",\n    \"Welche Integrationen/Datenquellen sind im Zielscope wirklich verfügbar (GitHub PR‑Status, Kunden‑Tickets, crash/usage Telemetry, Figma links)?\",\n    \"Welche Berechtigungs‑ und Compliance‑vorgaben gelten für einen Prototyp (SSO/SCIM, Audit‑Logs, Datenspeicherung, HIPAA/GDPR‑Constraints)?\",\n    \"Wollen Stakeholder ausschließlich read‑only Empfehlungen (niedriges Risiko) oder sind teilautomatische Aktionen akzeptabel nach Review?\",\n    \"Welche Erfolgskriterien/KPIs sollen wir in 4–6 Wochen demonstrieren (z. B. Übereinstimmung mit PM‑Prioritäten, Zeitersparnis bei Planung, Akzeptanzrate)?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Low",
+    "prototype_horizon": "4–6 weeks",
+    "detail_level": "More detailed",
+    "exclude_local_services": true
+  }
+}

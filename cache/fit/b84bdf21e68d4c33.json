@@ -1,0 +1,42 @@
+{
+  "company_name": "Linear - Plan and build products",
+  "fit": {
+    "fit_score": 80,
+    "decision_summary": "Linear eignet sich gut für einen Agentic Decision‑Support Prototypen: die Plattform zentralisiert relevante Produkt‑ und Entwicklungsdaten, enthält wiederkehrende, nicht‑triviale Priorisierungsentscheidungen und bietet eine API für schnellen Datenzugriff. Mit einem eng gefassten Use‑Case lässt sich in 2–4 Wochen ein human‑in‑the‑loop Prototyp bauen, der Empfehlungen erklärt und Entscheidungsträgern konkrete Handlungsoptionen liefert.",
+    "why_good_fit": [
+      "Zentrale Datenbasis: Issues, Roadmaps, Meilensteine, Triage‑Workflows und Integrationen bieten reichlich strukturierte Signale für Priorisierungs- und Release‑Entscheidungen.",
+      "Wiederkehrende, komplexe Entscheidungen: Backlog‑Priorisierung, Triage, Release‑Scope und Ressourcenabwägungen sind regelmäßig und beinhalten Stakeholder‑Tradeoffs sowie Unsicherheit.",
+      "Technische Zugänglichkeit: Erwähnte API/SDK und vorhandene Integrationen ermöglichen einen schnellen Prototyp‑Datenzugriff ohne invasive Systemänderungen.",
+      "Klare Human‑in‑the‑loop Anforderungen: Nutzer brauchen Erklärungen, Kontrollmöglichkeiten und Rücksetzoptionen — typische Eigenschaften eines Decision‑Support (nicht Automatisierungs‑) Prototyps.",
+      "Breite Nutzerbasis: Produkt‑ und Engineering‑Teams als primäre Zielrollen erleichtern Validierung und Pilotierung im Kundenumfeld."
+    ],
+    "why_not": [
+      "Unklare Details zu bestehenden KI‑Agenten: Fähigkeiten, Grenzen und Datenschutzverhalten der bereits angebotenen KI‑Funktionen sind nicht beschrieben und könnten Überlappungen oder technische Beschränkungen verursachen.",
+      "Enterprise‑/Sicherheitsanforderungen unklar: Fehlen von Info zu SSO, Zugriffskontrolle und Audit‑Log‑Tiefe kann Implementierung bei Großkunden verzögern.",
+      "Entscheidungskriterien heterogen: Organizations haben oft stark unterschiedliche Priorisierungs‑Policies/OKRs — das erhöht Aufwand für sinnvolle Default‑Heuristiken."
+    ],
+    "recommended_use_case": "Backlog Prioritization Assistant für die nächste Milestone‑Planung (2–4 Wochen): via Linear API Issues + Metadaten (Labels, Estimates, Comments, Linked PRs, Roadmap‑Tags) einziehen, heuristische Scoring‑Funktion + LLM‑gestützte Synthese zur Rangfolge erstellen. Ergebnis: eine ranked Liste mit pro Item kurzer, nachvollziehbarer Begründung, Konfidenz‑Score und interaktiven Gewichtungs‑Slidern für PMs; Audit‑Trail für Entscheidungen und einfache Export/Commit‑Option in Linear.",
+    "target_roles": [
+      "Product Manager",
+      "Engineering Manager",
+      "Product Operations / PMO"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Können wir auf eine Test‑Organisation oder anonymisierte Export‑Daten (Issues, comments, labels, estimates, roadmap tags) zugreifen? Wenn ja, in welchem Format/Umfang?",
+      "Welche Enterprise‑Sicherheitsanforderungen müssen berücksichtigt werden (SSO, Datenaufbewahrung, Audit‑Logs, IP‑/Datenschutzbeschränkungen)?",
+      "Gibt es bereits interne Priorisierungs‑Regeln, Scorecards oder KPIs (z. B. ROI, user‑impact, risk, effort), die als Default‑Gewichtung dienen sollen?",
+      "Welche der Integrationen (z. B. Git, Figma) sind für Entscheidungssignale kritisch und müssten in einem Prototyp enthalten sein?",
+      "Gibt es bestehende KI‑Agenten/Automationen in Linear, die mit dem Prototyp kollidieren oder ergänzt werden sollen (kurze Beschreibung der Funktionen)?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 80,\n  \"decision_summary\": \"Linear eignet sich gut für einen Agentic Decision‑Support Prototypen: die Plattform zentralisiert relevante Produkt‑ und Entwicklungsdaten, enthält wiederkehrende, nicht‑triviale Priorisierungsentscheidungen und bietet eine API für schnellen Datenzugriff. Mit einem eng gefassten Use‑Case lässt sich in 2–4 Wochen ein human‑in‑the‑loop Prototyp bauen, der Empfehlungen erklärt und Entscheidungsträgern konkrete Handlungsoptionen liefert.\",\n  \"why_good_fit\": [\n    \"Zentrale Datenbasis: Issues, Roadmaps, Meilensteine, Triage‑Workflows und Integrationen bieten reichlich strukturierte Signale für Priorisierungs- und Release‑Entscheidungen.\",\n    \"Wiederkehrende, komplexe Entscheidungen: Backlog‑Priorisierung, Triage, Release‑Scope und Ressourcenabwägungen sind regelmäßig und beinhalten Stakeholder‑Tradeoffs sowie Unsicherheit.\",\n    \"Technische Zugänglichkeit: Erwähnte API/SDK und vorhandene Integrationen ermöglichen einen schnellen Prototyp‑Datenzugriff ohne invasive Systemänderungen.\",\n    \"Klare Human‑in‑the‑loop Anforderungen: Nutzer brauchen Erklärungen, Kontrollmöglichkeiten und Rücksetzoptionen — typische Eigenschaften eines Decision‑Support (nicht Automatisierungs‑) Prototyps.\",\n    \"Breite Nutzerbasis: Produkt‑ und Engineering‑Teams als primäre Zielrollen erleichtern Validierung und Pilotierung im Kundenumfeld.\"\n  ],\n  \"why_not\": [\n    \"Unklare Details zu bestehenden KI‑Agenten: Fähigkeiten, Grenzen und Datenschutzverhalten der bereits angebotenen KI‑Funktionen sind nicht beschrieben und könnten Überlappungen oder technische Beschränkungen verursachen.\",\n    \"Enterprise‑/Sicherheitsanforderungen unklar: Fehlen von Info zu SSO, Zugriffskontrolle und Audit‑Log‑Tiefe kann Implementierung bei Großkunden verzögern.\",\n    \"Entscheidungskriterien heterogen: Organizations haben oft stark unterschiedliche Priorisierungs‑Policies/OKRs — das erhöht Aufwand für sinnvolle Default‑Heuristiken.\"\n  ],\n  \"recommended_use_case\": \"Backlog Prioritization Assistant für die nächste Milestone‑Planung (2–4 Wochen): via Linear API Issues + Metadaten (Labels, Estimates, Comments, Linked PRs, Roadmap‑Tags) einziehen, heuristische Scoring‑Funktion + LLM‑gestützte Synthese zur Rangfolge erstellen. Ergebnis: eine ranked Liste mit pro Item kurzer, nachvollziehbarer Begründung, Konfidenz‑Score und interaktiven Gewichtungs‑Slidern für PMs; Audit‑Trail für Entscheidungen und einfache Export/Commit‑Option in Linear.\",\n  \"target_roles\": [\n    \"Product Manager\",\n    \"Engineering Manager\",\n    \"Product Operations / PMO\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Können wir auf eine Test‑Organisation oder anonymisierte Export‑Daten (Issues, comments, labels, estimates, roadmap tags) zugreifen? Wenn ja, in welchem Format/Umfang?\",\n    \"Welche Enterprise‑Sicherheitsanforderungen müssen berücksichtigt werden (SSO, Datenaufbewahrung, Audit‑Logs, IP‑/Datenschutzbeschränkungen)?\",\n    \"Gibt es bereits interne Priorisierungs‑Regeln, Scorecards oder KPIs (z. B. ROI, user‑impact, risk, effort), die als Default‑Gewichtung dienen sollen?\",\n    \"Welche der Integrationen (z. B. Git, Figma) sind für Entscheidungssignale kritisch und müssten in einem Prototyp enthalten sein?\",\n    \"Gibt es bestehende KI‑Agenten/Automationen in Linear, die mit dem Prototyp kollidieren oder ergänzt werden sollen (kurze Beschreibung der Funktionen)?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Medium",
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard",
+    "exclude_local_services": true
+  }
+}

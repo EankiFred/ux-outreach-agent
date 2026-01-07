@@ -1,0 +1,42 @@
+{
+  "company_name": "NewFace",
+  "fit": {
+    "fit_score": 50,
+    "decision_summary": "NewFace hat wiederkehrende, nicht-triviale Entscheidungen (Terminmix, Personalzuordnung, No‑Show-Handling, Upselling), aber derzeit unklare Datenzugänge und vermutlich begrenzte digitale Telemetrie. Ein schlanker, human-in-the-loop Prototyp für Tages-/Wochenplanung und einfache No‑Show-/Upsell-Empfehlungen ist in 2–4 Wochen realistisch, sofern CSV/Calendar-Exporte und grundlegende Personaldaten verfügbar sind.",
+    "why_good_fit": [
+      "Klare, wiederkehrende Entscheidungen: Terminannahme/-reihenfolge, Personalzuordnung, Paket-/Upsell-Entscheidungen und Stornomanagement.",
+      "Geringe technische Komplexität für einen MVP: einfache Regel- und statistikbasierte Modelle (z. B. No‑Show-Risiko, Auslastung) reichen anfangs aus.",
+      "Niedriges regulatorisches Risiko; Entscheidungen bleiben human-in-the-loop und erklärbar.",
+      "Prototyp kann ohne tiefe Systemintegration starten (CSV- oder Kalender-Import, manuelle Eingaben).",
+      "Konkreter Nutzwert unmittelbar für Geschäftsführung/Empfang (bessere Auslastung, reduzierte Leerlaufzeiten, gezieltes Upselling)."
+    ],
+    "why_not": [
+      "Unklare/fehlende Datenzugänge (Buchungssystem, Historie, POS) erschweren aussagekräftige Modelle.",
+      "Wahrscheinlich kleine Datenmengen und hohe Varianz (einzelne Mitarbeitende, saisonale Schwankungen) → begrenzte Vorhersagegenauigkeit.",
+      "Wenn Echtzeit-Integration erforderlich ist, überschreitet das den 2–4‑Wochen-Horizont ohne zusätzliche Aufwände."
+    ],
+    "recommended_use_case": "2–4‑Wochen-Prototyp: \"Tages-/Schicht- Entscheidungs‑Assistant\" — ein erklärbares Dashboard, das aus CSV/Calendar-Exporten und manuellen Inputs (Mitarbeiter, Öffnungszeiten, Standarddauer/Preise) für die nächsten 7 Tage konkrete Empfehlungen liefert: optimale Verteilung der gebuchten Termine auf Mitarbeitende, Flaggen für hohe No‑Show‑Wahrscheinlichkeit (einfache Heuristiken/Logit auf Basis Historie), Empfehlungen für 1–2 Upsell‑Optionen pro Termin und Klartext-Begründungen. Output: Liste priorisierter Buchungen, Umlegungs‑Vorschläge und Maßnahmen (Bestätigung/Anzahlung vorschlagen).",
+    "target_roles": [
+      "Saloninhaber / Geschäftsführung",
+      "Empfangs-/Buchungsmanager",
+      "Leitender Stylist / Schichtplanung"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Welches Buchungssystem/Tool wird aktuell verwendet und kann es Exporte (CSV) oder Kalenderzugriff (iCal/Google Calendar) bereitstellen?",
+      "Wie viele Mitarbeitende (inkl. Teilzeit) arbeiten und welche Services/Skills sind an sie gebunden (z. B. Coloration, Extensions)?",
+      "Gibt es historische Buchungsdaten (idealerweise 2–6 Monate) inklusive No‑Shows, Stornierungen, tatsächliche Dauer und Umsätze?",
+      "Werden Produkte/Einzelposten über ein POS verkauft und sind Preislisten/Standarddauer der Services digital verfügbar?",
+      "Wie flexibel soll die Entscheidungsunterstützung sein: nur Empfehlungen für den Empfang oder automatische Umbuchungsvorschläge (fragt nach Policy/Genehmigung)?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 50,\n  \"decision_summary\": \"NewFace hat wiederkehrende, nicht-triviale Entscheidungen (Terminmix, Personalzuordnung, No‑Show-Handling, Upselling), aber derzeit unklare Datenzugänge und vermutlich begrenzte digitale Telemetrie. Ein schlanker, human-in-the-loop Prototyp für Tages-/Wochenplanung und einfache No‑Show-/Upsell-Empfehlungen ist in 2–4 Wochen realistisch, sofern CSV/Calendar-Exporte und grundlegende Personaldaten verfügbar sind.\",\n  \"why_good_fit\": [\n    \"Klare, wiederkehrende Entscheidungen: Terminannahme/-reihenfolge, Personalzuordnung, Paket-/Upsell-Entscheidungen und Stornomanagement.\",\n    \"Geringe technische Komplexität für einen MVP: einfache Regel- und statistikbasierte Modelle (z. B. No‑Show-Risiko, Auslastung) reichen anfangs aus.\",\n    \"Niedriges regulatorisches Risiko; Entscheidungen bleiben human-in-the-loop und erklärbar.\",\n    \"Prototyp kann ohne tiefe Systemintegration starten (CSV- oder Kalender-Import, manuelle Eingaben).\",\n    \"Konkreter Nutzwert unmittelbar für Geschäftsführung/Empfang (bessere Auslastung, reduzierte Leerlaufzeiten, gezieltes Upselling).\"\n  ],\n  \"why_not\": [\n    \"Unklare/fehlende Datenzugänge (Buchungssystem, Historie, POS) erschweren aussagekräftige Modelle.\",\n    \"Wahrscheinlich kleine Datenmengen und hohe Varianz (einzelne Mitarbeitende, saisonale Schwankungen) → begrenzte Vorhersagegenauigkeit.\",\n    \"Wenn Echtzeit-Integration erforderlich ist, überschreitet das den 2–4‑Wochen-Horizont ohne zusätzliche Aufwände.\"\n  ],\n  \"recommended_use_case\": \"2–4‑Wochen-Prototyp: \\\"Tages-/Schicht- Entscheidungs‑Assistant\\\" — ein erklärbares Dashboard, das aus CSV/Calendar-Exporten und manuellen Inputs (Mitarbeiter, Öffnungszeiten, Standarddauer/Preise) für die nächsten 7 Tage konkrete Empfehlungen liefert: optimale Verteilung der gebuchten Termine auf Mitarbeitende, Flaggen für hohe No‑Show‑Wahrscheinlichkeit (einfache Heuristiken/Logit auf Basis Historie), Empfehlungen für 1–2 Upsell‑Optionen pro Termin und Klartext-Begründungen. Output: Liste priorisierter Buchungen, Umlegungs‑Vorschläge und Maßnahmen (Bestätigung/Anzahlung vorschlagen).\",\n  \"target_roles\": [\n    \"Saloninhaber / Geschäftsführung\",\n    \"Empfangs-/Buchungsmanager\",\n    \"Leitender Stylist / Schichtplanung\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Welches Buchungssystem/Tool wird aktuell verwendet und kann es Exporte (CSV) oder Kalenderzugriff (iCal/Google Calendar) bereitstellen?\",\n    \"Wie viele Mitarbeitende (inkl. Teilzeit) arbeiten und welche Services/Skills sind an sie gebunden (z. B. Coloration, Extensions)?\",\n    \"Gibt es historische Buchungsdaten (idealerweise 2–6 Monate) inklusive No‑Shows, Stornierungen, tatsächliche Dauer und Umsätze?\",\n    \"Werden Produkte/Einzelposten über ein POS verkauft und sind Preislisten/Standarddauer der Services digital verfügbar?\",\n    \"Wie flexibel soll die Entscheidungsunterstützung sein: nur Empfehlungen für den Empfang oder automatische Umbuchungsvorschläge (fragt nach Policy/Genehmigung)?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Medium",
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard",
+    "exclude_local_services": false
+  }
+}

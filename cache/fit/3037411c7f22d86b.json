@@ -1,0 +1,35 @@
+{
+  "company_name": "Figma",
+  "fit": {
+    "fit_score": 80,
+    "decision_summary": "Figma eignet sich gut für einen Agentic Decision‑Support Prototyp, weil die Plattform viele Stakeholder, klare wiederkehrende Entscheidungen (Pläne, Seat‑Zuweisung, AI‑Credit‑Nutzung) und voraussichtlich verfügbare Nutzungsdaten hat. Ein schlanker 2–4‑Wochen Prototyp, z.B. zur Sitztyp‑/Plan‑Optimierung oder AI‑Credit‑Monitoring, ist realistisch und hochwertig, erfordert aber schnellen Zugriff auf Admin‑/Audit‑Daten und Abklärung zu Datenschutz/Compliance.",
+    "why_good_fit": [
+      "Mehrere beteiligte Nutzergruppen (Design, Dev, PM, Org‑Admins) erzeugen echte, koordinationsbedürftige Decisions (z. B. Seat‑Mix, Designsystem‑Governance).",
+      "Konkrete, wiederkehrende Entscheidungsfragen mit messbarem Nutzen (Kostenoptimierung, Credit‑Verbrauch, Library‑Governance) — guter Hebel für Prototyp‑Impact.",
+      "Wahrscheinliche Verfügbarkeit relevanter Signals (Nutzungsmetriken, Seat‑Aktivität, AI‑Credit‑Logs, Integrations‑Events) über Produkt‑/Admin‑APIs.",
+      "Produkt ist reif genug, um brauchbare Datenströme und Nutzersegmente zu liefern, ohne in Enterprise‑Trägheit oder Early‑Chaos zu stecken.",
+      "Schlanker Scope (z. B. Empfehlung für Seat‑Mix + simulationsbasierte Kostenvorhersage) lässt sich in 2–4 Wochen als interaktiver Prototyp realisieren."
+    ],
+    "why_not": [
+      "Zugriff auf nötige Admin‑/Nutzungsdaten, APIs und Beispiel‑Datensätze ist unklar und kann das Projekt blockieren.",
+      "Datenschutz/Compliance‑ und Enterprise‑Kundenanforderungen könnten Einschränkungen beim Zugriff auf Organisationsdaten und Empfehlungen verursachen.",
+      "Interne Politik bei plangetreuen oder vertraglich gebundenen Unternehmenskunden kann die Umsetzung von Handlungsempfehlungen erschweren."
+    ],
+    "recommended_use_case": "2–4 Wochen Prototyp: 'Seat‑Mix & Plan Recommendation' — Interaktiver Entscheidungsassistent für Org‑Admins, der aktuelle Seat‑Nutzung, Aktivitätsprofile (Design vs. Dev vs. Viewer), AI‑Credit‑Verbrauch und Preispläne zusammenführt, kosteneffiziente Empfehlungen (Anzahl & Typen von Seats, erwartete Kostenänderung) liefert und Simulations‑Szenarien (z. B. Wachstum + Mehrverwendung von Libraries) bietet. Ergebnis: Dashboard mit Top‑3 Konfigurationsoptionen, zugehörigen Einsparungs-/Produktivitätsannahmen und erklärbarer Entscheidungsbegründung.",
+    "target_roles": [
+      "Head of Product / Product Operations",
+      "Design/DesignOps Lead",
+      "Org Administrator / Finance (Purchasing)"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Gibt es Admin‑APIs oder Export‑Endpunkte für Seat‑Zuweisungen, Login/Activity‑Events und AI‑Credit‑Logs? Wenn ja: Beispiel‑Export oder Schema?",
+      "Wer sind die konkreten Entscheidungseigner für Pläne/Seats (z. B. Org‑Admins, Procurement, DesignOps) und wie werden Empfehlungen umgesetzt?",
+      "Gibt es datenschutzrechtliche oder vertragliche Einschränkungen beim Zugriff auf Organisations‑ und Nutzungsdaten (z. B. Enterprise‑Kunden, PII)?",
+      "Welche KPIs definieren Erfolg (z. B. Kosteneinsparung, reduzierte Support‑Anfragen, schnellere Onboarding‑Zeit)?",
+      "Gibt es bevorzugte/zugängliche Produktanalytik‑Tools oder Data‑Warehouse (z. B. Amplitude, Snowflake, interne Logs) für den Prototypzugriff?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 80,\n  \"decision_summary\": \"Figma eignet sich gut für einen Agentic Decision‑Support Prototyp, weil die Plattform viele Stakeholder, klare wiederkehrende Entscheidungen (Pläne, Seat‑Zuweisung, AI‑Credit‑Nutzung) und voraussichtlich verfügbare Nutzungsdaten hat. Ein schlanker 2–4‑Wochen Prototyp, z.B. zur Sitztyp‑/Plan‑Optimierung oder AI‑Credit‑Monitoring, ist realistisch und hochwertig, erfordert aber schnellen Zugriff auf Admin‑/Audit‑Daten und Abklärung zu Datenschutz/Compliance.\",\n  \"why_good_fit\": [\n    \"Mehrere beteiligte Nutzergruppen (Design, Dev, PM, Org‑Admins) erzeugen echte, koordinationsbedürftige Decisions (z. B. Seat‑Mix, Designsystem‑Governance).\",\n    \"Konkrete, wiederkehrende Entscheidungsfragen mit messbarem Nutzen (Kostenoptimierung, Credit‑Verbrauch, Library‑Governance) — guter Hebel für Prototyp‑Impact.\",\n    \"Wahrscheinliche Verfügbarkeit relevanter Signals (Nutzungsmetriken, Seat‑Aktivität, AI‑Credit‑Logs, Integrations‑Events) über Produkt‑/Admin‑APIs.\",\n    \"Produkt ist reif genug, um brauchbare Datenströme und Nutzersegmente zu liefern, ohne in Enterprise‑Trägheit oder Early‑Chaos zu stecken.\",\n    \"Schlanker Scope (z. B. Empfehlung für Seat‑Mix + simulationsbasierte Kostenvorhersage) lässt sich in 2–4 Wochen als interaktiver Prototyp realisieren.\"\n  ],\n  \"why_not\": [\n    \"Zugriff auf nötige Admin‑/Nutzungsdaten, APIs und Beispiel‑Datensätze ist unklar und kann das Projekt blockieren.\",\n    \"Datenschutz/Compliance‑ und Enterprise‑Kundenanforderungen könnten Einschränkungen beim Zugriff auf Organisationsdaten und Empfehlungen verursachen.\",\n    \"Interne Politik bei plangetreuen oder vertraglich gebundenen Unternehmenskunden kann die Umsetzung von Handlungsempfehlungen erschweren.\"\n  ],\n  \"recommended_use_case\": \"2–4 Wochen Prototyp: 'Seat‑Mix & Plan Recommendation' — Interaktiver Entscheidungsassistent für Org‑Admins, der aktuelle Seat‑Nutzung, Aktivitätsprofile (Design vs. Dev vs. Viewer), AI‑Credit‑Verbrauch und Preispläne zusammenführt, kosteneffiziente Empfehlungen (Anzahl & Typen von Seats, erwartete Kostenänderung) liefert und Simulations‑Szenarien (z. B. Wachstum + Mehrverwendung von Libraries) bietet. Ergebnis: Dashboard mit Top‑3 Konfigurationsoptionen, zugehörigen Einsparungs-/Produktivitätsannahmen und erklärbarer Entscheidungsbegründung.\",\n  \"target_roles\": [\n    \"Head of Product / Product Operations\",\n    \"Design/DesignOps Lead\",\n    \"Org Administrator / Finance (Purchasing)\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Gibt es Admin‑APIs oder Export‑Endpunkte für Seat‑Zuweisungen, Login/Activity‑Events und AI‑Credit‑Logs? Wenn ja: Beispiel‑Export oder Schema?\",\n    \"Wer sind die konkreten Entscheidungseigner für Pläne/Seats (z. B. Org‑Admins, Procurement, DesignOps) und wie werden Empfehlungen umgesetzt?\",\n    \"Gibt es datenschutzrechtliche oder vertragliche Einschränkungen beim Zugriff auf Organisations‑ und Nutzungsdaten (z. B. Enterprise‑Kunden, PII)?\",\n    \"Welche KPIs definieren Erfolg (z. B. Kosteneinsparung, reduzierte Support‑Anfragen, schnellere Onboarding‑Zeit)?\",\n    \"Gibt es bevorzugte/zugängliche Produktanalytik‑Tools oder Data‑Warehouse (z. B. Amplitude, Snowflake, interne Logs) für den Prototypzugriff?\"\n  ]\n}",
+  "from_cache": false
+}

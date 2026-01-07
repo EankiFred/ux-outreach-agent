@@ -1,0 +1,37 @@
+{
+  "company_name": "Notion",
+  "fit": {
+    "fit_score": 75,
+    "decision_summary": "Notion bietet eine zentrale Quelle für Projekte, Dokumentation, Meeting‑Notes und Kalenderdaten plus eine API und eingebaute AI‑Funktionen — damit gibt es genug strukturierte und unstrukturierte Signale für einen Agentic Decision‑Support Prototyp. Ein schlanker 2–4 Wochen‑Prototyp (ohne tiefe Systemintegration) ist realistisch, solange API‑Zugänge, Rate‑Limits und AI‑Datenrichtlinien geklärt sind.",
+    "why_good_fit": [
+      "Konzentration relevanter Daten (Docs, Projekt‑DBs, Meeting‑Notes, Calendar, Mail) an einem Ort — gute Rohdatenbasis für Entscheidungsunterstützung.",
+      "Vorhandene AI‑Funktionen (Agents, AI Search, Meeting Notes) und API/Integrationen erleichtern Prototyping ohne invasive Integrationen.",
+      "Typische wiederkehrende, nicht‑triviale Entscheidungen in Teams (Priorisierung, Task‑Triage, Meeting‑Entscheidungen) passen gut zu Decision‑Support statt Full‑Automation.",
+      "Prototyp kann initial mit Notion‑API & heuristischen Regeln + LLM‑Prompts gebaut werden (MVP ohne umfangreiche Backend‑Integrationen).",
+      "Enterprise‑Fokus (Sicherheitszertifikate, Admin‑Tools) reduziert Compliance‑Risiken gegenüber reinem Consumer‑Kontext."
+    ],
+    "why_not": [
+      "Unklare Details zu Datenweitergabe an AI‑Subprozessoren, Aufbewahrung und Privacy‑Grenzen — relevant für erklärbare, auditierbare Decision‑Support.",
+      "Mögliche Feature‑/Tarif‑Beschränkungen (welche AI‑Funktionen für welchen Plan) könnten Zugriff für Prototyp/Auswertung limitieren.",
+      "Unklarer Status/Verfügbarkeit von Custom Agents; falls nötig, könnte Verzögerung das Prototyping erschweren.",
+      "Wenn tiefe Cross‑Tool‑Entscheidungen (z.B. Jira/GitHub + Notion) nötig sind, steigt Integrationsaufwand über 2–4 Wochen hinaus."
+    ],
+    "recommended_use_case": "2–4 Wochen Prototyp: \"Weekly Prioritization & Planning Assistant\" für Team Leads/Product Manager. Der Agent aggregiert Tasks aus Notion Project DBs, Status/Deadlines, relevante Meeting‑Notes und Kalenderkonflikte, liefert eine priorisierte Top‑3 Liste mit Begründungen, identifiziert Risiken/Blocker sowie konkrete nächste Schritte, und bietet interaktive What‑if‑Abwägungen (z. B. Verschieben vs. Ressourcenumbewertung). Der Mensch bleibt final entscheidend; der Agent liefert rationale, nachvollziehbare Empfehlungen und Confidence‑Flags.",
+    "target_roles": [
+      "Product Manager",
+      "Team Lead",
+      "Program Manager"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Können wir einen Test‑Workspace/Developer‑Account mit ausreichenden API‑Rechten bekommen (inkl. Zugriff auf Project DBs, Meeting Notes, Calendar, Mail) für Prototyping?",
+      "Gibt es API‑Rate‑Limits/Usage‑Costs oder Tarif‑Beschränkungen, die unser 2–4 Wochen‑Prototyping beeinflussen würden?",
+      "Welche vertraglichen/technischen Regeln gelten für Weitergabe und Speicherung von Daten an externe LLM‑Subprozessoren (Retention, PII‑Handling, Regionen)?",
+      "Sind Custom Agents bereits verfügbar intern/als Beta, oder müssen wir den Agent‑Workflow über externe LLM‑Prompts/Glue‑Layer abbilden?",
+      "Können wir kurz Einsicht in Audit Logs/Activity Streams bekommen, um Explainability und Nachvollziehbarkeit der Entscheidungs‑Inputs sicherzustellen?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 75,\n  \"decision_summary\": \"Notion bietet eine zentrale Quelle für Projekte, Dokumentation, Meeting‑Notes und Kalenderdaten plus eine API und eingebaute AI‑Funktionen — damit gibt es genug strukturierte und unstrukturierte Signale für einen Agentic Decision‑Support Prototyp. Ein schlanker 2–4 Wochen‑Prototyp (ohne tiefe Systemintegration) ist realistisch, solange API‑Zugänge, Rate‑Limits und AI‑Datenrichtlinien geklärt sind.\",\n  \"why_good_fit\": [\n    \"Konzentration relevanter Daten (Docs, Projekt‑DBs, Meeting‑Notes, Calendar, Mail) an einem Ort — gute Rohdatenbasis für Entscheidungsunterstützung.\",\n    \"Vorhandene AI‑Funktionen (Agents, AI Search, Meeting Notes) und API/Integrationen erleichtern Prototyping ohne invasive Integrationen.\",\n    \"Typische wiederkehrende, nicht‑triviale Entscheidungen in Teams (Priorisierung, Task‑Triage, Meeting‑Entscheidungen) passen gut zu Decision‑Support statt Full‑Automation.\",\n    \"Prototyp kann initial mit Notion‑API & heuristischen Regeln + LLM‑Prompts gebaut werden (MVP ohne umfangreiche Backend‑Integrationen).\",\n    \"Enterprise‑Fokus (Sicherheitszertifikate, Admin‑Tools) reduziert Compliance‑Risiken gegenüber reinem Consumer‑Kontext.\"\n  ],\n  \"why_not\": [\n    \"Unklare Details zu Datenweitergabe an AI‑Subprozessoren, Aufbewahrung und Privacy‑Grenzen — relevant für erklärbare, auditierbare Decision‑Support.\",\n    \"Mögliche Feature‑/Tarif‑Beschränkungen (welche AI‑Funktionen für welchen Plan) könnten Zugriff für Prototyp/Auswertung limitieren.\",\n    \"Unklarer Status/Verfügbarkeit von Custom Agents; falls nötig, könnte Verzögerung das Prototyping erschweren.\",\n    \"Wenn tiefe Cross‑Tool‑Entscheidungen (z.B. Jira/GitHub + Notion) nötig sind, steigt Integrationsaufwand über 2–4 Wochen hinaus.\"\n  ],\n  \"recommended_use_case\": \"2–4 Wochen Prototyp: \\\"Weekly Prioritization & Planning Assistant\\\" für Team Leads/Product Manager. Der Agent aggregiert Tasks aus Notion Project DBs, Status/Deadlines, relevante Meeting‑Notes und Kalenderkonflikte, liefert eine priorisierte Top‑3 Liste mit Begründungen, identifiziert Risiken/Blocker sowie konkrete nächste Schritte, und bietet interaktive What‑if‑Abwägungen (z. B. Verschieben vs. Ressourcenumbewertung). Der Mensch bleibt final entscheidend; der Agent liefert rationale, nachvollziehbare Empfehlungen und Confidence‑Flags.\",\n  \"target_roles\": [\n    \"Product Manager\",\n    \"Team Lead\",\n    \"Program Manager\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Können wir einen Test‑Workspace/Developer‑Account mit ausreichenden API‑Rechten bekommen (inkl. Zugriff auf Project DBs, Meeting Notes, Calendar, Mail) für Prototyping?\",\n    \"Gibt es API‑Rate‑Limits/Usage‑Costs oder Tarif‑Beschränkungen, die unser 2–4 Wochen‑Prototyping beeinflussen würden?\",\n    \"Welche vertraglichen/technischen Regeln gelten für Weitergabe und Speicherung von Daten an externe LLM‑Subprozessoren (Retention, PII‑Handling, Regionen)?\",\n    \"Sind Custom Agents bereits verfügbar intern/als Beta, oder müssen wir den Agent‑Workflow über externe LLM‑Prompts/Glue‑Layer abbilden?\",\n    \"Können wir kurz Einsicht in Audit Logs/Activity Streams bekommen, um Explainability und Nachvollziehbarkeit der Entscheidungs‑Inputs sicherzustellen?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {}
+}

@@ -1,0 +1,26 @@
+{
+  "company_name": "Seba",
+  "fit": {
+    "fit_score": 60,
+    "decision_summary": "SEBA Hydrometrie ist grundsätzlich geeignet für einen Agentic Decision‑Support Prototyp, weil die Domäne datengetriebene, mehrstufige Entscheidungen und mehrere externe Stakeholder (Wasserbehörden, Katastrophenschutz, Wetterdienste) umfasst. Vor Start müssen jedoch Schlüsselfragen zur Datenverfügbarkeit, Budgetverantwortung und einem internen Sponsor geklärt werden, sonst steigt das Projekt‑Risiko deutlich.",
+    "why_good_fit": [
+      "Domäne enthält nachvollziehbare, wiederkehrende Entscheidungsfälle (z. B. Priorisierung von Wartung/Einsätzen, Standortwahl für Messstellen), die sich gut als Entscheidungs‑Vorschläge abbilden lassen.",
+      "Kunden (Behörden, Katastrophenschutz, Wetterdienste) benötigen oft schnelle, erklärbare Empfehlungen — Agentic DSS kann Entscheidungs‑Vorbereitung und Transparenz liefern.",
+      "Produkt‑ und Service‑Mix (Geräte + Service/Downloads) deutet auf vorhandene strukturierte Datenquellen hin, die für ein Prototypmodell genutzt werden können.",
+      "Ein schlanker, klar abgegrenzter Use‑Case könnte innerhalb kurzer Zeit (2–4 Wochen) als Proof‑of‑Concept demonstriert werden, sofern Beispiel‑ oder Live‑Daten und ein fachlicher Sponsor bereitstehen."
+    ],
+    "why_not": [
+      "Unklarheiten: Unternehmensgröße, vorhandene Datenbestandteile (Telemetrie, Service‑Logs), Preismodell und Vertriebswege sind nicht bekannt — diese Informationen sind entscheidend für Budgetierung und Ownership.",
+      "Nicht geprüft: Zugriffsrechte/Datenschutz und technische Integrationsfähigkeit der bestehenden Softwareplattform sind unbekannt und könnten den Prototyp verzögern.",
+      "Möglicherweise begrenzte Budgets oder fehlender klarer Produkt‑Owner in einem Mittelstands‑Setup; fehlt die Bestätigung eines internen Sponsors, ist Risiko hoch."
+    ],
+    "recommended_use_case": "Priorisierung von Wartungs- und Serviceeinsätzen für Messstationen: Ein Agent liefert eine priorisierte Maßnahmenliste (z. B. sofort, innerhalb 48 h, planen) basierend auf Sensor‑Status/Alarme, Servicehistorie, Wetter-/Hochwasserwarnungen und geschätzten Ausfallwahrscheinlichkeiten; jede Empfehlung enthält eine kurze Begründung und Handlungsempfehlungen. Hinweis: Datenzugang und Feldvalidierung vor Prototypstart bestätigen.",
+    "target_roles": [
+      "Leiter Produktmanagement",
+      "Leiter Service / Betrieb",
+      "CTO / Leiter Technik"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 60,\n  \"decision_summary\": \"SEBA Hydrometrie ist grundsätzlich geeignet für einen Agentic Decision‑Support Prototyp, weil die Domäne datengetriebene, mehrstufige Entscheidungen und mehrere externe Stakeholder (Wasserbehörden, Katastrophenschutz, Wetterdienste) umfasst. Vor Start müssen jedoch Schlüsselfragen zur Datenverfügbarkeit, Budgetverantwortung und einem internen Sponsor geklärt werden, sonst steigt das Projekt‑Risiko deutlich.\",\n  \"why_good_fit\": [\n    \"Domäne enthält nachvollziehbare, wiederkehrende Entscheidungsfälle (z. B. Priorisierung von Wartung/Einsätzen, Standortwahl für Messstellen), die sich gut als Entscheidungs‑Vorschläge abbilden lassen.\",\n    \"Kunden (Behörden, Katastrophenschutz, Wetterdienste) benötigen oft schnelle, erklärbare Empfehlungen — Agentic DSS kann Entscheidungs‑Vorbereitung und Transparenz liefern.\",\n    \"Produkt‑ und Service‑Mix (Geräte + Service/Downloads) deutet auf vorhandene strukturierte Datenquellen hin, die für ein Prototypmodell genutzt werden können.\",\n    \"Ein schlanker, klar abgegrenzter Use‑Case könnte innerhalb kurzer Zeit (2–4 Wochen) als Proof‑of‑Concept demonstriert werden, sofern Beispiel‑ oder Live‑Daten und ein fachlicher Sponsor bereitstehen.\"\n  ],\n  \"why_not\": [\n    \"Unklarheiten: Unternehmensgröße, vorhandene Datenbestandteile (Telemetrie, Service‑Logs), Preismodell und Vertriebswege sind nicht bekannt — diese Informationen sind entscheidend für Budgetierung und Ownership.\",\n    \"Nicht geprüft: Zugriffsrechte/Datenschutz und technische Integrationsfähigkeit der bestehenden Softwareplattform sind unbekannt und könnten den Prototyp verzögern.\",\n    \"Möglicherweise begrenzte Budgets oder fehlender klarer Produkt‑Owner in einem Mittelstands‑Setup; fehlt die Bestätigung eines internen Sponsors, ist Risiko hoch.\"\n  ],\n  \"recommended_use_case\": \"Priorisierung von Wartungs- und Serviceeinsätzen für Messstationen: Ein Agent liefert eine priorisierte Maßnahmenliste (z. B. sofort, innerhalb 48 h, planen) basierend auf Sensor‑Status/Alarme, Servicehistorie, Wetter-/Hochwasserwarnungen und geschätzten Ausfallwahrscheinlichkeiten; jede Empfehlung enthält eine kurze Begründung und Handlungsempfehlungen. Hinweis: Datenzugang und Feldvalidierung vor Prototypstart bestätigen.\",\n  \"target_roles\": [\n    \"Leiter Produktmanagement\",\n    \"Leiter Service / Betrieb\",\n    \"CTO / Leiter Technik\"\n  ]\n}",
+  "from_cache": false
+}

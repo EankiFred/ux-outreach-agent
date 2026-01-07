@@ -1,0 +1,36 @@
+{
+  "company_name": "Notion",
+  "fit": {
+    "fit_score": 80,
+    "decision_summary": "Notion ist gut geeignet für einen Agentic Decision‑Support Prototyp, weil die Plattform viele relevante Datenquellen (Pages, Meeting Notes, Tasks, Calendar, Integrationen) und eine API/Marketplace‑Strategie bietet. Unsicherheit bei Plan‑Abgrenzungen, Custom‑Agents‑Roadmap und Daten‑Subprozessoren erhöht jedoch den Implementierungs‑ und Compliance‑Aufwand.",
+    "why_good_fit": [
+      "Konsolidierte Datenbasis: Docs, Meeting Notes, Tasks, Calendar und Projektseiten liefern vielfältige Signale für Entscheidungsunterstützung.",
+      "Plattformreife: Notion ist ein etablierter Workspace mit Enterprise‑Funktionen und vorhandenen AI‑Features, was schnelle Integration erlaubt.",
+      "Integrationen & API: Vorhandene API/Marketplace ermöglichen externen Agenten Zugriff und Rückschreiben von Empfehlungen in Notion‑Pages.",
+      "Geringer Produkt‑Risk bei Prototyping: Ein externer Prototyp, der Notion‑Inhalte abfragt und Ergebnisse als Notion‑Page ablegt, ist in 2–4 Wochen realistisch.",
+      "Enterprise‑Sicherheitsnachweise (SOC2, ISO) erleichtern Gespräche mit Legal/Compliance für Pilotkunden."
+    ],
+    "why_not": [
+      "Unklare Abgrenzung von AI‑Features pro Tarif und mögliche Plan‑Restriktionen für API/AI‑Zugriff könnten den Pilot einschränken.",
+      "Fehlende Klarheit zu Custom Agents (Verfügbarkeit/Capabilities) begrenzt native agentische Integration.",
+      "Datenschutz & Subprozessoren: Details zur Weitergabe von Inhalten an LLM‑Subprozessoren sind unklar und können Compliance‑Risiken erhöhen.",
+      "Einige kritische operative Systeme (z. B. Jira, ERP, CRM) könnten außerhalb von Notion liegen und zusätzliche Integration erfordern."
+    ],
+    "recommended_use_case": "Prototyp (2–4 Wochen): \"Meeting→Decision Brief Generator\" — Ein externer Agent verbindet sich per Notion‑API zu Meeting Notes, Kalender‑Metadaten, relevanten Projektseiten und Tasks; erzeugt für jede Besprechung einen Entscheidungs‑Kurzbrief mit 2–3 empfohlenen Handlungsoptionen, Priorität, betroffenen Stakeholdern, Risiken und Quellenverweisen; schreibt das Ergebnis als Notion‑Page und erzeugt Tasks/Assignees für die nächsten Schritte.",
+    "target_roles": [
+      "Head of Product",
+      "Chief of Staff",
+      "Head of Operations"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Welche API‑Zugriffsrechte und Rate‑Limits gelten für die Zielkunden‑Tarife (insbesondere Enterprise vs. Team)?",
+      "Sind Custom Agents bereits verfügbar oder wann werden sie verfügbar sein und welche Fähigkeiten/Runtime bieten sie?",
+      "Wie ist die Datenweitergabe an externe AI‑Subprozessoren vertraglich geregelt (Datenpersistenz, Retention, Anonymisierung, Subprocessor‑Liste)?",
+      "Gibt es dokumentierte Beispiele/Dumps von Meeting Notes, Tasks und Projektseiten (struktur/Volumen), die wir für einen Minimalprototyp nutzen können?",
+      "Existieren interne oder Kundenseitige Compliance‑Bedingungen (z. B. Datenhoheit, EU‑Only‑Hosting), die externe LLM‑Aufrufe ausschließen würden?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 80,\n  \"decision_summary\": \"Notion ist gut geeignet für einen Agentic Decision‑Support Prototyp, weil die Plattform viele relevante Datenquellen (Pages, Meeting Notes, Tasks, Calendar, Integrationen) und eine API/Marketplace‑Strategie bietet. Unsicherheit bei Plan‑Abgrenzungen, Custom‑Agents‑Roadmap und Daten‑Subprozessoren erhöht jedoch den Implementierungs‑ und Compliance‑Aufwand.\",\n  \"why_good_fit\": [\n    \"Konsolidierte Datenbasis: Docs, Meeting Notes, Tasks, Calendar und Projektseiten liefern vielfältige Signale für Entscheidungsunterstützung.\",\n    \"Plattformreife: Notion ist ein etablierter Workspace mit Enterprise‑Funktionen und vorhandenen AI‑Features, was schnelle Integration erlaubt.\",\n    \"Integrationen & API: Vorhandene API/Marketplace ermöglichen externen Agenten Zugriff und Rückschreiben von Empfehlungen in Notion‑Pages.\",\n    \"Geringer Produkt‑Risk bei Prototyping: Ein externer Prototyp, der Notion‑Inhalte abfragt und Ergebnisse als Notion‑Page ablegt, ist in 2–4 Wochen realistisch.\",\n    \"Enterprise‑Sicherheitsnachweise (SOC2, ISO) erleichtern Gespräche mit Legal/Compliance für Pilotkunden.\"\n  ],\n  \"why_not\": [\n    \"Unklare Abgrenzung von AI‑Features pro Tarif und mögliche Plan‑Restriktionen für API/AI‑Zugriff könnten den Pilot einschränken.\",\n    \"Fehlende Klarheit zu Custom Agents (Verfügbarkeit/Capabilities) begrenzt native agentische Integration.\",\n    \"Datenschutz & Subprozessoren: Details zur Weitergabe von Inhalten an LLM‑Subprozessoren sind unklar und können Compliance‑Risiken erhöhen.\",\n    \"Einige kritische operative Systeme (z. B. Jira, ERP, CRM) könnten außerhalb von Notion liegen und zusätzliche Integration erfordern.\"\n  ],\n  \"recommended_use_case\": \"Prototyp (2–4 Wochen): \\\"Meeting→Decision Brief Generator\\\" — Ein externer Agent verbindet sich per Notion‑API zu Meeting Notes, Kalender‑Metadaten, relevanten Projektseiten und Tasks; erzeugt für jede Besprechung einen Entscheidungs‑Kurzbrief mit 2–3 empfohlenen Handlungsoptionen, Priorität, betroffenen Stakeholdern, Risiken und Quellenverweisen; schreibt das Ergebnis als Notion‑Page und erzeugt Tasks/Assignees für die nächsten Schritte.\",\n  \"target_roles\": [\n    \"Head of Product\",\n    \"Chief of Staff\",\n    \"Head of Operations\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Welche API‑Zugriffsrechte und Rate‑Limits gelten für die Zielkunden‑Tarife (insbesondere Enterprise vs. Team)?\",\n    \"Sind Custom Agents bereits verfügbar oder wann werden sie verfügbar sein und welche Fähigkeiten/Runtime bieten sie?\",\n    \"Wie ist die Datenweitergabe an externe AI‑Subprozessoren vertraglich geregelt (Datenpersistenz, Retention, Anonymisierung, Subprocessor‑Liste)?\",\n    \"Gibt es dokumentierte Beispiele/Dumps von Meeting Notes, Tasks und Projektseiten (struktur/Volumen), die wir für einen Minimalprototyp nutzen können?\",\n    \"Existieren interne oder Kundenseitige Compliance‑Bedingungen (z. B. Datenhoheit, EU‑Only‑Hosting), die externe LLM‑Aufrufe ausschließen würden?\"\n  ]\n}",
+  "from_cache": false
+}

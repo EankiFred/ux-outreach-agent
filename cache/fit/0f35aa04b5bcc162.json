@@ -1,0 +1,42 @@
+{
+  "company_name": "Company: LINEAR",
+  "fit": {
+    "fit_score": 75,
+    "decision_summary": "LINEAR hat eine strukturierte, datengetriebene Domäne (Hersteller‑Datensätze, CAD/MEP‑Artefakte, Simulation/ Berechnungsoutputs) mit wiederkehrenden, nicht‑trivialen Entscheidungen (Produktwahl, Norm‑/Kompatibilitätsabwägungen, Migrationsrisiken). Ein schlanker Agentic Decision‑Support Prototyp ist in 2–4 Wochen realistisch, wenn man mit extrahierten/gekapselten Datensätzen und einer UI‑Schicht arbeitet – allerdings fehlen Details zu Datenzugang und Lizenz/IP‑Restriktionen.",
+    "why_good_fit": [
+      "MD/MEP‑Planung enthält viele wiederkehrende Entscheidungsaufgaben (Komponentenwahl, Systemkonfiguration, Normenkonformität) mit klaren Abwägungen, die sich gut als Entscheidungs‑Assist modellieren lassen.",
+      "LINEAR verwaltet und vertreibt Hersteller‑Datensätze und Berechnungs‑Tools — das sind brauchbare, strukturierte Signale für ein Entscheidungsmodell (Produktattribute, Leistungskennwerte, Kompatibilitätsregeln).",
+      "Hoher Hebel: Assistent kann die Zeit für Produktrecherche und Alternativbewertung sichtbar reduzieren und gleichzeitig erklärbare Empfehlungen liefern (Human‑in‑the‑loop).",
+      "Prototyp ohne tiefgreifende CAD‑Integration ist möglich: CSV/JSON‑Exporte, Beispielprojekte oder simulierte Datensätze plus LLM‑Frontend reichen für MVP‑Evidence.",
+      "Risiko ist moderat/beherrschbar, weil die Lösung beratend bleibt (nicht autonom ausführt) und Erklärbarkeit/Disclaimer eingebaut werden können."
+    ],
+    "why_not": [
+      "Wichtige Informationen fehlen: Verfügbarkeit, Granularität und Exportfähigkeit der Hersteller‑Datensätze sowie rechtliche Nutzungsrechte sind unklar und können das Projekt blockieren.",
+      "Echte Nutzdaten (Revit/AutoCAD‑Modelle, Simulationsoutputs) sind oft schwer zugänglich; ohne sie bleibt der Prototyp begrenzt auf plausibilitätsprüfungen statt auf echte Projektberatung.",
+      "Entscheidungen in der Domäne können sicherheits‑ und haftungsrelevant sein (Normen, Brandschutz, Statik) — das erfordert klare Limits und Compliance‑Reviews, selbst für einen Prototyp."
+    ],
+    "recommended_use_case": "2–4 Wochen Prototyp: 'Component Selection & Alternatives Advisor' — Web‑UI, das für eine gegebene Planungsanforderung (raumbezogene Lasten, Norm/Land, grobe Anschlussbedingungen) aus einem gekapselten Hersteller‑Datensatz geeignete Komponenten vorschlägt, mehrere Alternativen rankt (Verfügbarkeit/Leistung/Energieeffizienz/Kompatibilität) und die Abwägungen in verständlichen, prüfbaren Regeln erklärt. Lieferumfang: Daten‑ingest (CSV/JSON) von 1–3 Herstellern + simple Scoring‑Regeln, LLM‑gestützte Natural Language Erklärungen, UI zur Gegenprüfung und Feedback‑Capture. Minimale Integrationen: kein Revit‑Plugin, optional Upload eines kleinen Export‑CSV aus Revit/Projekt.",
+    "target_roles": [
+      "Leiter Produkt / Produktmanager (Software & Daten)",
+      "Head of MEP / Lead TGA‑Ingenieur",
+      "Leiter OEM‑Partnerschaften / Data Owner"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Sind Hersteller‑Datensätze als strukturierte Exporte (CSV/JSON/BIM‑Family‑Exports) verfügbar und dürfen sie für einen internen Prototyp verwendet werden (Lizenz/IP)?",
+      "Können Sie ein anonymisiertes Beispielprojekt oder ein kleiner Export aus Revit/AutoCAD (z. B. Raumliste, Lasten, bestehende Komponenten) bereitstellen?",
+      "Welche Erfolgsmetriken zählen für den Prototyp in 2–4 Wochen (z. B. Zeitersparnis bei Komponentenrecherche, % akzeptierte Empfehlungen, NPS bei Testingenieuren)?",
+      "Gibt es regulatorische/haftungsrechtliche Vorgaben (z. B. Normen, Prüfprozesse, Herstellerfreigabe), die Empfehlungen explizit ausschließen oder besondere Disclaimer erfordern?",
+      "Wer sind die verfügbaren Entscheider/Testnutzer für das Pilot‑Feedback (Anzahl, Profil: Senior MEP‑Planer vs. Junior)?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 75,\n  \"decision_summary\": \"LINEAR hat eine strukturierte, datengetriebene Domäne (Hersteller‑Datensätze, CAD/MEP‑Artefakte, Simulation/ Berechnungsoutputs) mit wiederkehrenden, nicht‑trivialen Entscheidungen (Produktwahl, Norm‑/Kompatibilitätsabwägungen, Migrationsrisiken). Ein schlanker Agentic Decision‑Support Prototyp ist in 2–4 Wochen realistisch, wenn man mit extrahierten/gekapselten Datensätzen und einer UI‑Schicht arbeitet – allerdings fehlen Details zu Datenzugang und Lizenz/IP‑Restriktionen.\",\n  \"why_good_fit\": [\n    \"MD/MEP‑Planung enthält viele wiederkehrende Entscheidungsaufgaben (Komponentenwahl, Systemkonfiguration, Normenkonformität) mit klaren Abwägungen, die sich gut als Entscheidungs‑Assist modellieren lassen.\",\n    \"LINEAR verwaltet und vertreibt Hersteller‑Datensätze und Berechnungs‑Tools — das sind brauchbare, strukturierte Signale für ein Entscheidungsmodell (Produktattribute, Leistungskennwerte, Kompatibilitätsregeln).\",\n    \"Hoher Hebel: Assistent kann die Zeit für Produktrecherche und Alternativbewertung sichtbar reduzieren und gleichzeitig erklärbare Empfehlungen liefern (Human‑in‑the‑loop).\",\n    \"Prototyp ohne tiefgreifende CAD‑Integration ist möglich: CSV/JSON‑Exporte, Beispielprojekte oder simulierte Datensätze plus LLM‑Frontend reichen für MVP‑Evidence.\",\n    \"Risiko ist moderat/beherrschbar, weil die Lösung beratend bleibt (nicht autonom ausführt) und Erklärbarkeit/Disclaimer eingebaut werden können.\"\n  ],\n  \"why_not\": [\n    \"Wichtige Informationen fehlen: Verfügbarkeit, Granularität und Exportfähigkeit der Hersteller‑Datensätze sowie rechtliche Nutzungsrechte sind unklar und können das Projekt blockieren.\",\n    \"Echte Nutzdaten (Revit/AutoCAD‑Modelle, Simulationsoutputs) sind oft schwer zugänglich; ohne sie bleibt der Prototyp begrenzt auf plausibilitätsprüfungen statt auf echte Projektberatung.\",\n    \"Entscheidungen in der Domäne können sicherheits‑ und haftungsrelevant sein (Normen, Brandschutz, Statik) — das erfordert klare Limits und Compliance‑Reviews, selbst für einen Prototyp.\"\n  ],\n  \"recommended_use_case\": \"2–4 Wochen Prototyp: 'Component Selection & Alternatives Advisor' — Web‑UI, das für eine gegebene Planungsanforderung (raumbezogene Lasten, Norm/Land, grobe Anschlussbedingungen) aus einem gekapselten Hersteller‑Datensatz geeignete Komponenten vorschlägt, mehrere Alternativen rankt (Verfügbarkeit/Leistung/Energieeffizienz/Kompatibilität) und die Abwägungen in verständlichen, prüfbaren Regeln erklärt. Lieferumfang: Daten‑ingest (CSV/JSON) von 1–3 Herstellern + simple Scoring‑Regeln, LLM‑gestützte Natural Language Erklärungen, UI zur Gegenprüfung und Feedback‑Capture. Minimale Integrationen: kein Revit‑Plugin, optional Upload eines kleinen Export‑CSV aus Revit/Projekt.\"\n  ,\n  \"target_roles\": [\n    \"Leiter Produkt / Produktmanager (Software & Daten)\",\n    \"Head of MEP / Lead TGA‑Ingenieur\",\n    \"Leiter OEM‑Partnerschaften / Data Owner\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Sind Hersteller‑Datensätze als strukturierte Exporte (CSV/JSON/BIM‑Family‑Exports) verfügbar und dürfen sie für einen internen Prototyp verwendet werden (Lizenz/IP)?\",\n    \"Können Sie ein anonymisiertes Beispielprojekt oder ein kleiner Export aus Revit/AutoCAD (z. B. Raumliste, Lasten, bestehende Komponenten) bereitstellen?\",\n    \"Welche Erfolgsmetriken zählen für den Prototyp in 2–4 Wochen (z. B. Zeitersparnis bei Komponentenrecherche, % akzeptierte Empfehlungen, NPS bei Testingenieuren)?\",\n    \"Gibt es regulatorische/haftungsrechtliche Vorgaben (z. B. Normen, Prüfprozesse, Herstellerfreigabe), die Empfehlungen explizit ausschließen oder besondere Disclaimer erfordern?\",\n    \"Wer sind die verfügbaren Entscheider/Testnutzer für das Pilot‑Feedback (Anzahl, Profil: Senior MEP‑Planer vs. Junior)?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Medium",
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard",
+    "exclude_local_services": true
+  }
+}

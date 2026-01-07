@@ -1,0 +1,42 @@
+{
+  "company_name": "www.forest-ai.org",
+  "fit": {
+    "fit_score": 80,
+    "decision_summary": "Forest AI ist gut geeignet für einen Agentic Decision‑Support Prototyp, weil es wiederkehrende, nicht‑triviale Entscheidungen (z.B. Modell‑Abnahme, Benchmark‑Vergleich, Bias‑Abwägungen) adressiert und bereits hochwertige Signale (versiegelte Eval‑Datensätze, PeerBench‑Metriken, SDK‑Outputs) bereitstellt. Wesentliche Unklarheiten (API‑/Datenzugang, Deployment‑Optionen, Preis/Lizenz) müssen vor einem produktionsnahen Ausbau geklärt werden, für einen 2–4‑wöchigen Prototyp sind aber realistische, schlanke Ansätze möglich.",
+    "why_good_fit": [
+      "Klare, wiederkehrende Entscheidungen: Model acceptance/go‑no‑go, Auswahl zwischen Modellvarianten, Routing zu validierten Lösungen — Stakeholder mit Abwägungen und Unsicherheit vorhanden.",
+      "Verfügbare, relevante Signale: versiegelte Evaluationsdatensätze, PeerBench‑Benchmarkergebnisse und Open‑Source SDK liefern Metriken und Artefakte, die Entscheidungsgrundlage bilden.",
+      "Prototyp‑Machbarkeit: kurzer Prototyp möglich, wenn man mit exportierten Benchmark‑CSV/JSON oder Demo‑Daten arbeitet — begrenzte Integration erforderlich.",
+      "Decision‑Support (nicht Automatisierung) passt zur Produktstrategie: Fokus auf vertrauenswürdige Validierung und Transparenz erlaubt erklärbare Empfehlungen und Mensch‑in‑the‑loop.",
+      "Risiko‑Profil kompatibel mit 'medium' Toleranz: Entscheidungen unterstützen statt autonom entscheiden reduziert regulatorisches und betriebliches Risiko."
+    ],
+    "why_not": [
+      "Unklarer Zugang zu proprietären, versiegelten Datensätzen — ohne Zugriff sind reale High‑value Use‑Cases schwer zu validieren.",
+      "Unbekannte API/Export‑Fähigkeiten von PeerBench und Enterprise‑Suite könnten Integrationsaufwand verlängern und das 2–4‑Wochen‑Ziel gefährden.",
+      "Unklare Deployment‑Optionen (SaaS vs On‑Prem) und Lizenzbedingungen können die Nutzbarkeit für regulierte Kunden einschränken."
+    ],
+    "recommended_use_case": "Model Acceptance Decision Dashboard: Ein leichtgewichtiger Prototyp, der PeerBench/SDK‑Evaluationsergebnisse (CSV/JSON‑Exports oder Demo‑API) zusammenfasst und pro Modell eine klare Go/No‑Go‑Empfehlung + Rangfolge liefert. Enthalten: (a) Key metrics (accuracy, calibration, fairness/drift Indikatoren), (b) Unsicherheits‑/Konfidenz‑Warnings, (c) kurze, natürliche Sprache Begründung warum Empfehlung getroffen wurde, (d) vorgeschlagene nächste Schritte (retest, additional evaluation, human review). Implementierung in 2–4 Wochen: 1) Daten‑ingest (exportierte Benchmarks oder Demo‑dataset); 2) einfache Regel‑/score‑Aggregation und thresholds, 3) explainers (feature importance, failure‑case examples), 4) Web‑UI dashboard + exportable Report. Keine tiefgehende Integration in Produktionssysteme erforderlich — CSV/API‑based PoC.",
+    "target_roles": [
+      "Head of AI / ML (Model Governance)",
+      "Model Risk / Compliance Lead",
+      "Engineering Manager (AI Platforms)"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Gibt es APIs oder Export‑Mechanismen (CSV/JSON) für PeerBench/Evaluationsergebnisse und das Enterprise SDK? Wenn ja: Dokumentation/Rate‑Limits?",
+      "Können wir für den Prototyp Zugang zu anonymisierten Demo‑ oder Sample‑Eval‑Datensätzen bekommen (insbesondere für Insurance/Medical) oder sind alle relevanten Datensätze vollständig gesperrt?",
+      "Welche typischen Entscheidungs‑Policies/Schwellenwerte nutzt Ihr Kunden‑Segment heute für Modellfreigaben (z.B. must‑pass Metriken, fairness cutoffs, regulatory checks)?",
+      "Welche Deployment‑Constraints gelten für Pilotkunden (SaaS akzeptabel oder zwingend On‑Prem/air‑gapped)?",
+      "Gibt es rechtliche/Compliance‑Restriktionen (z.B. NDA, data sealing/unsealing workflows) die Zeitaufwand für Prototyp‑Zugriff signifikant erhöhen würden?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 80,\n  \"decision_summary\": \"Forest AI ist gut geeignet für einen Agentic Decision‑Support Prototyp, weil es wiederkehrende, nicht‑triviale Entscheidungen (z.B. Modell‑Abnahme, Benchmark‑Vergleich, Bias‑Abwägungen) adressiert und bereits hochwertige Signale (versiegelte Eval‑Datensätze, PeerBench‑Metriken, SDK‑Outputs) bereitstellt. Wesentliche Unklarheiten (API‑/Datenzugang, Deployment‑Optionen, Preis/Lizenz) müssen vor einem produktionsnahen Ausbau geklärt werden, für einen 2–4‑wöchigen Prototyp sind aber realistische, schlanke Ansätze möglich.\",\n  \"why_good_fit\": [\n    \"Klare, wiederkehrende Entscheidungen: Model acceptance/go‑no‑go, Auswahl zwischen Modellvarianten, Routing zu validierten Lösungen — Stakeholder mit Abwägungen und Unsicherheit vorhanden.\",\n    \"Verfügbare, relevante Signale: versiegelte Evaluationsdatensätze, PeerBench‑Benchmarkergebnisse und Open‑Source SDK liefern Metriken und Artefakte, die Entscheidungsgrundlage bilden.\",\n    \"Prototyp‑Machbarkeit: kurzer Prototyp möglich, wenn man mit exportierten Benchmark‑CSV/JSON oder Demo‑Daten arbeitet — begrenzte Integration erforderlich.\",\n    \"Decision‑Support (nicht Automatisierung) passt zur Produktstrategie: Fokus auf vertrauenswürdige Validierung und Transparenz erlaubt erklärbare Empfehlungen und Mensch‑in‑the‑loop.\",\n    \"Risiko‑Profil kompatibel mit 'medium' Toleranz: Entscheidungen unterstützen statt autonom entscheiden reduziert regulatorisches und betriebliches Risiko.\"\n  ],\n  \"why_not\": [\n    \"Unklarer Zugang zu proprietären, versiegelten Datensätzen — ohne Zugriff sind reale High‑value Use‑Cases schwer zu validieren.\",\n    \"Unbekannte API/Export‑Fähigkeiten von PeerBench und Enterprise‑Suite könnten Integrationsaufwand verlängern und das 2–4‑Wochen‑Ziel gefährden.\",\n    \"Unklare Deployment‑Optionen (SaaS vs On‑Prem) und Lizenzbedingungen können die Nutzbarkeit für regulierte Kunden einschränken.\"\n  ],\n  \"recommended_use_case\": \"Model Acceptance Decision Dashboard: Ein leichtgewichtiger Prototyp, der PeerBench/SDK‑Evaluationsergebnisse (CSV/JSON‑Exports oder Demo‑API) zusammenfasst und pro Modell eine klare Go/No‑Go‑Empfehlung + Rangfolge liefert. Enthalten: (a) Key metrics (accuracy, calibration, fairness/drift Indikatoren), (b) Unsicherheits‑/Konfidenz‑Warnings, (c) kurze, natürliche Sprache Begründung warum Empfehlung getroffen wurde, (d) vorgeschlagene nächste Schritte (retest, additional evaluation, human review). Implementierung in 2–4 Wochen: 1) Daten‑ingest (exportierte Benchmarks oder Demo‑dataset); 2) einfache Regel‑/score‑Aggregation und thresholds, 3) explainers (feature importance, failure‑case examples), 4) Web‑UI dashboard + exportable Report. Keine tiefgehende Integration in Produktionssysteme erforderlich — CSV/API‑based PoC.\",\n  \"target_roles\": [\n    \"Head of AI / ML (Model Governance)\",\n    \"Model Risk / Compliance Lead\",\n    \"Engineering Manager (AI Platforms)\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Gibt es APIs oder Export‑Mechanismen (CSV/JSON) für PeerBench/Evaluationsergebnisse und das Enterprise SDK? Wenn ja: Dokumentation/Rate‑Limits?\",\n    \"Können wir für den Prototyp Zugang zu anonymisierten Demo‑ oder Sample‑Eval‑Datensätzen bekommen (insbesondere für Insurance/Medical) oder sind alle relevanten Datensätze vollständig gesperrt?\",\n    \"Welche typischen Entscheidungs‑Policies/Schwellenwerte nutzt Ihr Kunden‑Segment heute für Modellfreigaben (z.B. must‑pass Metriken, fairness cutoffs, regulatory checks)?\",\n    \"Welche Deployment‑Constraints gelten für Pilotkunden (SaaS akzeptabel oder zwingend On‑Prem/air‑gapped)?\",\n    \"Gibt es rechtliche/Compliance‑Restriktionen (z.B. NDA, data sealing/unsealing workflows) die Zeitaufwand für Prototyp‑Zugriff signifikant erhöhen würden?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Medium",
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "More detailed",
+    "exclude_local_services": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "company_name": "Linear",
+  "fit": {
+    "fit_score": 82,
+    "decision_summary": "Linear ist gut geeignet für einen Agentic Decision‑Support‑Prototypen zur Unterstützung von Produkt‑ und Roadmap‑Priorisierungen: es gibt wiederkehrende, nicht‑triviale Entscheidungen und reichhaltige, strukturierte Quelldaten (Issues, Roadmaps, Integrationen, API). Ein 2–4‑wöchiger Prototyp in read‑only‑Form, der Vorschläge liefert und Gründe/Tradeoffs erklärt, ist realistisch und entspricht mittlerer Risikotoleranz, sofern Aktionen Mensch‑in‑the‑Loop bleiben.",
+    "why_good_fit": [
+      "Kernprodukt dreht sich um genau die Entscheider (PMs) und Entscheidungsgegenstände (Roadmaps, Priorisierung, Triage).",
+      "Strukturierte, wiederkehrende Daten sind verfügbar (Issues, Milestones, Initiatives, Assignment‑History), plus Integrationen (GitHub, Figma) und eine öffentliche API/GraphQL‑SDK.",
+      "Prototyp kann als read‑only Decision‑Support gebaut werden (Ranking + Erklärungen), erfordert keine riskante Automatisierung.",
+      "Enterprise‑Fokus und Compliance (SOC2/GDPR/HIPAA) unterstützen den Umgang mit sensiblen Daten, wenn man Sicherheitsanforderungen beachtet.",
+      "Konkrete UX‑Opportunitäten (Triage‑Erklärungen, nachvollziehbare Priorisierungen, konfigurierbare KPIs) liefern klaren Nutzer‑Nutzen schnell."
+    ],
+    "why_not": [
+      "Unklare Details zur Verfügbarkeit/Dichte wichtiger Felder (z. B. Story Points, revenue‑tags, Kundenpriorität) könnten die Qualität der Vorschläge begrenzen.",
+      "Enterprise‑Datenschutz/Compliance‑Regeln oder organisatorische Hürden (z. B. keine API‑Tokens für externe Prototypen) können Integration verzögern.",
+      "Falls Entscheidungskontext stark organisationsspezifisch ist (eigene Priorisierungsregeln/OKRs), wird mehr Anpassung nötig als in 2–4 Wochen realistisch ist."
+    ],
+    "recommended_use_case": "2–4 Wochen Prototyp: 'Roadmap Prioritization Assistant' (read‑only). Scope: per GraphQL API oder CSV‑Export Issues, Initiatives, Milestones, historische Cycle‑Times, Labels und Assignment‑History einlesen; einfache Scoring‑Funktion (Impact Signals: Kundenreports, blocker/severity, linked PRs/releases; Cost Signals: estimated effort or historical cycle time; Strategic Fit: OKR/initiative tag); Vorschlag einer priorisierten Top‑10 für den nächsten Cycle/Milestone mit pro Item kurz erklärter Begründung, Unsicherheitsindikator und interaktiver Gewichtung durch PMs. Oberfläche: Dashboard + Detail‑Panel mit Quelle der Signale und Möglichkeit, Vorschläge zu akzeptieren/abzulehnen (Human‑in‑the‑Loop). Technisch: read‑only API calls or uploaded sample dataset, no write actions, minimal infra, implementierbar in 2–4 Wochen.",
+    "target_roles": [
+      "Produktmanager (PM)",
+      "Head of Product / Produktleitung",
+      "Technical Program Manager / PMO"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Welche Felder/Metadaten sind standardmäßig in Kundeninstanzen vorhanden (story points/effort estimates, customer tags, revenue impact, OKR/initiative‑links)?",
+      "Ist für einen Prototypen read‑only Zugriff via API möglich (Test‑token oder Demo‑workspace) und wie schnell lässt sich dieser Token organisieren?",
+      "Gibt es bereits interne oder kundenseitige Priorisierungsregeln/Scoring‑Formeln, die wir als Baseline verwenden sollten?",
+      "Welche Datenschutz/Compliance‑Beschränkungen gelten für das Auslesen von Issues (z. B. PII/HIPAA‑Beschränkungen) und welche Genehmigungen sind nötig?",
+      "Welche Metriken/KPIs würden das Team als Erfolg des Prototyps betrachten (z. B. Akzeptanzrate der Vorschläge, Zeitersparnis in Planning‑Meetings, Zufriedenheit der PMs)?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 82,\n  \"decision_summary\": \"Linear ist gut geeignet für einen Agentic Decision‑Support‑Prototypen zur Unterstützung von Produkt‑ und Roadmap‑Priorisierungen: es gibt wiederkehrende, nicht‑triviale Entscheidungen und reichhaltige, strukturierte Quelldaten (Issues, Roadmaps, Integrationen, API). Ein 2–4‑wöchiger Prototyp in read‑only‑Form, der Vorschläge liefert und Gründe/Tradeoffs erklärt, ist realistisch und entspricht mittlerer Risikotoleranz, sofern Aktionen Mensch‑in‑the‑Loop bleiben.\",\n  \"why_good_fit\": [\n    \"Kernprodukt dreht sich um genau die Entscheider (PMs) und Entscheidungsgegenstände (Roadmaps, Priorisierung, Triage).\",\n    \"Strukturierte, wiederkehrende Daten sind verfügbar (Issues, Milestones, Initiatives, Assignment‑History), plus Integrationen (GitHub, Figma) und eine öffentliche API/GraphQL‑SDK.\",\n    \"Prototyp kann als read‑only Decision‑Support gebaut werden (Ranking + Erklärungen), erfordert keine riskante Automatisierung.\",\n    \"Enterprise‑Fokus und Compliance (SOC2/GDPR/HIPAA) unterstützen den Umgang mit sensiblen Daten, wenn man Sicherheitsanforderungen beachtet.\",\n    \"Konkrete UX‑Opportunitäten (Triage‑Erklärungen, nachvollziehbare Priorisierungen, konfigurierbare KPIs) liefern klaren Nutzer‑Nutzen schnell.\"\n  ],\n  \"why_not\": [\n    \"Unklare Details zur Verfügbarkeit/Dichte wichtiger Felder (z. B. Story Points, revenue‑tags, Kundenpriorität) könnten die Qualität der Vorschläge begrenzen.\",\n    \"Enterprise‑Datenschutz/Compliance‑Regeln oder organisatorische Hürden (z. B. keine API‑Tokens für externe Prototypen) können Integration verzögern.\",\n    \"Falls Entscheidungskontext stark organisationsspezifisch ist (eigene Priorisierungsregeln/OKRs), wird mehr Anpassung nötig als in 2–4 Wochen realistisch ist.\"\n  ],\n  \"recommended_use_case\": \"2–4 Wochen Prototyp: 'Roadmap Prioritization Assistant' (read‑only). Scope: per GraphQL API oder CSV‑Export Issues, Initiatives, Milestones, historische Cycle‑Times, Labels und Assignment‑History einlesen; einfache Scoring‑Funktion (Impact Signals: Kundenreports, blocker/severity, linked PRs/releases; Cost Signals: estimated effort or historical cycle time; Strategic Fit: OKR/initiative tag); Vorschlag einer priorisierten Top‑10 für den nächsten Cycle/Milestone mit pro Item kurz erklärter Begründung, Unsicherheitsindikator und interaktiver Gewichtung durch PMs. Oberfläche: Dashboard + Detail‑Panel mit Quelle der Signale und Möglichkeit, Vorschläge zu akzeptieren/abzulehnen (Human‑in‑the‑Loop). Technisch: read‑only API calls or uploaded sample dataset, no write actions, minimal infra, implementierbar in 2–4 Wochen.\",\n  \"target_roles\": [\n    \"Produktmanager (PM)\",\n    \"Head of Product / Produktleitung\",\n    \"Technical Program Manager / PMO\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Welche Felder/Metadaten sind standardmäßig in Kundeninstanzen vorhanden (story points/effort estimates, customer tags, revenue impact, OKR/initiative‑links)?\",\n    \"Ist für einen Prototypen read‑only Zugriff via API möglich (Test‑token oder Demo‑workspace) und wie schnell lässt sich dieser Token organisieren?\",\n    \"Gibt es bereits interne oder kundenseitige Priorisierungsregeln/Scoring‑Formeln, die wir als Baseline verwenden sollten?\",\n    \"Welche Datenschutz/Compliance‑Beschränkungen gelten für das Auslesen von Issues (z. B. PII/HIPAA‑Beschränkungen) und welche Genehmigungen sind nötig?\",\n    \"Welche Metriken/KPIs würden das Team als Erfolg des Prototyps betrachten (z. B. Akzeptanzrate der Vorschläge, Zeitersparnis in Planning‑Meetings, Zufriedenheit der PMs)?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "Product / roadmap / prioritization decisions",
+    "risk_tolerance": "Medium",
+    "exclude_local_services": true,
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard"
+  }
+}

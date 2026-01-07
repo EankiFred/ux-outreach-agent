@@ -1,0 +1,42 @@
+{
+  "company_name": "Notion",
+  "fit": {
+    "fit_score": 78,
+    "decision_summary": "Notion ist grundsätzlich gut geeignet für einen Agentic Decision‑Support Prototyp: die Plattform enthält relevante Signale (Meeting‑Notes, Aufgaben, Pages, Calendar) und bietet API/Integrationspunkte, sodass ein 2–4‑wöch Prototyp ohne umfangreiche native Integrationen realistisch ist. Risiken bestehen hauptsächlich in unklaren Produktgrenzen (Custom Agents, Tariflimits) und Datenschutz/Usage‑Beschränkungen, die vor Produktion geklärt werden müssen.",
+    "why_good_fit": [
+      "Relevante, strukturierbare Quellen liegen bereits in der Platform: Meeting‑Notes, Projektseiten, Tasks, Calendar‑Einträge und interne Dokumentation – gute Basis für Entscheidungs‑Signale.",
+      "Notion bietet API/Integrationen und eingebaute AI‑Features (AI Meeting Notes, Agents), wodurch ein Prototyp extern mit LLMs oder internen AI‑Features aufgebaut werden kann ohne tiefe native Änderungen.",
+      "Breite, cross‑funktionale Nutzerbasis (Product, Engineering, Marketing) — hoher Nutzwert und schneller Feedback‑Loop für ein Decision‑Support Feature.",
+      "Gute Ansätze für explainability/HITL: Notion‑Pages können die Begründungen, Quellenlinks und Änderungsannahmen sichtbar halten (erwarteter Workflow: Vorschlag → Review → Accept/Modify).",
+      "Schnelle wins möglich durch focused scope (z. B. aus Meeting‑Notizen konkrete Entscheidungs‑Vorschläge und Verantwortliche ableiten) — geringe Integrationskomplexität."
+    ],
+    "why_not": [
+      "Unklarer Status und Verfügbarkeit von 'Custom Agents' und welche Funktionalität in welchen Tarifen liegt — kann den Umfang eines agentischen Prototyps einschränken.",
+      "Mögliche AI‑Nutzungs‑Limits oder temporäre Reduktionen (bereits erwähnt) können die Testbarkeit und Stabilität eines Prototyps beeinträchtigen.",
+      "Feinere Details zur Datenweitergabe an Subprozessoren und Aufbewahrung sind unklar — relevant für sensitive Unternehmensdaten und Enterprise‑Rollout."
+    ],
+    "recommended_use_case": "Meeting Decision Assistant (2–4 Wochen): Ziehe Meeting‑Notes + zugehörige Page‑Metadaten (Datum, Teilnehmer, erwähnte Tasks) per Notion API, verwende ein LLM Prompt‑Layer, um aus den Notizen konkrete Entscheidungsoptionen, eine empfohlene Option mit Begründung, vorgeschlagene Verantwortliche und Termine sowie eine Konfidenzbewertung zu erzeugen. Präsentation als Kommentar/Section in der Notion‑Meeting‑Page mit Quellenverweisen und Edit/Accept‑Buttons (Human‑in‑the‑loop). Minimaler Scope: 1–2 Meeting‑Templates, engl./deutsch, einfache Heuristiken zur Owner‑Erkennung.",
+    "target_roles": [
+      "Product Manager",
+      "Team Lead",
+      "Program Manager"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Sind 'Custom Agents' bereits verfügbar intern/extern und welche APIs/extension‑points bieten sie (beta/GA, Einschränkungen)?",
+      "Welche API‑Rate‑Limits, AI‑Nutzungs‑Limits oder Quoten gelten pro Tarif für automatisierte Agenten/LLM‑Aufrufe?",
+      "Gibt es dokumentierte Richtlinien/Verträge zu Subprozessoren und zur Aufbewahrung/Analyse von Kundendaten, die für LLM‑Basierte Verarbeitung relevant sind?",
+      "Welche standardisierten Metadaten / Properties stehen in Meeting‑Templates und Projekt‑Pages (z. B. owner, status, priority, due_date)?",
+      "Ist es möglich, im Zielkunden‑Account Testdaten/Spaces anzulegen mit ausreichenden Rechten (API‑Token, Webhooks, Admin) für Prototyp‑Aufbau?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 78,\n  \"decision_summary\": \"Notion ist grundsätzlich gut geeignet für einen Agentic Decision‑Support Prototyp: die Plattform enthält relevante Signale (Meeting‑Notes, Aufgaben, Pages, Calendar) und bietet API/Integrationspunkte, sodass ein 2–4‑wöch Prototyp ohne umfangreiche native Integrationen realistisch ist. Risiken bestehen hauptsächlich in unklaren Produktgrenzen (Custom Agents, Tariflimits) und Datenschutz/Usage‑Beschränkungen, die vor Produktion geklärt werden müssen.\",\n  \"why_good_fit\": [\n    \"Relevante, strukturierbare Quellen liegen bereits in der Platform: Meeting‑Notes, Projektseiten, Tasks, Calendar‑Einträge und interne Dokumentation – gute Basis für Entscheidungs‑Signale.\",\n    \"Notion bietet API/Integrationen und eingebaute AI‑Features (AI Meeting Notes, Agents), wodurch ein Prototyp extern mit LLMs oder internen AI‑Features aufgebaut werden kann ohne tiefe native Änderungen.\",\n    \"Breite, cross‑funktionale Nutzerbasis (Product, Engineering, Marketing) — hoher Nutzwert und schneller Feedback‑Loop für ein Decision‑Support Feature.\",\n    \"Gute Ansätze für explainability/HITL: Notion‑Pages können die Begründungen, Quellenlinks und Änderungsannahmen sichtbar halten (erwarteter Workflow: Vorschlag → Review → Accept/Modify).\",\n    \"Schnelle wins möglich durch focused scope (z. B. aus Meeting‑Notizen konkrete Entscheidungs‑Vorschläge und Verantwortliche ableiten) — geringe Integrationskomplexität.\"\n  ],\n  \"why_not\": [\n    \"Unklarer Status und Verfügbarkeit von 'Custom Agents' und welche Funktionalität in welchen Tarifen liegt — kann den Umfang eines agentischen Prototyps einschränken.\",\n    \"Mögliche AI‑Nutzungs‑Limits oder temporäre Reduktionen (bereits erwähnt) können die Testbarkeit und Stabilität eines Prototyps beeinträchtigen.\",\n    \"Feinere Details zur Datenweitergabe an Subprozessoren und Aufbewahrung sind unklar — relevant für sensitive Unternehmensdaten und Enterprise‑Rollout.\"\n  ],\n  \"recommended_use_case\": \"Meeting Decision Assistant (2–4 Wochen): Ziehe Meeting‑Notes + zugehörige Page‑Metadaten (Datum, Teilnehmer, erwähnte Tasks) per Notion API, verwende ein LLM Prompt‑Layer, um aus den Notizen konkrete Entscheidungsoptionen, eine empfohlene Option mit Begründung, vorgeschlagene Verantwortliche und Termine sowie eine Konfidenzbewertung zu erzeugen. Präsentation als Kommentar/Section in der Notion‑Meeting‑Page mit Quellenverweisen und Edit/Accept‑Buttons (Human‑in‑the‑loop). Minimaler Scope: 1–2 Meeting‑Templates, engl./deutsch, einfache Heuristiken zur Owner‑Erkennung.\",\n  \"target_roles\": [\n    \"Product Manager\",\n    \"Team Lead\",\n    \"Program Manager\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Sind 'Custom Agents' bereits verfügbar intern/extern und welche APIs/extension‑points bieten sie (beta/GA, Einschränkungen)?\",\n    \"Welche API‑Rate‑Limits, AI‑Nutzungs‑Limits oder Quoten gelten pro Tarif für automatisierte Agenten/LLM‑Aufrufe?\",\n    \"Gibt es dokumentierte Richtlinien/Verträge zu Subprozessoren und zur Aufbewahrung/Analyse von Kundendaten, die für LLM‑Basierte Verarbeitung relevant sind?\",\n    \"Welche standardisierten Metadaten / Properties stehen in Meeting‑Templates und Projekt‑Pages (z. B. owner, status, priority, due_date)?\",\n    \"Ist es möglich, im Zielkunden‑Account Testdaten/Spaces anzulegen mit ausreichenden Rechten (API‑Token, Webhooks, Admin) für Prototyp‑Aufbau?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "exclude_local_services": true,
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Medium",
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "company_name": "Seba",
+  "fit": {
+    "fit_score": 70,
+    "decision_summary": "SEBA Hydrometrie hat eine klare, wiederkehrende Entscheidungsdomäne (Monitoring, Alarm- bzw. Inspektionspriorisierung, Wartungs- bzw. Einsatzentscheidungen) und plausibel verfügbare Signale (Messwerte, Telemetrie, Log/Service-Daten). Ein schlanker Agentic Decision‑Support‑Prototyp, der hochfrequente Messdaten (CSV/Time‑Series Upload) analysiert, priorisierte Handlungsempfehlungen liefert und diese erklärbar begründet, ist in 2–4 Wochen realistisch ohne tiefe Systemintegration umsetzbar.",
+    "why_good_fit": [
+      "Wiederkehrende, nicht triviale Entscheidungen existieren (Hochwasser-/Einsatz-Triage, Priorisierung von Wartung/Kalibrierung, Interpretation von Messabweichungen).",
+      "Kernprodukt liefert Zeitreihendaten (Wasserstand, Durchfluss, Wasserqualität) — geeignete Signale für ein datengetriebenes Decision‑Support-Tool.",
+      "Zielnutzer (Wasserbehörden, Katastrophenschutz, Wetterdienste) brauchen erklärbare, menschzentrierte Empfehlungen statt full automation.",
+      "Ein MVP kann mit hochgeladenen Beispieldaten, einfachen Heuristiken und LLM‑basierten Erläuterungen gebaut werden — vermeidet massive Integrationen in 2–4 Wochen.",
+      "Mittleres Risiko passt zur Risk‑Tolerance: Entscheidungsunterstützung (nicht automatische Aktionen) reduziert regulatorische/Haftungsrisiken."
+    ],
+    "why_not": [
+      "Unklar, ob und wie viele Geräte Telemetrie in Echtzeit/Cloud verfügbar machen — Integration könnte aufwändiger werden.",
+      "Detaillierte Produkt-/Datenformate und Software‑APIs sind nicht bekannt; ohne Musterdateien ist Tuning schwer.",
+      "Unbekannte Unternehmensgröße/IT‑Ressourcen könnten die Bereitstellung, Testdatenlieferung und Stakeholder‑Feedback verlangsamen."
+    ],
+    "recommended_use_case": "Priorisierungs- und Erklärungstool für Feldinspektionen und Einsatztriage: Nutzer laden Zeitreihen (CSV) und Standortmetadaten hoch; das System detektiert Anomalien/Trendbrüche (Schwellenüberschreitungen, schnell steigender Wasserstand, Sensordrift), erstellt eine priorisierte Liste von Standorten mit klaren, kurzformigen Handlungsempfehlungen (z. B. \"Sofort-Inspektion\", \"Beobachten, nächste 6 h\") und liefert für jede Empfehlung eine erklärbare Begründung sowie Unsicherheitsindikatoren. UI: Upload, Dashboard mit Rangliste, Detailansicht pro Standort, einfache Parameter‑Anpassung durch Nutzer. Keine Live‑Integration notwendig — funktioniert mit Beispiel-/Exportdaten.",
+    "target_roles": [
+      "Leiter Betrieb / Field Operations",
+      "Einsatzleiter Katastrophenschutz / Betriebsingenieur",
+      "Produktverantwortlicher für Software/Services"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Verfügt SEBA über Cloud‑Telemetrie/APIs oder werden Messdaten lokal gespeichert und per Export geteilt? In welchen Formaten (CSV, JSON, proprietär)?",
+      "Wie viele Sensorstandorte/Assets sind relevant für einen Prototyp (Skalengröße) und wie häufig werden Messwerte erfasst (min/h/sek)?",
+      "Gibt es Beispiele anonymisierter Messdatensätze oder historische Ereignisprotokolle (z. B. Hochwasserereignisse, Servicefälle) für Training/Test?",
+      "Welche konkreten Entscheidungen/Workflows sollen priorisiert werden (z. B. Wartung vs. Notfall‑Einsatz vs. Datenqualitätssicherung) und wer trifft diese finalen Entscheidungen?",
+      "Gibt es Compliance‑/Haftungsvorgaben oder SLAs, die die Art der Empfehlungen oder erforderliche Erklärbarkeit einschränken?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 70,\n  \"decision_summary\": \"SEBA Hydrometrie hat eine klare, wiederkehrende Entscheidungsdomäne (Monitoring, Alarm- bzw. Inspektionspriorisierung, Wartungs- bzw. Einsatzentscheidungen) und plausibel verfügbare Signale (Messwerte, Telemetrie, Log/Service-Daten). Ein schlanker Agentic Decision‑Support‑Prototyp, der hochfrequente Messdaten (CSV/Time‑Series Upload) analysiert, priorisierte Handlungsempfehlungen liefert und diese erklärbar begründet, ist in 2–4 Wochen realistisch ohne tiefe Systemintegration umsetzbar.\",\n  \"why_good_fit\": [\n    \"Wiederkehrende, nicht triviale Entscheidungen existieren (Hochwasser-/Einsatz-Triage, Priorisierung von Wartung/Kalibrierung, Interpretation von Messabweichungen).\",\n    \"Kernprodukt liefert Zeitreihendaten (Wasserstand, Durchfluss, Wasserqualität) — geeignete Signale für ein datengetriebenes Decision‑Support-Tool.\",\n    \"Zielnutzer (Wasserbehörden, Katastrophenschutz, Wetterdienste) brauchen erklärbare, menschzentrierte Empfehlungen statt full automation.\",\n    \"Ein MVP kann mit hochgeladenen Beispieldaten, einfachen Heuristiken und LLM‑basierten Erläuterungen gebaut werden — vermeidet massive Integrationen in 2–4 Wochen.\",\n    \"Mittleres Risiko passt zur Risk‑Tolerance: Entscheidungsunterstützung (nicht automatische Aktionen) reduziert regulatorische/Haftungsrisiken.\"\n  ],\n  \"why_not\": [\n    \"Unklar, ob und wie viele Geräte Telemetrie in Echtzeit/Cloud verfügbar machen — Integration könnte aufwändiger werden.\",\n    \"Detaillierte Produkt-/Datenformate und Software‑APIs sind nicht bekannt; ohne Musterdateien ist Tuning schwer.\",\n    \"Unbekannte Unternehmensgröße/IT‑Ressourcen könnten die Bereitstellung, Testdatenlieferung und Stakeholder‑Feedback verlangsamen.\"\n  ],\n  \"recommended_use_case\": \"Priorisierungs- und Erklärungstool für Feldinspektionen und Einsatztriage: Nutzer laden Zeitreihen (CSV) und Standortmetadaten hoch; das System detektiert Anomalien/Trendbrüche (Schwellenüberschreitungen, schnell steigender Wasserstand, Sensordrift), erstellt eine priorisierte Liste von Standorten mit klaren, kurzformigen Handlungsempfehlungen (z. B. \\\"Sofort-Inspektion\\\", \\\"Beobachten, nächste 6 h\\\") und liefert für jede Empfehlung eine erklärbare Begründung sowie Unsicherheitsindikatoren. UI: Upload, Dashboard mit Rangliste, Detailansicht pro Standort, einfache Parameter‑Anpassung durch Nutzer. Keine Live‑Integration notwendig — funktioniert mit Beispiel-/Exportdaten.\",\n  \"target_roles\": [\n    \"Leiter Betrieb / Field Operations\",\n    \"Einsatzleiter Katastrophenschutz / Betriebsingenieur\",\n    \"Produktverantwortlicher für Software/Services\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Verfügt SEBA über Cloud‑Telemetrie/APIs oder werden Messdaten lokal gespeichert und per Export geteilt? In welchen Formaten (CSV, JSON, proprietär)?\",\n    \"Wie viele Sensorstandorte/Assets sind relevant für einen Prototyp (Skalengröße) und wie häufig werden Messwerte erfasst (min/h/sek)?\",\n    \"Gibt es Beispiele anonymisierter Messdatensätze oder historische Ereignisprotokolle (z. B. Hochwasserereignisse, Servicefälle) für Training/Test?\",\n    \"Welche konkreten Entscheidungen/Workflows sollen priorisiert werden (z. B. Wartung vs. Notfall‑Einsatz vs. Datenqualitätssicherung) und wer trifft diese finalen Entscheidungen?\",\n    \"Gibt es Compliance‑/Haftungsvorgaben oder SLAs, die die Art der Empfehlungen oder erforderliche Erklärbarkeit einschränken?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {}
+}

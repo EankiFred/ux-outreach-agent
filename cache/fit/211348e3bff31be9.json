@@ -1,0 +1,35 @@
+{
+  "company_name": "NewFace",
+  "fit": {
+    "fit_score": 60,
+    "decision_summary": "NewFace ist grundsätzlich geeignet für einen kurzen Agentic Decision‑Support Prototyp, weil Entscheidungen über Terminplanung, Service‑Mix und Paket‑/Preistests wenige Stakeholder haben und schnell operationalisiert werden können. Einschränkungen bestehen durch unklare digitale Datengrundlage (Buchungssystem, POS, Kundendaten), die vor Beginn geklärt werden müssen.",
+    "why_good_fit": [
+      "Entscheidungen sind klar und operativ (Terminplanung, Paketangebote, Upsell‑Priorisierung) und liefern schnell umsetzbare Empfehlungen.",
+      "Wenig Stakeholder (Inhaber, Lead‑Stylist, Empfang) – schnelle Abstimmung und schnelles Feedback möglich.",
+      "Kurzfristige, messbare KPIs (Terminauslastung, Zusatzverkäufe, Terminno‑shows) eignen sich gut für einen 2–4‑wöchigen Prototypen.",
+      "Niedriges regulatorisches Risiko und keine sensiblen Compliance‑Hürden bei typischen Salon‑Daten.",
+      "Website/Online‑Präsenz als Ausgangspunkt; offline Interviews und Kalenderexporten genügen oft für einen ersten Prototyp."
+    ],
+    "why_not": [
+      "Unklare bzw. fehlende digitale Datenquellen (Echtzeitbuchungen, POS, CRM) können Umfang und Genauigkeit des Prototyps stark einschränken.",
+      "Kleinbetriebliche Struktur kann zu begrenzter Skalierung/ROI führen – hohen Mehrwert schwer zu garantieren, wenn Prozesse stark manuell sind.",
+      "Akzeptanzrisiko bei Mitarbeitenden, wenn Empfehlungen als 'Automatisierung' statt als Unterstützung wahrgenommen werden."
+    ],
+    "recommended_use_case": "2‑4 Wochen Prototyp: Entscheidungshilfe für Terminplanung & Angebotspriorisierung. Output: tages‑/wochenbasierte Empfehlungsliste zur Optimierung Auslastung (Terminzuteilung nach Dauer/Kompetenz, Puffer für Overruns, Vorschläge für Lückenfüllung via kurzfristige Promotions), plus 2 getestete Paket‑/Upsell‑Hypothesen mit Messplan (KPIs, A/B‑Test‑Anleitung). Datenbasis: Kalenderexport, 4 Wochen historischer Termine (ggf. manuell erfasst), einfache Verkaufshinweise und 5‑10 Mitarbeiterinterviews.",
+    "target_roles": [
+      "Inhaber / Geschäftsführer",
+      "Lead‑Stylist / Betriebsleiter",
+      "Empfang / Buchungsmanager"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Welches Buchungs‑/Kalendersystem nutzt ihr (Name) und ist ein Export (CSV/iCal/API) möglich?",
+      "Gibt es ein Kassensystem/POS und werden Produkte/Gutscheine digital erfasst? Falls ja: Name und Exportmöglichkeit?",
+      "Monatliche Kennzahlen: durchschnittliche Terminanzahl, Öffnungstage, durchschnittlicher Umsatz pro Termin (oder grobe Schätzung)?",
+      "Anzahl Mitarbeitende, deren Qualifikationen (z. B. Farbexpertin, Barber) und typische Arbeitspläne?",
+      "Was sind eure wichtigsten kurzfristigen Ziele (mehr Auslastung, höhere Zusatzverkäufe, weniger No‑Shows, bessere Preispolitik)?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 60,\n  \"decision_summary\": \"NewFace ist grundsätzlich geeignet für einen kurzen Agentic Decision‑Support Prototyp, weil Entscheidungen über Terminplanung, Service‑Mix und Paket‑/Preistests wenige Stakeholder haben und schnell operationalisiert werden können. Einschränkungen bestehen durch unklare digitale Datengrundlage (Buchungssystem, POS, Kundendaten), die vor Beginn geklärt werden müssen.\",\n  \"why_good_fit\": [\n    \"Entscheidungen sind klar und operativ (Terminplanung, Paketangebote, Upsell‑Priorisierung) und liefern schnell umsetzbare Empfehlungen.\",\n    \"Wenig Stakeholder (Inhaber, Lead‑Stylist, Empfang) – schnelle Abstimmung und schnelles Feedback möglich.\",\n    \"Kurzfristige, messbare KPIs (Terminauslastung, Zusatzverkäufe, Terminno‑shows) eignen sich gut für einen 2–4‑wöchigen Prototypen.\",\n    \"Niedriges regulatorisches Risiko und keine sensiblen Compliance‑Hürden bei typischen Salon‑Daten.\",\n    \"Website/Online‑Präsenz als Ausgangspunkt; offline Interviews und Kalenderexporten genügen oft für einen ersten Prototyp.\"\n  ],\n  \"why_not\": [\n    \"Unklare bzw. fehlende digitale Datenquellen (Echtzeitbuchungen, POS, CRM) können Umfang und Genauigkeit des Prototyps stark einschränken.\",\n    \"Kleinbetriebliche Struktur kann zu begrenzter Skalierung/ROI führen – hohen Mehrwert schwer zu garantieren, wenn Prozesse stark manuell sind.\",\n    \"Akzeptanzrisiko bei Mitarbeitenden, wenn Empfehlungen als 'Automatisierung' statt als Unterstützung wahrgenommen werden.\"\n  ],\n  \"recommended_use_case\": \"2‑4 Wochen Prototyp: Entscheidungshilfe für Terminplanung & Angebotspriorisierung. Output: tages‑/wochenbasierte Empfehlungsliste zur Optimierung Auslastung (Terminzuteilung nach Dauer/Kompetenz, Puffer für Overruns, Vorschläge für Lückenfüllung via kurzfristige Promotions), plus 2 getestete Paket‑/Upsell‑Hypothesen mit Messplan (KPIs, A/B‑Test‑Anleitung). Datenbasis: Kalenderexport, 4 Wochen historischer Termine (ggf. manuell erfasst), einfache Verkaufshinweise und 5‑10 Mitarbeiterinterviews.\",\n  \"target_roles\": [\n    \"Inhaber / Geschäftsführer\",\n    \"Lead‑Stylist / Betriebsleiter\",\n    \"Empfang / Buchungsmanager\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Welches Buchungs‑/Kalendersystem nutzt ihr (Name) und ist ein Export (CSV/iCal/API) möglich?\",\n    \"Gibt es ein Kassensystem/POS und werden Produkte/Gutscheine digital erfasst? Falls ja: Name und Exportmöglichkeit?\",\n    \"Monatliche Kennzahlen: durchschnittliche Terminanzahl, Öffnungstage, durchschnittlicher Umsatz pro Termin (oder grobe Schätzung)?\",\n    \"Anzahl Mitarbeitende, deren Qualifikationen (z. B. Farbexpertin, Barber) und typische Arbeitspläne?\",\n    \"Was sind eure wichtigsten kurzfristigen Ziele (mehr Auslastung, höhere Zusatzverkäufe, weniger No‑Shows, bessere Preispolitik)?\"\n  ]\n}",
+  "from_cache": false
+}

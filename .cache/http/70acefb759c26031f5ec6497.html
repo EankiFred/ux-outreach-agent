@@ -1,0 +1,1086 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Forest AI - Fixing AI Benchmarking with cheat-proof validation." />
+    <meta name="keywords" content="ai benchmarking, ai validation, peerbench" />
+    <meta name="author" content="Forest AI" />
+    <meta property="og:title" content="Forest AI - Cheat-Proof AI Validation" />
+    <meta property="og:description" content="Fixing AI Benchmarking with cheat-proof validation" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Forest AI - Cheat-Proof AI Validation" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="assets/svg/logos/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    
+    <title>Forest AI — Cheat-Proof AI Validation</title>
+    
+    <style>
+      :root {
+        --forest-dark: #090911;
+        --forest-darker: #050508;
+        --accent: #C55200;
+        --accent-hover: #ff6a00;
+        --accent-glow: rgba(197, 82, 0, 0.4);
+        --text-primary: #ffffff;
+        --text-secondary: #a0aab4;
+        --text-muted: #677788;
+        --card-bg: rgba(255, 255, 255, 0.03);
+        --card-border: rgba(255, 255, 255, 0.08);
+        --success: #00c9a7;
+        --gradient-start: rgba(197, 82, 0, 0.1);
+      }
+      
+      * {
+        font-family: 'Outfit', sans-serif;
+      }
+      
+      code, .mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+      
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      /* Style B: Bold Technical */
+      .hero-section {
+        min-height: 42vh;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 2rem;
+        position: relative;
+      }
+      
+      .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      
+      .hero-title-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 0;
+      }
+      
+      .hero-title-row .hero-title {
+        margin-bottom: 0;
+      }
+      
+      .hero-title-accent {
+        margin-top: -0.25rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      .hero-logo {
+        width: 60px;
+        height: auto;
+        filter: brightness(0) invert(1);
+        flex-shrink: 0;
+      }
+      
+      @media (max-width: 768px) {
+        .hero-title-row {
+          gap: 0.75rem;
+        }
+        .hero-logo {
+          width: 36px;
+        }
+      }
+      
+      .hero-eyebrow {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.75rem;
+        color: var(--accent);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+      
+      .hero-eyebrow::before,
+      .hero-eyebrow::after {
+        content: '';
+        width: 24px;
+        height: 1px;
+        background: var(--accent);
+      }
+      
+      .hero-title {
+        font-size: 4rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        line-height: 1.05;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.04em;
+      }
+      
+      .hero-title span {
+        background: linear-gradient(135deg, var(--accent) 0%, #ff8a3d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .hero-desc {
+        font-size: 1.2rem;
+        color: var(--text-secondary);
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      @media (max-width: 768px) {
+        .hero-title {
+          font-size: 2.5rem;
+        }
+      }
+      
+      /* Problem Statement */
+      .problem-banner {
+        background: linear-gradient(90deg, transparent 0%, rgba(197, 82, 0, 0.08) 50%, transparent 100%);
+        border-left: 3px solid var(--accent);
+        border-right: 3px solid var(--accent);
+        padding: 1.5rem 2rem;
+        margin: 2rem auto;
+        max-width: 700px;
+      }
+      
+      .problem-banner p {
+        font-size: 1rem;
+        color: var(--text-secondary);
+        margin: 0;
+        font-style: italic;
+      }
+      
+      .section {
+        padding: 5rem 0;
+      }
+      
+      .section-dark {
+        background: var(--forest-dark);
+      }
+      
+      .section-darker {
+        background: var(--forest-darker);
+      }
+      
+      /* Value Bars */
+      .value-bar {
+        border-top: 1px solid var(--card-border);
+        border-bottom: 1px solid var(--card-border);
+        padding: 1.25rem 0;
+        overflow: hidden;
+        position: relative;
+        z-index: 999;
+        background-color: #090911;
+      }
+      
+      .value-bar-problem {
+        background: #090911 linear-gradient(90deg, rgba(196, 69, 54, 0.15) 0%, rgba(9, 9, 17, 1) 25%, rgba(9, 9, 17, 1) 75%, rgba(196, 69, 54, 0.15) 100%);
+      }
+      
+      .value-bar-solution {
+        background: #090911 linear-gradient(90deg, rgba(0, 201, 167, 0.12) 0%, rgba(9, 9, 17, 1) 25%, rgba(9, 9, 17, 1) 75%, rgba(0, 201, 167, 0.12) 100%);
+      }
+      
+      .value-bar-content {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE/Edge */
+        cursor: grab;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      
+      .value-bar-content::-webkit-scrollbar {
+        display: none; /* Chrome/Safari */
+      }
+      
+      .value-bar-content.dragging {
+        cursor: grabbing;
+      }
+      
+      .value-bar-content.no-overflow {
+        cursor: default;
+        justify-content: center;
+      }
+      
+      .value-bar-label {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        flex-shrink: 0;
+      }
+      
+      .value-bar-label-problem {
+        color: #c44536;
+      }
+      
+      .value-bar-label-solution {
+        color: var(--success);
+      }
+      
+      .value-items {
+        display: flex;
+        align-items: center;
+        gap: 1.75rem;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+      }
+      
+      .value-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--text-secondary);
+        font-size: 0.85rem;
+        flex-shrink: 0;
+        white-space: nowrap;
+      }
+      
+      .value-item i {
+        font-size: 0.8rem;
+      }
+      
+      .value-bar-problem .value-item i {
+        color: #c44536;
+      }
+      
+      .value-bar-solution .value-item i {
+        color: var(--success);
+      }
+      
+      .value-item-dots {
+        color: var(--text-muted);
+        font-size: 1.2rem;
+        letter-spacing: 0.1em;
+      }
+      
+      .neurips-inline {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(0, 201, 167, 0.08);
+        border: 1px solid rgba(0, 201, 167, 0.2);
+        padding: 0.4rem 0.85rem;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: all 0.2s;
+        flex-shrink: 0;
+        white-space: nowrap;
+      }
+      
+      .neurips-inline:hover {
+        background: rgba(0, 201, 167, 0.12);
+        border-color: rgba(0, 201, 167, 0.35);
+      }
+      
+      .neurips-inline img {
+        height: 18px;
+        width: auto;
+      }
+      
+      .neurips-inline span {
+        color: var(--text-primary);
+        font-size: 0.75rem;
+        font-weight: 500;
+      }
+      
+      .neurips-inline i {
+        color: var(--success);
+        font-size: 0.65rem;
+      }
+      
+      .section-header {
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+      
+      .section-label {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 0.75rem;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        letter-spacing: -0.02em;
+      }
+      
+      /* NeurIPS Badge in Solutions */
+      .neurips-card {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        padding: 1rem 1.5rem;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+      
+      .neurips-card:hover {
+        border-color: var(--accent);
+        box-shadow: 0 0 30px var(--accent-glow);
+      }
+      
+      .neurips-card img {
+        height: 32px;
+      }
+      
+      .neurips-card-text {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .neurips-card-text strong {
+        color: var(--text-primary);
+        font-size: 0.9rem;
+      }
+      
+      .neurips-card-text span {
+        color: var(--text-muted);
+        font-size: 0.75rem;
+      }
+      
+      /* Solutions - Style C Cards */
+      .solutions-list {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      
+      .solution-card {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 2rem;
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        border-radius: 16px;
+        margin-bottom: 1.25rem;
+        transition: all 0.3s;
+      }
+      
+      .solution-card:hover {
+        border-color: rgba(255, 255, 255, 0.12);
+        transform: translateY(-2px);
+      }
+      
+      .solution-card:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      
+      @media (max-width: 768px) {
+        .solution-card,
+        .solution-card:nth-child(even) {
+          flex-direction: column;
+          text-align: center;
+        }
+        
+        .solution-header {
+          justify-content: center;
+        }
+        
+        .solution-links {
+          justify-content: center;
+        }
+      }
+      
+      .solution-icon {
+        width: 72px;
+        height: 72px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, var(--gradient-start), transparent);
+        border: 1px solid var(--card-border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      
+      .solution-icon i {
+        font-size: 1.75rem;
+        color: var(--accent);
+      }
+      
+      .solution-content {
+        flex: 1;
+      }
+      
+      .solution-header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 0.6rem;
+        flex-wrap: wrap;
+      }
+      
+      .solution-content h3 {
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin: 0;
+      }
+      
+      .solution-badge {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.6rem;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      
+      .badge-live {
+        background: rgba(0, 201, 167, 0.12);
+        color: var(--success);
+        border: 1px solid rgba(0, 201, 167, 0.25);
+      }
+      
+      .badge-open {
+        background: rgba(197, 82, 0, 0.12);
+        color: var(--accent);
+        border: 1px solid rgba(197, 82, 0, 0.25);
+      }
+      
+      .badge-soon {
+        background: rgba(151, 164, 175, 0.12);
+        color: var(--text-secondary);
+        border: 1px solid rgba(151, 164, 175, 0.2);
+      }
+      
+      .badge-unique {
+        background: rgba(147, 112, 219, 0.12);
+        color: #b8a3e8;
+        border: 1px solid rgba(147, 112, 219, 0.25);
+      }
+      
+      .solution-content p {
+        font-size: 0.95rem;
+        color: var(--text-secondary);
+        line-height: 1.6;
+        margin-bottom: 0;
+      }
+      
+      .solution-links {
+        display: flex;
+        gap: 1.25rem;
+        margin-top: 0.75rem;
+        flex-wrap: wrap;
+      }
+      
+      .solution-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        color: var(--accent);
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.2s;
+      }
+      
+      .solution-link:hover {
+        color: var(--accent-hover);
+      }
+      
+      /* Team Section */
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      
+      @media (max-width: 768px) {
+        .team-grid {
+          grid-template-columns: 1fr;
+          max-width: 400px;
+          margin: 0 auto;
+        }
+      }
+      
+      .team-card {
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        border-radius: 16px;
+        padding: 1.75rem;
+        text-align: center;
+        transition: all 0.3s;
+      }
+      
+      .team-card:hover {
+        border-color: var(--accent);
+      }
+      
+      .team-photo {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1.25rem;
+        border: 3px solid var(--card-border);
+        transition: all 0.3s;
+      }
+      
+      .team-card:hover .team-photo {
+        border-color: var(--accent);
+      }
+      
+      .team-card h4 {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 0.25rem;
+      }
+      
+      .team-role {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.7rem;
+        color: var(--accent);
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      
+      .team-bio {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        line-height: 1.5;
+      }
+      
+      .team-logos {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+      }
+      
+      .team-logo-badge {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.6rem;
+        padding: 0.2rem 0.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 4px;
+        color: var(--text-muted);
+      }
+      
+      .team-linkedin {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.05);
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        transition: all 0.2s;
+        text-decoration: none;
+      }
+      
+      .team-linkedin:hover {
+        background: var(--accent);
+        color: white;
+      }
+      
+      /* CTA */
+      .cta-section {
+        text-align: center;
+        padding: 4rem 2rem;
+      }
+      
+      .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      .cta-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+      
+      .cta-btn-primary {
+        background: var(--accent);
+        color: white;
+      }
+      
+      .cta-btn-primary:hover {
+        background: var(--accent-hover);
+        box-shadow: 0 0 30px var(--accent-glow);
+        transform: translateY(-2px);
+        color: white;
+      }
+      
+      .cta-btn-secondary {
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        color: var(--text-primary);
+      }
+      
+      .cta-btn-secondary:hover {
+        border-color: var(--accent);
+        color: white;
+      }
+      
+      /* Footer */
+      .footer {
+        padding: 2rem 0;
+        border-top: 1px solid var(--card-border);
+      }
+      
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      
+      .footer-brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      
+      .footer-logo {
+        width: 28px;
+        height: auto;
+        filter: brightness(0) invert(1);
+        opacity: 0.6;
+      }
+      
+      .footer-links {
+        display: flex;
+        gap: 1.5rem;
+      }
+      
+      .footer-links a {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1.1rem;
+        transition: color 0.2s;
+      }
+      
+      .footer-links a:hover {
+        color: var(--accent);
+      }
+      
+      .footer p {
+        color: var(--text-muted);
+        font-size: 0.85rem;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body class="bg-dark">
+    <main>
+      <!-- Parallax Background -->
+      <div>
+        <div class="position-relative" style="height: 50vh">
+          <div class="parallax" id="parallax3" data-speed="16"></div>
+          <div class="parallax" id="parallax4" data-speed="36"></div>
+          <div class="parallax" id="parallax2" data-speed="48"></div>
+          <div class="parallax" id="parallax1" data-speed="70"></div>
+          <div id="parallax0"></div>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="section section-dark position-relative zi-999 hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-eyebrow">AI Validation Infrastructure</div>
+            <div class="hero-title-row">
+              <img src="assets/svg/logos/logo.svg" alt="Forest AI" class="hero-logo">
+              <h1 class="hero-title">Fixing AI</h1>
+            </div>
+            <h1 class="hero-title hero-title-accent"><span>Benchmarking</span></h1>
+            
+        
+            
+            <div class="problem-banner">
+              <p>"AI benchmarks shape trillion-dollar valuations, guide research priorities, and influence where the world economy invests. When these benchmarks fail, everyone loses."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Problem Bar -->
+      <div class="value-bar value-bar-problem position-relative zi-999">
+        <div class="container">
+          <div class="value-bar-content">
+            <span class="value-bar-label value-bar-label-problem">Problem</span>
+            <div class="value-items">
+              <div class="value-item">
+                <i class="fas fa-virus"></i>
+                <span>Contamination</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-hand-pointer"></i>
+                <span>Cherry-picking</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-balance-scale-left"></i>
+                <span>Bias</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Noisy Metrics</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-puzzle-piece"></i>
+                <span>Fragmentation</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-ban"></i>
+                <span>Restricted Access</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-gavel"></i>
+                <span>Lack of Fairness</span>
+              </div>
+              <div class="value-item value-item-dots">
+                <span>...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Section -->
+      <section class="section section-darker position-relative zi-999">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-label">// Offer</div>
+            <h2 class="section-title">Product Suite</h2>
+          </div>
+          
+          <div class="solutions-list">
+            <div class="solution-card">
+              <div class="solution-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="solution-content">
+                <div class="solution-header">
+                  <h3>Private Proprietary Datasets</h3>
+                  <span class="solution-badge badge-live">Live</span>
+                  <span class="solution-badge badge-unique">Unique</span>
+                </div>
+                <p>Proprietary evaluation data in insurance, medical, and other high-value domains.</p>
+              </div>
+            </div>
+            
+            <div class="solution-card">
+              <div class="solution-icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <div class="solution-content">
+                <div class="solution-header">
+                  <h3>AI Validation Tools</h3>
+                  <span class="solution-badge badge-live">Live</span>
+                  <span class="solution-badge badge-open">Open Source</span>
+                </div>
+                <p>A collection of tools, libraries and standards for evaluating model & agentic quality, performance, reliability, fairness and drift.</p>
+                <div class="solution-links">
+                  <a href="https://github.com/peerbench/peerBench/tree/main/packages/sdk" target="_blank" rel="noopener noreferrer" class="solution-link">
+                    <i class="fab fa-github"></i> SDK on GitHub →
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="solution-card">
+              <div class="solution-icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <div class="solution-content">
+                <div class="solution-header">
+                  <h3>PeerBench Platform</h3>
+                  <span class="solution-badge badge-live">Live</span>
+                  <span class="solution-badge badge-open">Open Source</span>
+                </div>
+                <p>Benchmark creation & execution platform for trustworthy evaluations.</p>
+                <div class="solution-links">
+                  <a href="https://peerbench.ai" target="_blank" rel="noopener noreferrer" class="solution-link">
+                    peerbench.ai →
+                  </a>
+                  <a href="https://github.com/peerbench/peerBench/tree/main/apps/webapp" target="_blank" rel="noopener noreferrer" class="solution-link">
+                    <i class="fab fa-github"></i> GitHub →
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="solution-card">
+              <div class="solution-icon">
+                <i class="fas fa-building"></i>
+              </div>
+              <div class="solution-content">
+                <div class="solution-header">
+                  <h3>Enterprise White-Label Platform</h3>
+                  <span class="solution-badge badge-live">Live</span>
+                </div>
+                <p>Internal AI / agent validation suite for enterprise deployments.</p>
+                <div class="solution-links">
+                  <a href="https://cal.com/forest-protocols" target="_blank" rel="noopener noreferrer" class="solution-link">
+                    Request Demo →
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="solution-card">
+              <div class="solution-icon">
+                <i class="fas fa-store"></i>
+              </div>
+              <div class="solution-content">
+                <div class="solution-header">
+                  <h3>AI Marketplace</h3>
+                  <span class="solution-badge badge-soon">Coming Soon</span>
+                </div>
+                <p>Marketplace for validated AI solutions with transparent performance metrics and automated routing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solution Bar -->
+      <div class="value-bar value-bar-solution position-relative zi-999">
+        <div class="container">
+          <div class="value-bar-content">
+            <span class="value-bar-label value-bar-label-solution">Solution</span>
+            <div class="value-items">
+              <div class="value-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Protected Datasets</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-lock"></i>
+                <span>Rigorous & Sealed Execution</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Continuous Monitoring</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-users"></i>
+                <span>Community Governance</span>
+              </div>
+            </div>
+            <a href="https://arxiv.org/abs/2510.07575" target="_blank" rel="noopener noreferrer" class="neurips-inline">
+              <img src="assets/img/neurips.png" alt="NeurIPS">
+              <span>Powered by NeurIPS'25 validated methodology</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Section -->
+      <section class="section section-dark position-relative zi-999">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-label">// Team</div>
+            <h2 class="section-title">Leadership</h2>
+          </div>
+          
+          <div class="team-grid">
+            <div class="team-card">
+              <img src="assets/img/ruben.jpeg" alt="Ruben Wolff" class="team-photo">
+              <h4>Ruben Wolff</h4>
+              <div class="team-role">CEO</div>
+              <p class="team-bio">15 years building AI. Tech lead at FIFA for World Cup, Swiss Stock Exchange, UAE National Health.</p>
+              <div class="team-logos">
+                <span class="team-logo-badge">FIFA</span>
+                <span class="team-logo-badge">SIX</span>
+                <span class="team-logo-badge">United Arab Emirates Government</span>
+              </div>
+              <a href="https://www.linkedin.com/in/ruben-wolff/" target="_blank" rel="noopener noreferrer" class="team-linkedin" aria-label="Ruben Wolff LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            
+            <div class="team-card">
+              <img src="assets/img/mikolaj.png" alt="Mikołaj Glinka" class="team-photo">
+              <h4>Mikołaj Glinka</h4>
+              <div class="team-role">CTO</div>
+              <p class="team-bio">Built crypto dev shop (acquired). Pioneered tokenization. Algo trading since 2016.</p>
+              <div class="team-logos">
+                <span class="team-logo-badge">Accenture</span>
+                <span class="team-logo-badge">Peanut Protocol</span>
+                <span class="team-logo-badge">Samsung</span>
+              </div>
+              <a href="https://www.linkedin.com/in/mikolaj-glinka/" target="_blank" rel="noopener noreferrer" class="team-linkedin" aria-label="Mikołaj Glinka LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            
+            <div class="team-card">
+              <img src="assets/img/laurence.jpeg" alt="Laurence Lewandowska" class="team-photo">
+              <h4>Laurence Lewandowska</h4>
+              <div class="team-role">CFO</div>
+              <p class="team-bio">Experienced executive with a strong track record in finance, tokenomics & operations.</p>
+              <div class="team-logos">
+                <span class="team-logo-badge">NEAR AI</span>
+                <span class="team-logo-badge">Swiss Re</span>
+                <span class="team-logo-badge">Julius Baer</span>
+                <span class="team-logo-badge">L1 Blockchain</span>
+              </div>
+              <a href="https://www.linkedin.com/in/laurence-lewandowska/" target="_blank" rel="noopener noreferrer" class="team-linkedin" aria-label="Laurence Lewandowska LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="section section-darker position-relative zi-999 cta-section">
+        <div class="container">
+          <div class="cta-buttons">
+            <a href="https://cal.com/forest-protocols" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn-primary">
+              <i class="fas fa-calendar"></i>
+              Book a Demo
+            </a>
+            <a href="https://arxiv.org/abs/2510.07575" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn-secondary">
+              <i class="fas fa-file-alt"></i>
+              Read our NeurIPS Paper
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer section-dark position-relative zi-999">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-brand">
+              <img src="assets/svg/logos/logo.svg" alt="Forest AI" class="footer-logo">
+              <p>© 2025 Forest AI</p>
+            </div>
+            <div class="footer-links">
+              <a href="https://x.com/forest_ai_" target="_blank" aria-label="X"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/company/forest-protocols" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    
+    <script src="assets/js/main-simple.js"></script>
+    <script>
+      // Drag-to-scroll for value bars (only when content overflows)
+      (function() {
+        const bars = document.querySelectorAll('.value-bar-content');
+        
+        bars.forEach(bar => {
+          let isDown = false;
+          let startX;
+          let scrollLeft;
+          
+          // Check if content overflows and update cursor
+          function checkOverflow() {
+            const hasOverflow = bar.scrollWidth > bar.clientWidth;
+            bar.classList.toggle('no-overflow', !hasOverflow);
+          }
+          
+          // Initial check and on resize
+          checkOverflow();
+          window.addEventListener('resize', checkOverflow, { passive: true });
+          
+          // Mouse events
+          bar.addEventListener('mousedown', (e) => {
+            if (bar.scrollWidth <= bar.clientWidth) return; // No drag if no overflow
+            isDown = true;
+            bar.classList.add('dragging');
+            startX = e.pageX - bar.offsetLeft;
+            scrollLeft = bar.scrollLeft;
+          });
+          
+          bar.addEventListener('mouseleave', () => {
+            isDown = false;
+            bar.classList.remove('dragging');
+          });
+          
+          bar.addEventListener('mouseup', () => {
+            isDown = false;
+            bar.classList.remove('dragging');
+          });
+          
+          bar.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - bar.offsetLeft;
+            const walk = (x - startX) * 1.5; // Scroll speed multiplier
+            bar.scrollLeft = scrollLeft - walk;
+          });
+          
+          // Touch events for mobile
+          bar.addEventListener('touchstart', (e) => {
+            if (bar.scrollWidth <= bar.clientWidth) return;
+            isDown = true;
+            startX = e.touches[0].pageX - bar.offsetLeft;
+            scrollLeft = bar.scrollLeft;
+          }, { passive: true });
+          
+          bar.addEventListener('touchend', () => {
+            isDown = false;
+          });
+          
+          bar.addEventListener('touchmove', (e) => {
+            if (!isDown) return;
+            const x = e.touches[0].pageX - bar.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            bar.scrollLeft = scrollLeft - walk;
+          }, { passive: true });
+        });
+      })();
+    </script>
+  </body>
+</html>

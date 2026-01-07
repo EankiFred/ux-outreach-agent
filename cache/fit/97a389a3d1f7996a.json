@@ -1,0 +1,35 @@
+{
+  "company_name": "Linear",
+  "fit": {
+    "fit_score": 82,
+    "decision_summary": "Linear ist gut geeignet für einen Agentic Decision‑Support Prototyp: klare Produktdatenquellen (Issues, Cycles, Integrationen, GraphQL API), ein Produktteam‑Nutzerkreis mit echten Entscheidungsbedarfen (Triage, Priorisierung, Roadmaps) und eine Kultur, die bereits KI/Automatisierungen einsetzt. Risiken sind vor allem Zugriff auf Produktdaten und genaue Enterprise‑Bedingungen — beides klärbar vor Prototypstart.",
+    "why_good_fit": [
+      "Relevante, strukturierte Datenquellen vorhanden: Issue/Task‑History, Cycles, Projektzuweisungen plus Integrationen (GitHub, Figma) und öffentlicher GraphQL API.",
+      "Klare, wiederkehrende Entscheidungsprobleme (Triage, Assignee‑Auswahl, Priorisierung, Cycle‑Time‑Analysen) die sich gut als Decision‑Support formulieren lassen.",
+      "Unternehmensfokus auf Performance, Developer‑UX und vorhandene KI‑Agenten → höhere Akzeptanz für erklärbare Agenten‑Prototypen.",
+      "Remote, API‑orientiertes Produkt erleichtert schneller technischer Prototypzugang (Sandbox/Org‑Anbindung möglich).",
+      "Enterprise‑Compliance (SOC2/GDPR/HIPAA) reduziert regulatorisches Ablehnungsrisiko im Proof‑of‑Concept, wenn Anforderungen erfüllt werden."
+    ],
+    "why_not": [
+      "Unklare Details zu Enterprise‑Tarifen, Nutzungsgrenzen und SLA können Zugang zu notwendigen Daten/Orgs einschränken.",
+      "Wenn Kundendaten streng isoliert sind oder keine Sandbox verfügbar ist, erhöht das Setup‑Aufwand und Verzögerungen.",
+      "Bei stark heterogenen Workflows zwischen Kunden könnte ein generischer Prototyp geringere Wirksamkeit zeigen."
+    ],
+    "recommended_use_case": "2–4 Wochen Prototyp: 'Triage‑ & Assignee‑Suggestion mit Explainability' — Vorschläge für Issue‑Priorität und zuständigen Assignee basierend auf historischem Assignment, Similarity zu ähnlichen Issues und Recent Activity; jede Empfehlung kommt mit kurzen, maschinenlesbaren Erklärungen (z. B. \"Historische Zuweisung an X bei ähnlichen Labels; 75% Konfidenz\") sowie einer UI‑Option zum Akzeptieren, Anpassen oder Rückgängig‑Machen.",
+    "target_roles": [
+      "Product Manager (Lead PM)",
+      "Engineering Manager",
+      "Head of Product/Head of Product Ops"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Können wir API‑Zugriff auf eine Test‑Organization oder Beispiel‑Datensätze erhalten (GraphQL Tokens, ggf. Anonymisierte Issue‑History)?",
+      "Gibt es Enterprise‑Restriktionen für Prototypdaten (z. B. keine externe Verarbeitung, VPC‑only, besondere Datenschutzanforderungen)?",
+      "Welches konkrete Entscheidungsziel/KPI soll der Prototyp optimieren bzw. wie messen Sie Erfolg (z. B. Time‑to‑triage, First‑response, Assignment‑Accuracy)?",
+      "Gibt es bereits interne Priorisierungsregeln oder Heuristiken, die der Prototyp berücksichtigen muss (z. B. SLA‑Priorities, security‑tags)?",
+      "Wer sind die Stakeholder für Akzeptanztests und wer kann Probanden/Feedback‑Sessions in den 2–4 Wochen bereitstellen?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 82,\n  \"decision_summary\": \"Linear ist gut geeignet für einen Agentic Decision‑Support Prototyp: klare Produktdatenquellen (Issues, Cycles, Integrationen, GraphQL API), ein Produktteam‑Nutzerkreis mit echten Entscheidungsbedarfen (Triage, Priorisierung, Roadmaps) und eine Kultur, die bereits KI/Automatisierungen einsetzt. Risiken sind vor allem Zugriff auf Produktdaten und genaue Enterprise‑Bedingungen — beides klärbar vor Prototypstart.\",\n  \"why_good_fit\": [\n    \"Relevante, strukturierte Datenquellen vorhanden: Issue/Task‑History, Cycles, Projektzuweisungen plus Integrationen (GitHub, Figma) und öffentlicher GraphQL API.\",\n    \"Klare, wiederkehrende Entscheidungsprobleme (Triage, Assignee‑Auswahl, Priorisierung, Cycle‑Time‑Analysen) die sich gut als Decision‑Support formulieren lassen.\",\n    \"Unternehmensfokus auf Performance, Developer‑UX und vorhandene KI‑Agenten → höhere Akzeptanz für erklärbare Agenten‑Prototypen.\",\n    \"Remote, API‑orientiertes Produkt erleichtert schneller technischer Prototypzugang (Sandbox/Org‑Anbindung möglich).\",\n    \"Enterprise‑Compliance (SOC2/GDPR/HIPAA) reduziert regulatorisches Ablehnungsrisiko im Proof‑of‑Concept, wenn Anforderungen erfüllt werden.\"\n  ],\n  \"why_not\": [\n    \"Unklare Details zu Enterprise‑Tarifen, Nutzungsgrenzen und SLA können Zugang zu notwendigen Daten/Orgs einschränken.\",\n    \"Wenn Kundendaten streng isoliert sind oder keine Sandbox verfügbar ist, erhöht das Setup‑Aufwand und Verzögerungen.\",\n    \"Bei stark heterogenen Workflows zwischen Kunden könnte ein generischer Prototyp geringere Wirksamkeit zeigen.\"\n  ],\n  \"recommended_use_case\": \"2–4 Wochen Prototyp: 'Triage‑ & Assignee‑Suggestion mit Explainability' — Vorschläge für Issue‑Priorität und zuständigen Assignee basierend auf historischem Assignment, Similarity zu ähnlichen Issues und Recent Activity; jede Empfehlung kommt mit kurzen, maschinenlesbaren Erklärungen (z. B. \\\"Historische Zuweisung an X bei ähnlichen Labels; 75% Konfidenz\\\") sowie einer UI‑Option zum Akzeptieren, Anpassen oder Rückgängig‑Machen.\",\n  \"target_roles\": [\n    \"Product Manager (Lead PM)\",\n    \"Engineering Manager\",\n    \"Head of Product/Head of Product Ops\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Können wir API‑Zugriff auf eine Test‑Organization oder Beispiel‑Datensätze erhalten (GraphQL Tokens, ggf. Anonymisierte Issue‑History)?\",\n    \"Gibt es Enterprise‑Restriktionen für Prototypdaten (z. B. keine externe Verarbeitung, VPC‑only, besondere Datenschutzanforderungen)?\",\n    \"Welches konkrete Entscheidungsziel/KPI soll der Prototyp optimieren bzw. wie messen Sie Erfolg (z. B. Time‑to‑triage, First‑response, Assignment‑Accuracy)?\",\n    \"Gibt es bereits interne Priorisierungsregeln oder Heuristiken, die der Prototyp berücksichtigen muss (z. B. SLA‑Priorities, security‑tags)?\",\n    \"Wer sind die Stakeholder für Akzeptanztests und wer kann Probanden/Feedback‑Sessions in den 2–4 Wochen bereitstellen?\"\n  ]\n}",
+  "from_cache": false
+}

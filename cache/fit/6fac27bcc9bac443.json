@@ -1,0 +1,28 @@
+{
+  "company_name": "Figma",
+  "fit": {
+    "fit_score": 75,
+    "decision_summary": "Figma ist gut geeignet für einen Agentic Decision‑Support Prototyp, weil die Plattform viele cross‑funktionale Entscheidungsprozesse (Seat-/Plan‑Mix, AI‑Credit‑Nutzung, Designsystem‑Governance) vereint und über in‑app Flächen für kontextuelle Unterstützung verfügt. Einschränkungen bestehen bei fehlenden technischen Detailangaben (API-/Datenzugang, Tiefe der AI‑Features) und möglichen Enterprise‑Datenschutz-/Berechtigungsfragen, die vor Prototypstart geklärt werden müssen.",
+    "why_good_fit": [
+      "Hohe Entscheidungs‑Komplexität: mehrere Stakeholder (Designer, Entwickler, PMs, Admins) und variable Pläne/Seat‑Typen schaffen Bedarf für unterstützte Empfehlungen.",
+      "Konkrete, abgrenzbare Entscheidungsfälle (Plan/Seat‑Auswahl, AI‑Credit‑Forecast, Designsystem‑Library‑Governance) eignen sich gut für ein erklärbares Decision‑Support‑Agenten‑Design.",
+      "Produkt hat native Flächen für In‑App‑Hilfen (Admin UX, Dev Mode, FigJam), was die Einbettung eines Prototyps in realen Arbeitsfluss erleichtert.",
+      "Organisationelle Reife: gestaffelte kommerzielle Pläne und Enterprise‑Fokus deuten auf vorhandene Budgets und Entscheidungseigner (z. B. Design Ops / Org Admins).",
+      "Pilotierbarer Umfang: ein fokussierter Use‑Case (z. B. Seat/AI‑Credit‑Recommender) ist technisch und inhaltlich in 2–4 Wochen prototypisch darstellbar, sofern notwendige Daten zugänglich sind."
+    ],
+    "why_not": [
+      "Unklare technische Details/Datenschicht: Aus den vorliegenden Informationen ist nicht sicher, ob und welche Admin‑/Usage‑APIs für Seat‑ und AI‑Credit‑Daten verfügbar sind.",
+      "Fehlende Angaben zu Datenschutz, Berechtigungen und Unternehmens‑Policies für in‑App Agenten (Enterprise‑Risiken müssen geprüft werden).",
+      "Tiefe und genaue Funktionsweise mancher AI‑Features ist unklar; ohne diese Details kann ein Agent nur eingeschränkt realistische Empfehlungen generieren.",
+      "Basisinformationen fehlen (z. B. Gründungsjahr, Firmensitz) — dies schmälert nicht die Eignung, zeigt aber Lücken in der vorliegenden Due Diligence."
+    ],
+    "recommended_use_case": "Org‑Admin Decision Support: Ein erklärbarer Recommendation‑Agent, der auf Basis Team‑ und Nutzungsmetriken (Sitztypen, aktiv genutzte Features, AI‑Credit‑Verbrauch) mehrere Szenarien durchspielt und konkrete, priorisierte Handlungsoptionen vorschlägt (z. B. Seat‑Umschichtungen, Plan‑Upgrades, AI‑Credit‑Käufe) inklusive Kosten‑ und Nutzungsprognosen sowie Begründungen für jede Empfehlung.",
+    "target_roles": [
+      "Design Ops / Product Ops Manager",
+      "Org Admin / IT‑Manager",
+      "Head of Product / VP Product"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 75,\n  \"decision_summary\": \"Figma ist gut geeignet für einen Agentic Decision‑Support Prototyp, weil die Plattform viele cross‑funktionale Entscheidungsprozesse (Seat-/Plan‑Mix, AI‑Credit‑Nutzung, Designsystem‑Governance) vereint und über in‑app Flächen für kontextuelle Unterstützung verfügt. Einschränkungen bestehen bei fehlenden technischen Detailangaben (API-/Datenzugang, Tiefe der AI‑Features) und möglichen Enterprise‑Datenschutz-/Berechtigungsfragen, die vor Prototypstart geklärt werden müssen.\",\n  \"why_good_fit\": [\n    \"Hohe Entscheidungs‑Komplexität: mehrere Stakeholder (Designer, Entwickler, PMs, Admins) und variable Pläne/Seat‑Typen schaffen Bedarf für unterstützte Empfehlungen.\",\n    \"Konkrete, abgrenzbare Entscheidungsfälle (Plan/Seat‑Auswahl, AI‑Credit‑Forecast, Designsystem‑Library‑Governance) eignen sich gut für ein erklärbares Decision‑Support‑Agenten‑Design.\",\n    \"Produkt hat native Flächen für In‑App‑Hilfen (Admin UX, Dev Mode, FigJam), was die Einbettung eines Prototyps in realen Arbeitsfluss erleichtert.\",\n    \"Organisationelle Reife: gestaffelte kommerzielle Pläne und Enterprise‑Fokus deuten auf vorhandene Budgets und Entscheidungseigner (z. B. Design Ops / Org Admins).\",\n    \"Pilotierbarer Umfang: ein fokussierter Use‑Case (z. B. Seat/AI‑Credit‑Recommender) ist technisch und inhaltlich in 2–4 Wochen prototypisch darstellbar, sofern notwendige Daten zugänglich sind.\"\n  ],\n  \"why_not\": [\n    \"Unklare technische Details/Datenschicht: Aus den vorliegenden Informationen ist nicht sicher, ob und welche Admin‑/Usage‑APIs für Seat‑ und AI‑Credit‑Daten verfügbar sind.\",\n    \"Fehlende Angaben zu Datenschutz, Berechtigungen und Unternehmens‑Policies für in‑App Agenten (Enterprise‑Risiken müssen geprüft werden).\",\n    \"Tiefe und genaue Funktionsweise mancher AI‑Features ist unklar; ohne diese Details kann ein Agent nur eingeschränkt realistische Empfehlungen generieren.\",\n    \"Basisinformationen fehlen (z. B. Gründungsjahr, Firmensitz) — dies schmälert nicht die Eignung, zeigt aber Lücken in der vorliegenden Due Diligence.\"\n  ],\n  \"recommended_use_case\": \"Org‑Admin Decision Support: Ein erklärbarer Recommendation‑Agent, der auf Basis Team‑ und Nutzungsmetriken (Sitztypen, aktiv genutzte Features, AI‑Credit‑Verbrauch) mehrere Szenarien durchspielt und konkrete, priorisierte Handlungsoptionen vorschlägt (z. B. Seat‑Umschichtungen, Plan‑Upgrades, AI‑Credit‑Käufe) inklusive Kosten‑ und Nutzungsprognosen sowie Begründungen für jede Empfehlung.\",\n  \"target_roles\": [\n    \"Design Ops / Product Ops Manager\",\n    \"Org Admin / IT‑Manager\",\n    \"Head of Product / VP Product\"\n  ]\n}",
+  "from_cache": false
+}

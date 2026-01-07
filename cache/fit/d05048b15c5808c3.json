@@ -1,0 +1,43 @@
+{
+  "company_name": "DACHSER in Deutschland",
+  "fit": {
+    "fit_score": 78,
+    "decision_summary": "DACHSER ist gut geeignet für einen Agentic Decision‑Support Prototyp, speziell zur Entscheidungsunterstützung bei Sendungs‑/Exception‑Triage (z. B. Temperaturabweichungen, Verzögerungen). Die vorhandene IT‑Basis (ActiveReport, eigenes IT‑Netzwerk), multimodale Logistikprozesse und wiederkehrende Abwägungen zwischen Priorisierung, Eskalation und Kundenkommunikation ermöglichen in 2–4 Wochen einen schlanken, human‑in‑the‑loop Prototypen ohne massive Integrationen.",
+    "why_good_fit": [
+      "Wiederkehrende, nicht‑triviale Entscheidungen (Priorisierung/Eskalation von Sendungen, Maßnahmen bei Temperaturabweichungen, SLA‑Abwägungen) sind zentral im Tagesgeschäft.",
+      "Vorhandene Event‑Management‑Plattform (ActiveReport) und DACHSER‑IT lassen plausible Datenexporte/Signale erwarten (Tracking‑Events, Temperatursensoren, Statuslogs).",
+      "Multimodale Services und branchenspezifische Anforderungen (Food, Pharma) schaffen klaren Bedarf an erklärbaren Empfehlungen und nachvollziehbaren Entscheidungen.",
+      "Ein Minimalprototyp kann rule‑basiert + einfache Scoring‑Modelle arbeiten und mit CSV/Exportdaten oder einem Simulator starten — vermeidet tiefe Integrationen.",
+      "Human‑in‑the‑loop Ansatz passt zur Risiko‑Toleranz (Medium): Empfehlungen, Prioritäten und Impact‑Schätzungen statt automatische Aktionen."
+    ],
+    "why_not": [
+      "Unklare Details zu API‑Zugängen, Datenformaten und Datenverfügbarkeit (ActiveReport Export‑Fähigkeiten nicht spezifiziert).",
+      "Datenschutz, Kundendatenhoheit und branchenspezifische Regularien (Food/Pharma) können Zugriff und Nutzung der Daten einschränken.",
+      "Heterogene Kundenanforderungen und fehlende Standardisierung bei Prioritäten/SLA‑Regeln könnten Modellierung und Bewertung erschweren.",
+      "Wenn Live‑Integration in TMS/WMS/telematik nötig wird, sprengt das den 2–4 Wochen‑Rahmen."
+    ],
+    "recommended_use_case": "2–4 Wochen Prototyp: 'Exception Triage & Priorisierungs‑Dashboard' — Eingabe: ActiveReport/Export‑CSV mit Sendungs‑Events, Temperatursignalen, ETA‑Abweichungen; Output: priorisierte Liste von betroffenen Sendungen mit Severity‑Score, vorgeschlagenen Maßnahmen (z. B. Kunden informieren, Umladung, Hold), erklärbarer Begründung und geschätztem SLA‑/Umsatzrisiko. Umsetzung mit rule‑engine + leichtem ML‑Scoring, UI/Dashboard und Export für Operations‑Teams; keine automatische Durchführung von Maßnahmen.",
+    "target_roles": [
+      "Operations Manager (Regional/Hub)",
+      "Key Account Manager",
+      "Quality / Compliance Manager"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Können Sie Beispiel‑ oder historische ActiveReport‑Exportdateien (anonymisiert) bereitstellen? Welche Felder enthalten diese (Event‑Timestamp, Location, Temp, Status, shipment id, customer id, SLA info)?",
+      "Welche Schnittstellen/APIs sind vorhanden und wie schnell ist Zugriff möglich (CSV‑Export reicht für den Prototyp)?",
+      "Wie definiert DACHSER intern Prioritäten und Eskalationsregeln heute (z. B. Impact‑Kriterien, Schaden/Revenue‑Schwellen, SLAs)?",
+      "Wie viele Exceptions/Alerts treten typischerweise pro Tag/Woche auf (Skalierungsannahme für das Dashboard)?",
+      "Gibt es rechtliche/Compliance‑Beschränkungen für die Nutzung von Sendungs‑ und Sensordaten in Prototypen (z. B. Kundenfreigaben, Anonymisierungspflichten)?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 78,\n  \"decision_summary\": \"DACHSER ist gut geeignet für einen Agentic Decision‑Support Prototyp, speziell zur Entscheidungsunterstützung bei Sendungs‑/Exception‑Triage (z. B. Temperaturabweichungen, Verzögerungen). Die vorhandene IT‑Basis (ActiveReport, eigenes IT‑Netzwerk), multimodale Logistikprozesse und wiederkehrende Abwägungen zwischen Priorisierung, Eskalation und Kundenkommunikation ermöglichen in 2–4 Wochen einen schlanken, human‑in‑the‑loop Prototypen ohne massive Integrationen.\",\n  \"why_good_fit\": [\n    \"Wiederkehrende, nicht‑triviale Entscheidungen (Priorisierung/Eskalation von Sendungen, Maßnahmen bei Temperaturabweichungen, SLA‑Abwägungen) sind zentral im Tagesgeschäft.\",\n    \"Vorhandene Event‑Management‑Plattform (ActiveReport) und DACHSER‑IT lassen plausible Datenexporte/Signale erwarten (Tracking‑Events, Temperatursensoren, Statuslogs).\",\n    \"Multimodale Services und branchenspezifische Anforderungen (Food, Pharma) schaffen klaren Bedarf an erklärbaren Empfehlungen und nachvollziehbaren Entscheidungen.\",\n    \"Ein Minimalprototyp kann rule‑basiert + einfache Scoring‑Modelle arbeiten und mit CSV/Exportdaten oder einem Simulator starten — vermeidet tiefe Integrationen.\",\n    \"Human‑in‑the‑loop Ansatz passt zur Risiko‑Toleranz (Medium): Empfehlungen, Prioritäten und Impact‑Schätzungen statt automatische Aktionen.\"\n  ],\n  \"why_not\": [\n    \"Unklare Details zu API‑Zugängen, Datenformaten und Datenverfügbarkeit (ActiveReport Export‑Fähigkeiten nicht spezifiziert).\",\n    \"Datenschutz, Kundendatenhoheit und branchenspezifische Regularien (Food/Pharma) können Zugriff und Nutzung der Daten einschränken.\",\n    \"Heterogene Kundenanforderungen und fehlende Standardisierung bei Prioritäten/SLA‑Regeln könnten Modellierung und Bewertung erschweren.\",\n    \"Wenn Live‑Integration in TMS/WMS/telematik nötig wird, sprengt das den 2–4 Wochen‑Rahmen.\"\n  ],\n  \"recommended_use_case\": \"2–4 Wochen Prototyp: 'Exception Triage & Priorisierungs‑Dashboard' — Eingabe: ActiveReport/Export‑CSV mit Sendungs‑Events, Temperatursignalen, ETA‑Abweichungen; Output: priorisierte Liste von betroffenen Sendungen mit Severity‑Score, vorgeschlagenen Maßnahmen (z. B. Kunden informieren, Umladung, Hold), erklärbarer Begründung und geschätztem SLA‑/Umsatzrisiko. Umsetzung mit rule‑engine + leichtem ML‑Scoring, UI/Dashboard und Export für Operations‑Teams; keine automatische Durchführung von Maßnahmen.\",\n  \"target_roles\": [\n    \"Operations Manager (Regional/Hub)\",\n    \"Key Account Manager\",\n    \"Quality / Compliance Manager\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Können Sie Beispiel‑ oder historische ActiveReport‑Exportdateien (anonymisiert) bereitstellen? Welche Felder enthalten diese (Event‑Timestamp, Location, Temp, Status, shipment id, customer id, SLA info)?\",\n    \"Welche Schnittstellen/APIs sind vorhanden und wie schnell ist Zugriff möglich (CSV‑Export reicht für den Prototyp)?\",\n    \"Wie definiert DACHSER intern Prioritäten und Eskalationsregeln heute (z. B. Impact‑Kriterien, Schaden/Revenue‑Schwellen, SLAs)?\",\n    \"Wie viele Exceptions/Alerts treten typischerweise pro Tag/Woche auf (Skalierungsannahme für das Dashboard)?\",\n    \"Gibt es rechtliche/Compliance‑Beschränkungen für die Nutzung von Sendungs‑ und Sensordaten in Prototypen (z. B. Kundenfreigaben, Anonymisierungspflichten)?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Medium",
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard",
+    "exclude_local_services": true
+  }
+}

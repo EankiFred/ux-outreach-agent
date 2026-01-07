@@ -1,0 +1,36 @@
+{
+  "company_name": "Seba",
+  "fit": {
+    "fit_score": 75,
+    "decision_summary": "SEBA Hydrometrie ist grundsätzlich gut geeignet für einen Agentic Decision‑Support Prototyp, weil das Kerngeschäft sensorreiche Hardware und Serviceleistungen umfasst und Entscheidungen zu Wartung, Alarmbewertung und Einsatzpriorisierung datengetrieben sind. Vor dem Start sind aber essentielle Infos zu Datenzugang, Softwareplattformen und organisatorischer Verantwortung für Entscheidungen zu klären.",
+    "why_good_fit": [
+      "Produktportfolio liefert plausibel kontinuierliche, strukturierte Sensordaten (Wasserstand, Qualität, Fließgeschwindigkeit) als Grundlage für Entscheidungsunterstützung.",
+      "Kunden (Wasserbehörden, Katastrophenschutz, Wetterdienste) treffen häufig zeitkritische, stakeholderübergreifende Entscheidungen, die von guter Entscheidungs-Vorbereitung profitieren.",
+      "Firmenfokus auf Hardware + Services legt nahe, dass Operational- und Wartungsentscheidungen existieren, an denen ein Prototyp schnell Mehrwert zeigen kann.",
+      "Als mittelständisches Unternehmen in Wachstumsphase ist Agilität für einen 2–4 Wochen Prototypen wahrscheinlicher als bei trägen Großkonzernen.",
+      "Konkrete, begrenzte Use‑Cases (z. B. Wartungspriorisierung oder Alarmtriage) erlauben schnelle, greifbare Prototypen mit geringem Integrationsaufwand."
+    ],
+    "why_not": [
+      "Unklare Verfügbarkeit und Qualität der Telemetrie-, Service- und Historie-Daten (Zugriffsrechte, Sampling, Lücken).",
+      "Unbekannter Reifegrad der vorhandenen Software-/Cloud-Infrastruktur (API‑Zugänge, Datenmodell, Authentifizierung).",
+      "Mögliche Compliance- und Kundenanforderungen bei öffentlichen Auftraggebern (Datenschutz, Verlässlichkeit) könnten Umfang erhöhen.",
+      "Fehlende Informationen zur Unternehmensgröße und internen Kapazitäten für ein kooperatives Pilotprojekt."
+    ],
+    "recommended_use_case": "2–4 Wochen Prototyp: Wartungs‑ und Alarm‑Priorisierungs-Dashboard. Scope: Lade eine kleine Stichprobe historischer Telemetrie (Sensorlogs, batteriestatus, zuletzt erfolgte Einsätze), Servicehistorie und ggf. Wetterwarnungen ein; automatisch Erkennung einfacher Anomalien + Scoring (Ausfallwahrscheinlichkeit / Dringlichkeit) und eine Rangliste mit empfohlenen nächsten Schritten (z. B. 'Fernprüfung', 'Vor-Ort-Einsatz', 'Monitoren') inklusive Konfidenz. Präsentation als interaktives Mockup (CSV-/API‑Import) ohne sofortige Produktivintegration.",
+    "target_roles": [
+      "Leitung Service/Operations",
+      "Produktmanager IoT/Software",
+      "Leitung Vertrieb Behörden / Key Account Manager"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Gibt es bereits zentrale Telemetrie-/IoT‑Plattformen oder APIs (z. B. MQTT, REST) und können Beispiel‑Datensätze bereitgestellt werden?",
+      "Liegt eine historisierte Service‑/Wartungsdatenbank (Tickets, Einsätze, Ersatzteile, Ausfallgründe) vor und ist sie exportierbar?",
+      "Welche internen Rollen treffen operative Entscheidungen (Serviceleitung, regionale Techniker, Kundenkontakt) und wie soll der Entscheidungsprozess aussehen?",
+      "Welche rechtlichen/vertragsseitigen Einschränkungen bestehen beim Zugriff auf Gerätedaten oder bei der Verarbeitung von Kundendaten (Öffentliche Auftraggeber, SLAs)?",
+      "Welche Erwartungen bestehen an das Prototyp‑Format (PowerPoint/Mockup, interaktives Dashboard, Excel/CSV‑Report) und wer ist der interne Sponsor?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 75,\n  \"decision_summary\": \"SEBA Hydrometrie ist grundsätzlich gut geeignet für einen Agentic Decision‑Support Prototyp, weil das Kerngeschäft sensorreiche Hardware und Serviceleistungen umfasst und Entscheidungen zu Wartung, Alarmbewertung und Einsatzpriorisierung datengetrieben sind. Vor dem Start sind aber essentielle Infos zu Datenzugang, Softwareplattformen und organisatorischer Verantwortung für Entscheidungen zu klären.\",\n  \"why_good_fit\": [\n    \"Produktportfolio liefert plausibel kontinuierliche, strukturierte Sensordaten (Wasserstand, Qualität, Fließgeschwindigkeit) als Grundlage für Entscheidungsunterstützung.\",\n    \"Kunden (Wasserbehörden, Katastrophenschutz, Wetterdienste) treffen häufig zeitkritische, stakeholderübergreifende Entscheidungen, die von guter Entscheidungs-Vorbereitung profitieren.\",\n    \"Firmenfokus auf Hardware + Services legt nahe, dass Operational- und Wartungsentscheidungen existieren, an denen ein Prototyp schnell Mehrwert zeigen kann.\",\n    \"Als mittelständisches Unternehmen in Wachstumsphase ist Agilität für einen 2–4 Wochen Prototypen wahrscheinlicher als bei trägen Großkonzernen.\",\n    \"Konkrete, begrenzte Use‑Cases (z. B. Wartungspriorisierung oder Alarmtriage) erlauben schnelle, greifbare Prototypen mit geringem Integrationsaufwand.\"\n  ],\n  \"why_not\": [\n    \"Unklare Verfügbarkeit und Qualität der Telemetrie-, Service- und Historie-Daten (Zugriffsrechte, Sampling, Lücken).\",\n    \"Unbekannter Reifegrad der vorhandenen Software-/Cloud-Infrastruktur (API‑Zugänge, Datenmodell, Authentifizierung).\",\n    \"Mögliche Compliance- und Kundenanforderungen bei öffentlichen Auftraggebern (Datenschutz, Verlässlichkeit) könnten Umfang erhöhen.\",\n    \"Fehlende Informationen zur Unternehmensgröße und internen Kapazitäten für ein kooperatives Pilotprojekt.\"\n  ],\n  \"recommended_use_case\": \"2–4 Wochen Prototyp: Wartungs‑ und Alarm‑Priorisierungs-Dashboard. Scope: Lade eine kleine Stichprobe historischer Telemetrie (Sensorlogs, batteriestatus, zuletzt erfolgte Einsätze), Servicehistorie und ggf. Wetterwarnungen ein; automatisch Erkennung einfacher Anomalien + Scoring (Ausfallwahrscheinlichkeit / Dringlichkeit) und eine Rangliste mit empfohlenen nächsten Schritten (z. B. 'Fernprüfung', 'Vor-Ort-Einsatz', 'Monitoren') inklusive Konfidenz. Präsentation als interaktives Mockup (CSV-/API‑Import) ohne sofortige Produktivintegration.\",\n  \"target_roles\": [\n    \"Leitung Service/Operations\",\n    \"Produktmanager IoT/Software\",\n    \"Leitung Vertrieb Behörden / Key Account Manager\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Gibt es bereits zentrale Telemetrie-/IoT‑Plattformen oder APIs (z. B. MQTT, REST) und können Beispiel‑Datensätze bereitgestellt werden?\",\n    \"Liegt eine historisierte Service‑/Wartungsdatenbank (Tickets, Einsätze, Ersatzteile, Ausfallgründe) vor und ist sie exportierbar?\",\n    \"Welche internen Rollen treffen operative Entscheidungen (Serviceleitung, regionale Techniker, Kundenkontakt) und wie soll der Entscheidungsprozess aussehen?\",\n    \"Welche rechtlichen/vertragsseitigen Einschränkungen bestehen beim Zugriff auf Gerätedaten oder bei der Verarbeitung von Kundendaten (Öffentliche Auftraggeber, SLAs)?\",\n    \"Welche Erwartungen bestehen an das Prototyp‑Format (PowerPoint/Mockup, interaktives Dashboard, Excel/CSV‑Report) und wer ist der interne Sponsor?\"\n  ]\n}",
+  "from_cache": false
+}

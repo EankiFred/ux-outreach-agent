@@ -1,0 +1,27 @@
+{
+  "company_name": "Notion",
+  "fit": {
+    "fit_score": 70,
+    "decision_summary": "Notion ist grundsätzlich geeignet für einen Agentic Decision‑Support Prototyp: die Plattform fasst heterogene Team‑Informationen, hat eingebaute AI‑Funktionen und Enterprise‑Kunden mit Budget. Einschränkungen bestehen bei fehlenden Detailinfos zu Custom Agents, Datenweitergabe an Subprozessoren und Tarif‑Abgrenzungen, die Scope und Datenschutzrisiken für einen prototypischen Agenten beeinflussen können.",
+    "why_good_fit": [
+      "Plattform‑Fokus auf kombinierten Wissens‑, Projekt‑ und Meeting‑Daten — notwendige Inputs für Entscheidungsunterstützung sind bereits in Notion vorhanden.",
+      "Existierende AI‑Funktionen (AI Meeting Notes, Agents, AI Search) bieten Bausteine, mit denen ein Prototyp schneller zusammengebaut werden kann.",
+      "Notion bedient SMB bis Enterprise und hat Sicherheitszertifikate (SOC 2, ISO 27001), was Budget‑ und Compliance‑Hürden bei Pilotkunden reduziert.",
+      "Cross‑funktionale Nutzerbasis und Integrationen/API ermöglichen Zugriff auf Stakeholder‑relevante Datenquellen für fundierte Empfehlungen.",
+      "Plattform‑Usability und Templates/Marketplace bieten schnelle Wege für ein MVP‑Flow (Templates, gespeicherte Queries, sichtbare Actions)."
+    ],
+    "why_not": [
+      "Unklarer Status und Release‑Datum für \"Custom Agents\" — wenn maßgeschneiderte Agenten nötig sind, könnte das den Prototyp verzögern oder einschränken.",
+      "Keine detaillierten Angaben zur Weitergabe von Daten an AI‑Subprozessoren bzw. zur Aufbewahrung — erhöht Datenschutz‑/Compliance‑Risiko für Decision‑Support, das sensible Kontextdaten nutzt.",
+      "Feinere Tarif‑Abgrenzungen der AI‑Features sind unklar — Budget/Feature‑Zugang für Zielkunden lässt sich nicht zuverlässig planen."
+    ],
+    "recommended_use_case": "Meeting‑to‑Decision Assistant: Aggregiert AI Meeting Notes, relevante Notion‑Projektpages und Calendar/Inbox‑Kontext, erstellt priorisierte Entscheidsvorschläge (Optionen, empfohlene nächste Schritte, vorgeschlagene Owner) mit kurzer Begründung und Confidence‑Score; Prototyp als interaktives Panel in Notion, das Nutzer in 1–3 Meetings testen können.",
+    "target_roles": [
+      "Head of Product",
+      "Head of Operations / Program Management",
+      "Enterprise IT / Workspace Admin"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 70,\n  \"decision_summary\": \"Notion ist grundsätzlich geeignet für einen Agentic Decision‑Support Prototyp: die Plattform fasst heterogene Team‑Informationen, hat eingebaute AI‑Funktionen und Enterprise‑Kunden mit Budget. Einschränkungen bestehen bei fehlenden Detailinfos zu Custom Agents, Datenweitergabe an Subprozessoren und Tarif‑Abgrenzungen, die Scope und Datenschutzrisiken für einen prototypischen Agenten beeinflussen können.\",\n  \"why_good_fit\": [\n    \"Plattform‑Fokus auf kombinierten Wissens‑, Projekt‑ und Meeting‑Daten — notwendige Inputs für Entscheidungsunterstützung sind bereits in Notion vorhanden.\",\n    \"Existierende AI‑Funktionen (AI Meeting Notes, Agents, AI Search) bieten Bausteine, mit denen ein Prototyp schneller zusammengebaut werden kann.\",\n    \"Notion bedient SMB bis Enterprise und hat Sicherheitszertifikate (SOC 2, ISO 27001), was Budget‑ und Compliance‑Hürden bei Pilotkunden reduziert.\",\n    \"Cross‑funktionale Nutzerbasis und Integrationen/API ermöglichen Zugriff auf Stakeholder‑relevante Datenquellen für fundierte Empfehlungen.\",\n    \"Plattform‑Usability und Templates/Marketplace bieten schnelle Wege für ein MVP‑Flow (Templates, gespeicherte Queries, sichtbare Actions).\"\n  ],\n  \"why_not\": [\n    \"Unklarer Status und Release‑Datum für \\\"Custom Agents\\\" — wenn maßgeschneiderte Agenten nötig sind, könnte das den Prototyp verzögern oder einschränken.\",\n    \"Keine detaillierten Angaben zur Weitergabe von Daten an AI‑Subprozessoren bzw. zur Aufbewahrung — erhöht Datenschutz‑/Compliance‑Risiko für Decision‑Support, das sensible Kontextdaten nutzt.\",\n    \"Feinere Tarif‑Abgrenzungen der AI‑Features sind unklar — Budget/Feature‑Zugang für Zielkunden lässt sich nicht zuverlässig planen.\"\n  ],\n  \"recommended_use_case\": \"Meeting‑to‑Decision Assistant: Aggregiert AI Meeting Notes, relevante Notion‑Projektpages und Calendar/Inbox‑Kontext, erstellt priorisierte Entscheidsvorschläge (Optionen, empfohlene nächste Schritte, vorgeschlagene Owner) mit kurzer Begründung und Confidence‑Score; Prototyp als interaktives Panel in Notion, das Nutzer in 1–3 Meetings testen können.\",\n  \"target_roles\": [\n    \"Head of Product\",\n    \"Head of Operations / Program Management\",\n    \"Enterprise IT / Workspace Admin\"\n  ]\n}",
+  "from_cache": false
+}

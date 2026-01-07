@@ -1,0 +1,43 @@
+{
+  "company_name": "www.forest-ai.org",
+  "fit": {
+    "fit_score": 78,
+    "decision_summary": "Forest AI hat eine klar adressierbare Entscheidungsdomäne (Modell‑Validierung / Deployment‑Entscheidungen für Enterprise‑AI) mit relevanten Stakeholdern und messbaren Signalen. Ein schlanker Agentic Decision‑Support Prototyp (Vergleichs‑/Freigabe‑Entscheidung für Modelle) ist in 2–4 Wochen realistisch, wenn man mit Exportdaten/Demo‑Datasets arbeitet und keine tiefen Integrationen voraussetzt.",
+    "why_good_fit": [
+      "Wiederkehrende, nicht‑triviale Entscheidungen: Auswahl, Freigabe und Monitoring von Modellen in Hochrisiko‑Domänen (Insurance/Medical) erfordern Abwägungen zwischen Performance, Fairness und Robustheit.",
+      "Vorhandene Daten/Signale: PeerBench, versiegelte Evaluationsdatensätze und Validierungs‑SDK bieten plausible Inputs (Benchmark‑Scores, Fehlerverteilungen, Drift/Telemetrie).",
+      "Klare, umsetzbare Outputs: Benchmarkergebnisse lassen sich zu Ranglisten, Trade‑off‑Visualisierungen und Handlungsempfehlungen aggregieren – typisch für Decision‑Support, nicht Automatisierung.",
+      "Prototypierbarkeit ohne große Integrationen: Ein MVP kann mit CSV/JSON‑Exports aus PeerBench/SDK oder Demo‑Datasets realisiert werden, UI/Agent‑Logik fokussiert auf Entscheidungsaufbereitung.",
+      "Stakeholder‑Fit: Produkt/Zielgruppe (Enterprise AI/Compliance/Research) profitieren direkt von assistierten, erklärbaren Empfehlungen und Checklisten für Release‑Entscheidungen."
+    ],
+    "why_not": [
+      "Sensibler Datensatz‑Kontext (Medical/Insurance) kann regulatorische/Compliance‑Hürden erzeugen, die Pilotumfang beschränken.",
+      "Unklarheit über Verfügbarkeit und Zugriffsrechte auf die proprietären, versiegelten Datensätze für einen externen Prototypen.",
+      "Unklarheit zu Deployment‑Optionen (SaaS vs. On‑Prem) und Lizenzkosten — kann Integrationszeit und Budget erhöhen.",
+      "Wenn tiefere Integrationen in CI/CD oder Live‑Monitoring nötig sind, ist der 2–4‑Wochen‑Zeithorizont schnell überschritten."
+    ],
+    "recommended_use_case": "2–4‑Wochen‑Prototyp: 'Model Release Decision Assistant' — Web‑Dashboard + Agentic Assistant, das exportierte PeerBench/SDK‑Benchmark‑Ergebnisse einliest und für ein Set von Modellen eine priorisierte Entscheidungs‑Übersicht liefert (Rangliste nach konfigurierbaren Metriken, Visualisierung von Trade‑offs (Performance vs. Fairness vs. Robustheit), Unsicherheitskennzahlen, risikobasierte Empfehlung (Freigabe / weitere Tests) und eine menschlich‑prüfbare Checkliste mit next steps). Implementierung nutzt statische Exports oder Demo‑Datensätze, kein Live‑System‑Integrationsbedarf.",
+    "target_roles": [
+      "Head of ML / VP AI",
+      "Chief Data Officer",
+      "Head of Compliance / Risk"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Können wir Beispiel‑/Demo‑Benchmark‑Exporte (CSV/JSON) aus PeerBench oder dem SDK für einen Pilot erhalten?",
+      "Sind die proprietären, versiegelten Datensätze für einen Prototyp zugänglich (z. B. in anonymisierter/demospezifischer Form) und unter welchen Lizenzbedingungen?",
+      "Welche Deployment‑Optionen bieten Sie für Enterprise‑Piloten (SaaS, VPC, On‑Prem) und wie schnell lässt sich ein Pilotumgebung bereitstellen?",
+      "Gibt es API/automatische Export‑Endpoints, die historische Benchmarks, Drift‑Zeitreihen und Audit‑Logs liefern?",
+      "Welche datenschutz‑ oder regulatorischen Einschränkungen bestehen für die Nutzung von Medical/Insurance‑Evaluationsdaten in einem extern unterstützten Prototyp?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 78,\n  \"decision_summary\": \"Forest AI hat eine klar adressierbare Entscheidungsdomäne (Modell‑Validierung / Deployment‑Entscheidungen für Enterprise‑AI) mit relevanten Stakeholdern und messbaren Signalen. Ein schlanker Agentic Decision‑Support Prototyp (Vergleichs‑/Freigabe‑Entscheidung für Modelle) ist in 2–4 Wochen realistisch, wenn man mit Exportdaten/Demo‑Datasets arbeitet und keine tiefen Integrationen voraussetzt.\",\n  \"why_good_fit\": [\n    \"Wiederkehrende, nicht‑triviale Entscheidungen: Auswahl, Freigabe und Monitoring von Modellen in Hochrisiko‑Domänen (Insurance/Medical) erfordern Abwägungen zwischen Performance, Fairness und Robustheit.\",\n    \"Vorhandene Daten/Signale: PeerBench, versiegelte Evaluationsdatensätze und Validierungs‑SDK bieten plausible Inputs (Benchmark‑Scores, Fehlerverteilungen, Drift/Telemetrie).\",\n    \"Klare, umsetzbare Outputs: Benchmarkergebnisse lassen sich zu Ranglisten, Trade‑off‑Visualisierungen und Handlungsempfehlungen aggregieren – typisch für Decision‑Support, nicht Automatisierung.\",\n    \"Prototypierbarkeit ohne große Integrationen: Ein MVP kann mit CSV/JSON‑Exports aus PeerBench/SDK oder Demo‑Datasets realisiert werden, UI/Agent‑Logik fokussiert auf Entscheidungsaufbereitung.\",\n    \"Stakeholder‑Fit: Produkt/Zielgruppe (Enterprise AI/Compliance/Research) profitieren direkt von assistierten, erklärbaren Empfehlungen und Checklisten für Release‑Entscheidungen.\"\n  ],\n  \"why_not\": [\n    \"Sensibler Datensatz‑Kontext (Medical/Insurance) kann regulatorische/Compliance‑Hürden erzeugen, die Pilotumfang beschränken.\",\n    \"Unklarheit über Verfügbarkeit und Zugriffsrechte auf die proprietären, versiegelten Datensätze für einen externen Prototypen.\",\n    \"Unklarheit zu Deployment‑Optionen (SaaS vs. On‑Prem) und Lizenzkosten — kann Integrationszeit und Budget erhöhen.\",\n    \"Wenn tiefere Integrationen in CI/CD oder Live‑Monitoring nötig sind, ist der 2–4‑Wochen‑Zeithorizont schnell überschritten.\"\n  ],\n  \"recommended_use_case\": \"2–4‑Wochen‑Prototyp: 'Model Release Decision Assistant' — Web‑Dashboard + Agentic Assistant, das exportierte PeerBench/SDK‑Benchmark‑Ergebnisse einliest und für ein Set von Modellen eine priorisierte Entscheidungs‑Übersicht liefert (Rangliste nach konfigurierbaren Metriken, Visualisierung von Trade‑offs (Performance vs. Fairness vs. Robustheit), Unsicherheitskennzahlen, risikobasierte Empfehlung (Freigabe / weitere Tests) und eine menschlich‑prüfbare Checkliste mit next steps). Implementierung nutzt statische Exports oder Demo‑Datensätze, kein Live‑System‑Integrationsbedarf.\",\n  \"target_roles\": [\n    \"Head of ML / VP AI\",\n    \"Chief Data Officer\",\n    \"Head of Compliance / Risk\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Können wir Beispiel‑/Demo‑Benchmark‑Exporte (CSV/JSON) aus PeerBench oder dem SDK für einen Pilot erhalten?\",\n    \"Sind die proprietären, versiegelten Datensätze für einen Prototyp zugänglich (z. B. in anonymisierter/demospezifischer Form) und unter welchen Lizenzbedingungen?\",\n    \"Welche Deployment‑Optionen bieten Sie für Enterprise‑Piloten (SaaS, VPC, On‑Prem) und wie schnell lässt sich ein Pilotumgebung bereitstellen?\",\n    \"Gibt es API/automatische Export‑Endpoints, die historische Benchmarks, Drift‑Zeitreihen und Audit‑Logs liefern?\",\n    \"Welche datenschutz‑ oder regulatorischen Einschränkungen bestehen für die Nutzung von Medical/Insurance‑Evaluationsdaten in einem extern unterstützten Prototyp?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Medium",
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard",
+    "exclude_local_services": true
+  }
+}

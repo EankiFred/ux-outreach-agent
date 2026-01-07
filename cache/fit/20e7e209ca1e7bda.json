@@ -1,0 +1,42 @@
+{
+  "company_name": "Linear - Plan and build products",
+  "fit": {
+    "fit_score": 78,
+    "decision_summary": "Linear ist gut geeignet für einen Agentic Decision‑Support Prototyp, weil Produktentscheidungen (Priorisierung, Scope‑Festlegung, Triage) wiederkehrend, strukturiert und datengetrieben sind und die Plattform bereits Issues, Roadmaps, Cycles und Integrationen als Signale bereitstellt. Ein 4–6 Wochen‑Prototyp (Recommendation + Explainability, Human‑in‑the‑loop) ist realistisch, sofern Zugriff auf Workspace‑Daten und die API ohne langwierige Enterprise‑Prozesse möglich ist.",
+    "why_good_fit": [
+      "Kernprodukt ist die Entscheidungsdomäne (Backlog‑Priorisierung, Roadmap‑Abwägungen, Release‑Scope) mit klaren Stakeholdern und trade‑offs.",
+      "Vorhandene Datenquellen: Issues, Cycles, Roadmaps, Labels, Integrationen zu Git/Figma und Telemetrie/Analytics ermöglichen multiple Signale für Bewertungen.",
+      "API/SDK und vorhandene KI‑Agenten/Automatisierungen reduzieren Integrationsaufwand für einen Prototypen ohne vollständige Systemumstellung.",
+      "Realistische Prototyp‑Horizon: eine Empfehlungskomponente mit Erklärungen und konfigurierbaren Regeln lässt sich in 4–6 Wochen liefern.",
+      "Enterprise‑Kunden und strukturierte workflows (SLA/Security‑Anforderungen) erhöhen den Wert von erklärbarem, menschzentriertem Decision‑Support."
+    ],
+    "why_not": [
+      "Unklare Details zu API‑Zugriff, Data‑Retention und Enterprise‑Zugangsprozessen können Zeit kosten und das Projekt verzögern.",
+      "Für hochwertige Empfehlungen werden ggf. Quellsysteme (z. B. CI/CD, time tracking, customer analytics) benötigt — das erhöht Integrationsaufwand.",
+      "Vertrauen/Adoption erfordert starke Explainability und Auditierbarkeit; das kann den scope eines schnellen Prototyps ausweiten."
+    ],
+    "recommended_use_case": "Backlog‑Priorisierungs‑Advisor für den nächsten Cycle: ein Prototyp, der Issues (Prioritätssignale: Labels, Upvotes, Kunden‑Bugs, Bug/Feature‑Typ), historische Cycle‑Velocity, geschätzten Aufwand (Story‑Points/Hours), Abhängigkeiten und jüngste Git‑Aktivität zusammenführt und eine Rangliste mit: (1) vorgeschlagener Scope für den nächsten Cycle, (2) empfohlene Assignee/Team, (3) erwartete Impact‑/Risk‑Tradeoffs und (4) kurze, nachvollziehbare Erklärungen + Confidence. UI: Inline Recommendations in Linear (oder als Sidecar Web UI) mit Accept/Reject und Feedback‑Loop für Learning.",
+    "target_roles": [
+      "Produktmanager",
+      "Engineering Manager",
+      "Head of Product / PMO"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Können wir kurzfristig (staging/demo) API‑Zugriff zu einem repräsentativen Workspace mit realen Issues, Cycles, Labels und Commits bekommen? (inkl. Rate limits/SCOPES)",
+      "Welche zusätzlichen externe Signale sollen zwingend einbezogen werden (z. B. Customer‑tickets, CI‑Flaky‑tests, Zeitaufwand/Time‑tracking, Produkt‑Metriken) und sind diese über Integrationen verfügbar?",
+      "Gibt es Enterprise‑Beschränkungen (Datenhaltung, Pseudonymisierung, Audit/Logging, DSGVO/HIPAA‑Auflagen), die das Prototyp‑Design beeinflussen?",
+      "Welche KPIs definieren Erfolg des Prototyps (z. B. Zeitersparnis beim Planning, Agreement‑Rate zwischen PM und Eng, Reduktion von Re‑scope während Cycle)?",
+      "Welche Grade an Automation sind akzeptabel für den Prototyp (nur Empfehlungsmodus vs. teilautomatische Zuweisungen/Statusänderungen)?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 78,\n  \"decision_summary\": \"Linear ist gut geeignet für einen Agentic Decision‑Support Prototyp, weil Produktentscheidungen (Priorisierung, Scope‑Festlegung, Triage) wiederkehrend, strukturiert und datengetrieben sind und die Plattform bereits Issues, Roadmaps, Cycles und Integrationen als Signale bereitstellt. Ein 4–6 Wochen‑Prototyp (Recommendation + Explainability, Human‑in‑the‑loop) ist realistisch, sofern Zugriff auf Workspace‑Daten und die API ohne langwierige Enterprise‑Prozesse möglich ist.\",\n  \"why_good_fit\": [\n    \"Kernprodukt ist die Entscheidungsdomäne (Backlog‑Priorisierung, Roadmap‑Abwägungen, Release‑Scope) mit klaren Stakeholdern und trade‑offs.\",\n    \"Vorhandene Datenquellen: Issues, Cycles, Roadmaps, Labels, Integrationen zu Git/Figma und Telemetrie/Analytics ermöglichen multiple Signale für Bewertungen.\",\n    \"API/SDK und vorhandene KI‑Agenten/Automatisierungen reduzieren Integrationsaufwand für einen Prototypen ohne vollständige Systemumstellung.\",\n    \"Realistische Prototyp‑Horizon: eine Empfehlungskomponente mit Erklärungen und konfigurierbaren Regeln lässt sich in 4–6 Wochen liefern.\",\n    \"Enterprise‑Kunden und strukturierte workflows (SLA/Security‑Anforderungen) erhöhen den Wert von erklärbarem, menschzentriertem Decision‑Support.\"\n  ],\n  \"why_not\": [\n    \"Unklare Details zu API‑Zugriff, Data‑Retention und Enterprise‑Zugangsprozessen können Zeit kosten und das Projekt verzögern.\",\n    \"Für hochwertige Empfehlungen werden ggf. Quellsysteme (z. B. CI/CD, time tracking, customer analytics) benötigt — das erhöht Integrationsaufwand.\",\n    \"Vertrauen/Adoption erfordert starke Explainability und Auditierbarkeit; das kann den scope eines schnellen Prototyps ausweiten.\"\n  ],\n  \"recommended_use_case\": \"Backlog‑Priorisierungs‑Advisor für den nächsten Cycle: ein Prototyp, der Issues (Prioritätssignale: Labels, Upvotes, Kunden‑Bugs, Bug/Feature‑Typ), historische Cycle‑Velocity, geschätzten Aufwand (Story‑Points/Hours), Abhängigkeiten und jüngste Git‑Aktivität zusammenführt und eine Rangliste mit: (1) vorgeschlagener Scope für den nächsten Cycle, (2) empfohlene Assignee/Team, (3) erwartete Impact‑/Risk‑Tradeoffs und (4) kurze, nachvollziehbare Erklärungen + Confidence. UI: Inline Recommendations in Linear (oder als Sidecar Web UI) mit Accept/Reject und Feedback‑Loop für Learning.\",\n  \"target_roles\": [\n    \"Produktmanager\",\n    \"Engineering Manager\",\n    \"Head of Product / PMO\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Können wir kurzfristig (staging/demo) API‑Zugriff zu einem repräsentativen Workspace mit realen Issues, Cycles, Labels und Commits bekommen? (inkl. Rate limits/SCOPES)\",\n    \"Welche zusätzlichen externe Signale sollen zwingend einbezogen werden (z. B. Customer‑tickets, CI‑Flaky‑tests, Zeitaufwand/Time‑tracking, Produkt‑Metriken) und sind diese über Integrationen verfügbar?\",\n    \"Gibt es Enterprise‑Beschränkungen (Datenhaltung, Pseudonymisierung, Audit/Logging, DSGVO/HIPAA‑Auflagen), die das Prototyp‑Design beeinflussen?\",\n    \"Welche KPIs definieren Erfolg des Prototyps (z. B. Zeitersparnis beim Planning, Agreement‑Rate zwischen PM und Eng, Reduktion von Re‑scope während Cycle)?\",\n    \"Welche Grade an Automation sind akzeptabel für den Prototyp (nur Empfehlungsmodus vs. teilautomatische Zuweisungen/Statusänderungen)?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Medium",
+    "prototype_horizon": "4–6 weeks",
+    "detail_level": "Standard",
+    "exclude_local_services": false
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "company_name": "Notion",
+  "fit": {
+    "fit_score": 78,
+    "decision_summary": "Notion ist grundsätzlich gut geeignet für einen Agentic Decision‑Support‑Prototyp zur Produkt‑/Roadmap‑Priorisierung: die Plattform zentralisiert relevante Signale (Backlog, Meeting‑Notes, Projekte) und bietet API/Integrationen, so dass in 2–4 Wochen ein lesender, human‑in‑the‑loop Prototyp machbar ist. Wichtige Einschränkungen: Unklare Details zu AI‑Limits, Datenweitergabe an Subprozessoren und Verfügbarkeit spezifischer Metriken — daher strikt read‑only, eng begrenzter Scope empfehlen.",
+    "why_good_fit": [
+      "Zentrale Datenbasis: Notion hält typischerweise Backlogs, Projekt‑DBs, Meeting‑Notes und Roadmap‑Dokumente an einem Ort — das liefert die Signale für Priorisierungsentscheidungen.",
+      "API & Integrationen vorhanden: Ermöglichen schnellen, begrenzten Lesezugriff ohne tiefe Systemintegration (geeignet für schnellen Prototyp).",
+      "Existierende AI‑Funktionen/Agents reduzieren Hürden für ein AI‑gestütztes Frontend/Assistance‑Layer (nicht automatisierend, sondern erklärend).",
+      "Zielnutzer (Product/PM‑Teams) sind auf der Plattform vertreten — einfacher Zugang zu Pilotnutzern und Feedback‑Loops.",
+      "Enterprise‑Funktionen (Berechtigungen, Compliance) erlauben einen sicheren, read‑only Pilot bei mittlerer Risikotoleranz."
+    ],
+    "why_not": [
+      "Unklare Limits/Abrechnung der AI‑Nutzung und mögliche temporäre Reduktion von AI‑Zugriff können Prototyp‑Stabilität gefährden.",
+      "Unbekannte Details zur Weitergabe von Daten an Subprozessoren / Storage‑Fristen — Governance‑Risiken für sensible Produktdaten.",
+      "Wenn externe Metriken (Analytics, Fehlertracker) nötig sind, ist deren Verfügbarkeit/Integration in 2–4 Wochen fraglich.",
+      "Unklarheit über Verfügbarkeit und Zeitpunkt von \"Custom Agents\" kann bestimmte Integrationswege einschränken."
+    ],
+    "recommended_use_case": "Product Prioritization Advisor (Pilot für ein einzelnes Produktteam, 2–4 Wochen): Implementiere einen read‑only Notion‑Agent, der eine definierte Notion‑Backlog‑Datenbank + zugehörige Meeting‑Notes und OKR‑Seiten liest, Items nach einfachen, transparenten Kriterien (Impact, Aufwand, strategische Übereinstimmung, Abhängigkeiten, jüngstes Kundenfeedback) bewertet und eine priorisierte Top‑N‑Liste mit erklärbaren Begründungen und empfohlenen nächsten Schritten erzeugt. Keine automatischen Änderungen — Nutzer bestätigt Entscheidungen; minimaler UI‑Prototyp kann als Notion‑Page oder kleines Web‑Frontend geliefert werden. Erfolgsmessung: PM‑Bewertung der Nützlichkeit (qualitativ) und Übereinstimmung mit manueller Priorisierung für Top‑5 Items.",
+    "target_roles": [
+      "Product Manager",
+      "Head of Product",
+      "Product Operations / PMO Lead"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Können wir read‑only API‑Zugänge zu einer repräsentativen Notion‑Workspace/Backlog‑DB und Meeting‑Notes für einen Pilot erhalten (inkl. Feldschema z. B. Impact/Effort/Tags)?",
+      "Welche AI‑Features/Quoten gelten für den Ziel‑Account (Rate‑Limits, Kosten, Nutzungsbeschränkungen, temporäre Drosselungsregeln)?",
+      "Gibt es Einschränkungen bzgl. Weitergabe von Notion‑Inhalten an Dritt‑LLMs/Subprozessoren (Datenschutz/Vertragsanforderungen) für einen Prototyp?",
+      "Welche externen Metriken müssen zwingend einfließen (Product‑Analytics, Crash/bug‑Tracker, NPS) und sind diese innerhalb des Zeitrahmens erreichbar?",
+      "Welche konkreten Erfolgskriterien/KPIs für den Pilot sind gewünscht (z. B. PM Zufriedenheit, Übereinstimmung Top‑5, Zeitersparnis bei Entscheidungsmeetings)?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 78,\n  \"decision_summary\": \"Notion ist grundsätzlich gut geeignet für einen Agentic Decision‑Support‑Prototyp zur Produkt‑/Roadmap‑Priorisierung: die Plattform zentralisiert relevante Signale (Backlog, Meeting‑Notes, Projekte) und bietet API/Integrationen, so dass in 2–4 Wochen ein lesender, human‑in‑the‑loop Prototyp machbar ist. Wichtige Einschränkungen: Unklare Details zu AI‑Limits, Datenweitergabe an Subprozessoren und Verfügbarkeit spezifischer Metriken — daher strikt read‑only, eng begrenzter Scope empfehlen.\",\n  \"why_good_fit\": [\n    \"Zentrale Datenbasis: Notion hält typischerweise Backlogs, Projekt‑DBs, Meeting‑Notes und Roadmap‑Dokumente an einem Ort — das liefert die Signale für Priorisierungsentscheidungen.\",\n    \"API & Integrationen vorhanden: Ermöglichen schnellen, begrenzten Lesezugriff ohne tiefe Systemintegration (geeignet für schnellen Prototyp).\",\n    \"Existierende AI‑Funktionen/Agents reduzieren Hürden für ein AI‑gestütztes Frontend/Assistance‑Layer (nicht automatisierend, sondern erklärend).\",\n    \"Zielnutzer (Product/PM‑Teams) sind auf der Plattform vertreten — einfacher Zugang zu Pilotnutzern und Feedback‑Loops.\",\n    \"Enterprise‑Funktionen (Berechtigungen, Compliance) erlauben einen sicheren, read‑only Pilot bei mittlerer Risikotoleranz.\"\n  ],\n  \"why_not\": [\n    \"Unklare Limits/Abrechnung der AI‑Nutzung und mögliche temporäre Reduktion von AI‑Zugriff können Prototyp‑Stabilität gefährden.\",\n    \"Unbekannte Details zur Weitergabe von Daten an Subprozessoren / Storage‑Fristen — Governance‑Risiken für sensible Produktdaten.\",\n    \"Wenn externe Metriken (Analytics, Fehlertracker) nötig sind, ist deren Verfügbarkeit/Integration in 2–4 Wochen fraglich.\",\n    \"Unklarheit über Verfügbarkeit und Zeitpunkt von \\\"Custom Agents\\\" kann bestimmte Integrationswege einschränken.\"\n  ],\n  \"recommended_use_case\": \"Product Prioritization Advisor (Pilot für ein einzelnes Produktteam, 2–4 Wochen): Implementiere einen read‑only Notion‑Agent, der eine definierte Notion‑Backlog‑Datenbank + zugehörige Meeting‑Notes und OKR‑Seiten liest, Items nach einfachen, transparenten Kriterien (Impact, Aufwand, strategische Übereinstimmung, Abhängigkeiten, jüngstes Kundenfeedback) bewertet und eine priorisierte Top‑N‑Liste mit erklärbaren Begründungen und empfohlenen nächsten Schritten erzeugt. Keine automatischen Änderungen — Nutzer bestätigt Entscheidungen; minimaler UI‑Prototyp kann als Notion‑Page oder kleines Web‑Frontend geliefert werden. Erfolgsmessung: PM‑Bewertung der Nützlichkeit (qualitativ) und Übereinstimmung mit manueller Priorisierung für Top‑5 Items.\",\n  \"target_roles\": [\n    \"Product Manager\",\n    \"Head of Product\",\n    \"Product Operations / PMO Lead\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Können wir read‑only API‑Zugänge zu einer repräsentativen Notion‑Workspace/Backlog‑DB und Meeting‑Notes für einen Pilot erhalten (inkl. Feldschema z. B. Impact/Effort/Tags)?\",\n    \"Welche AI‑Features/Quoten gelten für den Ziel‑Account (Rate‑Limits, Kosten, Nutzungsbeschränkungen, temporäre Drosselungsregeln)?\",\n    \"Gibt es Einschränkungen bzgl. Weitergabe von Notion‑Inhalten an Dritt‑LLMs/Subprozessoren (Datenschutz/Vertragsanforderungen) für einen Prototyp?\",\n    \"Welche externen Metriken müssen zwingend einfließen (Product‑Analytics, Crash/bug‑Tracker, NPS) und sind diese innerhalb des Zeitrahmens erreichbar?\",\n    \"Welche konkreten Erfolgskriterien/KPIs für den Pilot sind gewünscht (z. B. PM Zufriedenheit, Übereinstimmung Top‑5, Zeitersparnis bei Entscheidungsmeetings)?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "Product / roadmap / prioritization decisions",
+    "risk_tolerance": "Medium",
+    "exclude_local_services": true,
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard"
+  }
+}

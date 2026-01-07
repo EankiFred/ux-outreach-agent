@@ -1,0 +1,27 @@
+{
+  "company_name": "Figma",
+  "fit": {
+    "fit_score": 0,
+    "decision_summary": "Auf Basis der vorliegenden Informationen sieht das Produktportfolio von Figma und die Vielzahl beteiligter Nutzergruppen grundsätzlich nach einem guten Anwendungsfall für einen Agentic Decision‑Support Prototypen aus (z. B. bei Plan-/Seat‑Auswahl und AI‑Credit‑Management). Eine belastbare Bewertung und Priorisierung kann jedoch nicht erfolgen, weil zentrale Infrastruktur‑ und Unternehmensdaten fehlen, die für Risiko‑ und Machbarkeitsprüfungen nötig sind.",
+    "why_good_fit": [
+      "Hohe Entscheidungs‑Komplexität: unterschiedliche Seat‑Typen, Staffelpläne und AI‑Guthaben erzeugen viele Parameter und Stakeholder‑Tradeoffs (Design, Dev, PM, Admin).",
+      "Cross‑funktionale Nutzerbasis (Designer, Entwickler, Produktteams) liefert klare, mehrfach vertretene Rollen, die von Entscheidungsunterstützung profitieren.",
+      "Konkrete UX‑Opportunities (Plan‑Vergleich, AI‑Credit‑Monitoring, Admin‑Flows) liefern fokussierte, realweltliche Entscheidungsprobleme, die sich prototypisch adressieren lassen.",
+      "Vorhandene Produktvarianten (z. B. Enterprise/Organization‑Pläne, Dev Mode, MCP) deuten auf existierende Ownership/Buyer‑Journeys, was Budget‑/Verantwortungsansätze wahrscheinlicher macht."
+    ],
+    "why_not": [
+      "Fehlende Angaben zur technischen Architektur (Cloud vs. On‑Prem) — entscheidend für Datenzugriff, Sicherheitsanforderungen und Prototyp‑Integrationsaufwand.",
+      "Firmensitz / Hauptniederlassung ist nicht angegeben — relevant für Compliance‑ und Stakeholder‑Routing im Prototyp.",
+      "Gründungsjahr / Unternehmensreife nicht spezifiziert — erschwert Einschätzung von Organisationsreife und Veränderungsfähigkeit.",
+      "Tiefe und exakte Funktionsweise der AI‑Features (außer AI‑Credit‑Angabe) sind unklar — nötig, um Umfang und Grenzen eines Decision‑Support Agents genau zu definieren."
+    ],
+    "recommended_use_case": "Prototyp: 'Plan & Seat Allocation Decision Assistant' — interaktiver Entscheidungsassistent, der aus wenigen Inputs (Anzahl Nutzer je Rolle, Nutzungsprofile, benötigte Features, erwartete AI‑Nutzung) mehrere Szenarien (Kosten, seat‑allocation, AI‑Credit‑Verbrauch, Feature‑Abdeckung) simuliert und als Vergleichsübersicht sowie Handlungsempfehlung (z. B. Starter vs. Professional vs. Organization; Collab/Dev/Full‑Seat Mix) bereitstellt.",
+    "target_roles": [
+      "Design Operations Lead (DesignOps)",
+      "Product/Platform Manager",
+      "Procurement / IT Platform Owner"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 0,\n  \"decision_summary\": \"Auf Basis der vorliegenden Informationen sieht das Produktportfolio von Figma und die Vielzahl beteiligter Nutzergruppen grundsätzlich nach einem guten Anwendungsfall für einen Agentic Decision‑Support Prototypen aus (z. B. bei Plan-/Seat‑Auswahl und AI‑Credit‑Management). Eine belastbare Bewertung und Priorisierung kann jedoch nicht erfolgen, weil zentrale Infrastruktur‑ und Unternehmensdaten fehlen, die für Risiko‑ und Machbarkeitsprüfungen nötig sind.\",\n  \"why_good_fit\": [\n    \"Hohe Entscheidungs‑Komplexität: unterschiedliche Seat‑Typen, Staffelpläne und AI‑Guthaben erzeugen viele Parameter und Stakeholder‑Tradeoffs (Design, Dev, PM, Admin).\",\n    \"Cross‑funktionale Nutzerbasis (Designer, Entwickler, Produktteams) liefert klare, mehrfach vertretene Rollen, die von Entscheidungsunterstützung profitieren.\",\n    \"Konkrete UX‑Opportunities (Plan‑Vergleich, AI‑Credit‑Monitoring, Admin‑Flows) liefern fokussierte, realweltliche Entscheidungsprobleme, die sich prototypisch adressieren lassen.\",\n    \"Vorhandene Produktvarianten (z. B. Enterprise/Organization‑Pläne, Dev Mode, MCP) deuten auf existierende Ownership/Buyer‑Journeys, was Budget‑/Verantwortungsansätze wahrscheinlicher macht.\"\n  ],\n  \"why_not\": [\n    \"Fehlende Angaben zur technischen Architektur (Cloud vs. On‑Prem) — entscheidend für Datenzugriff, Sicherheitsanforderungen und Prototyp‑Integrationsaufwand.\",\n    \"Firmensitz / Hauptniederlassung ist nicht angegeben — relevant für Compliance‑ und Stakeholder‑Routing im Prototyp.\",\n    \"Gründungsjahr / Unternehmensreife nicht spezifiziert — erschwert Einschätzung von Organisationsreife und Veränderungsfähigkeit.\",\n    \"Tiefe und exakte Funktionsweise der AI‑Features (außer AI‑Credit‑Angabe) sind unklar — nötig, um Umfang und Grenzen eines Decision‑Support Agents genau zu definieren.\"\n  ],\n  \"recommended_use_case\": \"Prototyp: 'Plan & Seat Allocation Decision Assistant' — interaktiver Entscheidungsassistent, der aus wenigen Inputs (Anzahl Nutzer je Rolle, Nutzungsprofile, benötigte Features, erwartete AI‑Nutzung) mehrere Szenarien (Kosten, seat‑allocation, AI‑Credit‑Verbrauch, Feature‑Abdeckung) simuliert und als Vergleichsübersicht sowie Handlungsempfehlung (z. B. Starter vs. Professional vs. Organization; Collab/Dev/Full‑Seat Mix) bereitstellt.\",\n  \"target_roles\": [\n    \"Design Operations Lead (DesignOps)\",\n    \"Product/Platform Manager\",\n    \"Procurement / IT Platform Owner\"\n  ]\n}",
+  "from_cache": false
+}

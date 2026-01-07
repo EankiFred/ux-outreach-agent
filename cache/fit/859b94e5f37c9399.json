@@ -1,0 +1,42 @@
+{
+  "company_name": "Figma",
+  "fit": {
+    "fit_score": 80,
+    "decision_summary": "Figma eignet sich gut für einen Agentic Decision‑Support Prototyp zur Unterstützung von Produkt-/Roadmap‑Priorisierungsentscheidungen: es gibt wiederkehrende, nicht‑triviale Entscheidungen (Feature-/Designsystem‑Priorisierung, Seat-/Plan‑Optimierung) und plausibel verfügbare Nutzungs‑ und Betriebs‑Signale. Ein schlanker Prototyp mit erklärbaren Empfehlungen und Human‑in‑the‑loop Steuerung ist in einem 2–4‑Wochen‑Horizont realistisch, solange einfache Datenexports oder begrenzte API‑Zugriffe genutzt werden.",
+    "why_good_fit": [
+      "Existenz klarer, wiederkehrender Entscheidungen im Produkt‑ und Designkontext (Priorisierung von Features, Libraries, Onboarding/Seat‑Entscheidungen).",
+      "Plattformtyp liefert plausibel relevante Signale (File‑/Collaboration‑Aktivität, Komponenten‑/Library‑Adoption, Plan‑/Seat‑Metriken, AI‑Credit‑Nutzung) zur Entscheidungsvorbereitung.",
+      "Decision‑Support (nicht Automation) reduziert Risiken – Vorschläge, Erklärungen und menschliche Freigabe passen zur Risk‑Tolerance 'Medium'.",
+      "Prototyp kann mit aggregierten/Exportdaten oder kleinen integrierten Endpunkten realisiert werden, ohne umfangreiche Systemänderungen.",
+      "Klare Stakeholdergruppen (Product Manager, Design Ops, Produktleitung) die direkt von priorisierten, erklärbaren Empfehlungen profitieren."
+    ],
+    "why_not": [
+      "Konkreter Zugang zu den relevanten Telemetrie‑APIs/Exports ist unklar — ohne Datenzugang wird der Prototyp stark eingeschränkt.",
+      "Enterprise‑Datenschutz/Compliance und Kundenverträge könnten den Zugriff auf notwendige Nutzungsdaten komplizieren.",
+      "Zur echten Priorisierungsqualität werden oft cross‑funktionale Daten (Support‑Tickets, Metriken aus Analytics/CRM) benötigt, deren Verfügbarkeit unbestätigt ist."
+    ],
+    "recommended_use_case": "2–4 Wochen Prototyp: 'Product Roadmap Prioritization Assistant' — aggregiert wenige, leicht erreichbare Signale (z. B. Datei‑Aktivität und Änderungsfrequenz pro Komponente, Library‑Adoptionrate, AI‑Credit‑/Seat‑Trends, plus kurzes Stakeholder‑Voting) und erzeugt eine erklärbare, gewichtbare Prioritätenliste (Impact vs. Effort + Unsicherheit). Lieferung: interaktives Mockup mit konfigurierbaren Gewichtungen, eine einfache Heuristik/Scoring‑Engine, Beispiel‑Datensatz (Exports oder synthetische Daten) und Erklärungs‑Templates für jede Empfehlung. Menschlicher Entscheidungsweg bleibt zentral (Review & Adjust).",
+    "target_roles": [
+      "Product Manager",
+      "Design/Design Ops Lead",
+      "Head of Product / Produktleitung"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Welche konkreten Datenzugänge/Exports oder APIs stehen zur Verfügung (File activity logs, library/component usage, admin billing/seat metrics, AI‑credit usage)?",
+      "Gibt es historische Entscheidungen + Outcome‑Labels (z. B. vergangene Features mit Metriken nach Launch) zur Validierung der Priorisierungen?",
+      "Welche Datenschutz-/Compliance‑Einschränkungen gelten für das Verwenden von Nutzungsdaten in einem Prototyp (anonymisiert/aggregiert möglich)?",
+      "Welche Stakeholder müssten in 2–4 Wochen für Interviews/Validierung verfügbar sein und wer kann sign off geben?",
+      "Soll sich der Prototyp nur auf Figma‑eigene Produktentscheidungen konzentrieren oder auch auf Kunden/Enterprise‑Management‑Entscheidungen (z. B. Seat/Plan‑Optimierung)?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 80,\n  \"decision_summary\": \"Figma eignet sich gut für einen Agentic Decision‑Support Prototyp zur Unterstützung von Produkt-/Roadmap‑Priorisierungsentscheidungen: es gibt wiederkehrende, nicht‑triviale Entscheidungen (Feature-/Designsystem‑Priorisierung, Seat-/Plan‑Optimierung) und plausibel verfügbare Nutzungs‑ und Betriebs‑Signale. Ein schlanker Prototyp mit erklärbaren Empfehlungen und Human‑in‑the‑loop Steuerung ist in einem 2–4‑Wochen‑Horizont realistisch, solange einfache Datenexports oder begrenzte API‑Zugriffe genutzt werden.\",\n  \"why_good_fit\": [\n    \"Existenz klarer, wiederkehrender Entscheidungen im Produkt‑ und Designkontext (Priorisierung von Features, Libraries, Onboarding/Seat‑Entscheidungen).\",\n    \"Plattformtyp liefert plausibel relevante Signale (File‑/Collaboration‑Aktivität, Komponenten‑/Library‑Adoption, Plan‑/Seat‑Metriken, AI‑Credit‑Nutzung) zur Entscheidungsvorbereitung.\",\n    \"Decision‑Support (nicht Automation) reduziert Risiken – Vorschläge, Erklärungen und menschliche Freigabe passen zur Risk‑Tolerance 'Medium'.\",\n    \"Prototyp kann mit aggregierten/Exportdaten oder kleinen integrierten Endpunkten realisiert werden, ohne umfangreiche Systemänderungen.\",\n    \"Klare Stakeholdergruppen (Product Manager, Design Ops, Produktleitung) die direkt von priorisierten, erklärbaren Empfehlungen profitieren.\"\n  ],\n  \"why_not\": [\n    \"Konkreter Zugang zu den relevanten Telemetrie‑APIs/Exports ist unklar — ohne Datenzugang wird der Prototyp stark eingeschränkt.\",\n    \"Enterprise‑Datenschutz/Compliance und Kundenverträge könnten den Zugriff auf notwendige Nutzungsdaten komplizieren.\",\n    \"Zur echten Priorisierungsqualität werden oft cross‑funktionale Daten (Support‑Tickets, Metriken aus Analytics/CRM) benötigt, deren Verfügbarkeit unbestätigt ist.\"\n  ],\n  \"recommended_use_case\": \"2–4 Wochen Prototyp: 'Product Roadmap Prioritization Assistant' — aggregiert wenige, leicht erreichbare Signale (z. B. Datei‑Aktivität und Änderungsfrequenz pro Komponente, Library‑Adoptionrate, AI‑Credit‑/Seat‑Trends, plus kurzes Stakeholder‑Voting) und erzeugt eine erklärbare, gewichtbare Prioritätenliste (Impact vs. Effort + Unsicherheit). Lieferung: interaktives Mockup mit konfigurierbaren Gewichtungen, eine einfache Heuristik/Scoring‑Engine, Beispiel‑Datensatz (Exports oder synthetische Daten) und Erklärungs‑Templates für jede Empfehlung. Menschlicher Entscheidungsweg bleibt zentral (Review & Adjust).\",\n  \"target_roles\": [\n    \"Product Manager\",\n    \"Design/Design Ops Lead\",\n    \"Head of Product / Produktleitung\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Welche konkreten Datenzugänge/Exports oder APIs stehen zur Verfügung (File activity logs, library/component usage, admin billing/seat metrics, AI‑credit usage)?\",\n    \"Gibt es historische Entscheidungen + Outcome‑Labels (z. B. vergangene Features mit Metriken nach Launch) zur Validierung der Priorisierungen?\",\n    \"Welche Datenschutz-/Compliance‑Einschränkungen gelten für das Verwenden von Nutzungsdaten in einem Prototyp (anonymisiert/aggregiert möglich)?\",\n    \"Welche Stakeholder müssten in 2–4 Wochen für Interviews/Validierung verfügbar sein und wer kann sign off geben?\",\n    \"Soll sich der Prototyp nur auf Figma‑eigene Produktentscheidungen konzentrieren oder auch auf Kunden/Enterprise‑Management‑Entscheidungen (z. B. Seat/Plan‑Optimierung)?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "Product / roadmap / prioritization decisions",
+    "risk_tolerance": "Medium",
+    "exclude_local_services": true,
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard"
+  }
+}

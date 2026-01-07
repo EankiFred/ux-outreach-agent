@@ -1,0 +1,42 @@
+{
+  "company_name": "SEBA - Hydrologische Messtechnik für Wasserstand und -qualität",
+  "fit": {
+    "fit_score": 78,
+    "decision_summary": "SEBA Hydrometrie ist grundsätzlich geeignet für einen Agentic Decision‑Support‑Prototyp: das Geschäft liefert strukturierte, wiederkehrende Messdaten und betreibt eine Datenplattform, beides gute Voraussetzungen für eine mensch‑in‑the‑loop Advisor‑App. Ein schlanker 2–4 Wochen‑Prototyp (ohne tiefe Systemintegration) ist realistisch, sofern SEBA bereitstellt: Beispiel‑Exports von Telemetrie, Sensor‑Metadaten und typischen Alarmlogs.",
+    "why_good_fit": [
+      "Wiederkehrende, nicht‑triviale Entscheidungen liegen vor (Maintenance‑Priorisierung, Alarm‑Triage, Datenqualitätsbewertungen) mit Stakeholdern und Abwägungen.",
+      "Vorhandensein einer Datenplattform (SEBA Hydrocenter) und telemetrische Messdaten macht brauchbare signals/inputs plausibel (time series, device metadata, alarm logs).",
+      "Decision‑Support (nicht Automatisierung) reduziert safety/regulatory Risiken und passt zur mittleren Risk‑Tolerance: Vorschläge bleiben menschlich überprüfbar.",
+      "Ein MVP kann ohne tiefes Integrationsprojekt realisiert werden, z. B. durch CSV/JSON‑Exports oder Demo‑datasets und eine leichte web‑UI mit erklärbaren Regeln/Scoring.",
+      "Klare Nutzergruppen (Betriebsleiter, Techniker, Hydrologen) ermöglichen fokussierte UX und schnell messbare Prototyp‑Ergebnisse (Prioritätenliste, Ursachenhypothesen, Checklisten)."
+    ],
+    "why_not": [
+      "Unklare Detailinfos zu APIs, Exportformaten, Datenqualität und tatsächlichem Zugriff auf Hydrocenter – könnte Integrations‑/Datenvorbereitungszeit verlängern.",
+      "Unbekannte Variabilität der Feldgeräte, Kalibrier‑Prozesse und bisherige Incident‑Labeling erschweren sofort anwendbare ML‑Modelle.",
+      "Mögliche regulatorische/Vertragliche Einschränkungen für externe Datenzugriff oder Datenschutz/Compliance sind nicht geklärt."
+    ],
+    "recommended_use_case": "Maintenance & anomaly triage advisor (2–4 Wochen): Ein interaktives Prototyp‑Dashboard, das stationäre/mobile Sensor‑Zeitreihen + Device‑Metadaten + Alarmlogs (via CSV/JSON‑Export) einliest, Sites nach inspection‑Priorität scoret, wahrscheinliche Ursachen für Abweichungen vorschlägt (regelbasierte + einfache Anomalie‑Detektion) und für jeden Eintrag eine kurze, erklärbare Checkliste für Techniker liefert. Keine automatische Steuerung, immer Human‑in‑the‑loop; deliverables: runnable prototype, sample data pipeline, prioritisation logic and explanation templates, handover notes for integration.",
+    "target_roles": [
+      "Operations / Network Manager",
+      "Field Service Lead",
+      "Product Manager Monitoring Solutions"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Können Sie Beispiel‑Datenexporte bereitstellen (time series CSV/JSON, Alarmlogs, Geräteliste mit Metadaten) und was sind typische Datengrößen/Frequenzen?",
+      "Gibt es bestehende Incident/maintenance‑Labels oder Nachweisdaten (z. B. vergangene Inspektionen, Fehlerursachen), die zur Validierung genutzt werden können?",
+      "Welche APIs oder Exportmechanismen bietet SEBA Hydrocenter heute (REST, FTP, CSV‑Export)? Gibt es Einschränkungen/SLAs für externe Prototyp‑Zugriffe?",
+      "Wie viele Messstationen/Devices sollen im Prototyp abgebildet (ein Pilot‑Cluster vs. gesamtes Netzwerk) und welche Prioritätskriterien sind geschäftlich relevant (Ausfallrisiko, Umweltrisiko, Kunden‑SLAs)?",
+      "Gibt es Compliance‑/Vertragsanforderungen oder datenschutzrechtliche Einschränkungen, die das Teilen von Rohdaten mit einem externen Prototyp‑Team verhindern würden?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 78,\n  \"decision_summary\": \"SEBA Hydrometrie ist grundsätzlich geeignet für einen Agentic Decision‑Support‑Prototyp: das Geschäft liefert strukturierte, wiederkehrende Messdaten und betreibt eine Datenplattform, beides gute Voraussetzungen für eine mensch‑in‑the‑loop Advisor‑App. Ein schlanker 2–4 Wochen‑Prototyp (ohne tiefe Systemintegration) ist realistisch, sofern SEBA bereitstellt: Beispiel‑Exports von Telemetrie, Sensor‑Metadaten und typischen Alarmlogs.\",\n  \"why_good_fit\": [\n    \"Wiederkehrende, nicht‑triviale Entscheidungen liegen vor (Maintenance‑Priorisierung, Alarm‑Triage, Datenqualitätsbewertungen) mit Stakeholdern und Abwägungen.\",\n    \"Vorhandensein einer Datenplattform (SEBA Hydrocenter) und telemetrische Messdaten macht brauchbare signals/inputs plausibel (time series, device metadata, alarm logs).\",\n    \"Decision‑Support (nicht Automatisierung) reduziert safety/regulatory Risiken und passt zur mittleren Risk‑Tolerance: Vorschläge bleiben menschlich überprüfbar.\",\n    \"Ein MVP kann ohne tiefes Integrationsprojekt realisiert werden, z. B. durch CSV/JSON‑Exports oder Demo‑datasets und eine leichte web‑UI mit erklärbaren Regeln/Scoring.\",\n    \"Klare Nutzergruppen (Betriebsleiter, Techniker, Hydrologen) ermöglichen fokussierte UX und schnell messbare Prototyp‑Ergebnisse (Prioritätenliste, Ursachenhypothesen, Checklisten).\"\n  ],\n  \"why_not\": [\n    \"Unklare Detailinfos zu APIs, Exportformaten, Datenqualität und tatsächlichem Zugriff auf Hydrocenter – könnte Integrations‑/Datenvorbereitungszeit verlängern.\",\n    \"Unbekannte Variabilität der Feldgeräte, Kalibrier‑Prozesse und bisherige Incident‑Labeling erschweren sofort anwendbare ML‑Modelle.\",\n    \"Mögliche regulatorische/Vertragliche Einschränkungen für externe Datenzugriff oder Datenschutz/Compliance sind nicht geklärt.\"\n  ],\n  \"recommended_use_case\": \"Maintenance & anomaly triage advisor (2–4 Wochen): Ein interaktives Prototyp‑Dashboard, das stationäre/mobile Sensor‑Zeitreihen + Device‑Metadaten + Alarmlogs (via CSV/JSON‑Export) einliest, Sites nach inspection‑Priorität scoret, wahrscheinliche Ursachen für Abweichungen vorschlägt (regelbasierte + einfache Anomalie‑Detektion) und für jeden Eintrag eine kurze, erklärbare Checkliste für Techniker liefert. Keine automatische Steuerung, immer Human‑in‑the‑loop; deliverables: runnable prototype, sample data pipeline, prioritisation logic and explanation templates, handover notes for integration.\",\n  \"target_roles\": [\n    \"Operations / Network Manager\",\n    \"Field Service Lead\",\n    \"Product Manager Monitoring Solutions\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Können Sie Beispiel‑Datenexporte bereitstellen (time series CSV/JSON, Alarmlogs, Geräteliste mit Metadaten) und was sind typische Datengrößen/Frequenzen?\",\n    \"Gibt es bestehende Incident/maintenance‑Labels oder Nachweisdaten (z. B. vergangene Inspektionen, Fehlerursachen), die zur Validierung genutzt werden können?\",\n    \"Welche APIs oder Exportmechanismen bietet SEBA Hydrocenter heute (REST, FTP, CSV‑Export)? Gibt es Einschränkungen/SLAs für externe Prototyp‑Zugriffe?\",\n    \"Wie viele Messstationen/Devices sollen im Prototyp abgebildet (ein Pilot‑Cluster vs. gesamtes Netzwerk) und welche Prioritätskriterien sind geschäftlich relevant (Ausfallrisiko, Umweltrisiko, Kunden‑SLAs)?\",\n    \"Gibt es Compliance‑/Vertragsanforderungen oder datenschutzrechtliche Einschränkungen, die das Teilen von Rohdaten mit einem externen Prototyp‑Team verhindern würden?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Medium",
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard",
+    "exclude_local_services": true
+  }
+}

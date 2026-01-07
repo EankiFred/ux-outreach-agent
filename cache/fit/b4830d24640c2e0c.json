@@ -1,0 +1,43 @@
+{
+  "company_name": "Seba",
+  "fit": {
+    "fit_score": 75,
+    "decision_summary": "SEBA Hydrometrie hat eine passende Domäne für einen Agentic Decision‑Support Prototyp zur Produkt-/Roadmap‑Priorisierung: es gibt wiederkehrende, anspruchsvolle Abwägungen (Funktionalität vs. Robustheit vs. Kosten) und plausibel verfügbare Signale (Felddaten, Service-/Fehlerlogs, Kundenanfragen). Mit einem schlanken, daten‑agnostischen Prototyp (CSV/Spreadsheets + evtl. öffentliche Hydrologie‑Daten) lässt sich in 2–4 Wochen ein erklärbarer Priorisierungsassistent liefern, solange kritische Integrations- oder Datenschutzhürden nicht auftreten.",
+    "why_good_fit": [
+      "Produkt- und Roadmap‑Entscheidungen sind bei Messgeräteherstellern regelmäßig komplex und geeignet für assistierte Priorisierung (Stakeholder, Unsicherheit, Trade-offs).",
+      "Vielseitige, plausibel vorhandene Signale: Sensor-/Felddaten, Servicefälle/Wartungslogs, Kundenanfragen/Downloads, Vertriebs‑/Leaddaten (können als CSV bereitgestellt werden).",
+      "Prototyp kann datenagnostisch gebaut werden (CSV/Excel‑Ingest, einfache Scoring‑Regeln, Shapley‑like Erklärungen) und braucht keine tiefe Systemintegration in 2–4 Wochen.",
+      "Klare Human‑in‑the‑loop‑Anforderungen: Empfehlungen mit Erklärungen, Sensitivitätsanalyse und Entscheidungsoptionen, nicht autonome Aktionen.",
+      "Risiko ist moderat handhabbar: keine direkte operative Automatisierung, Fokus auf Entscheidungsunterstützung reduziert rechtliche/sicherheitskritische Risiken."
+    ],
+    "why_not": [
+      "Unklarheiten über vorhandene Datenqualität, Umfang und Zugänglichkeit (z. B. CRM, Telemetrie, Service‑Logs) — das kann Prototypeffektivität stark beeinflussen.",
+      "Unbekannte Software‑/IT‑Landschaft und Integrationsbereitschaft; wenn Daten nur in proprietären Systemen liegen, kann das den Zeitplan gefährden.",
+      "Keine Informationen zur Unternehmensgröße und zu verfügbaren Ressourcen (Product Owner, Datenverantwortliche) für Zusammenarbeit während des Sprint‑Zeitraums.",
+      "Mögliche Datenschutz- oder Kundenvertragsbeschränkungen beim Teilen von Feld- oder Kundendaten sind nicht bewertet."
+    ],
+    "recommended_use_case": "2–4 Wochen Prototyp: \"Roadmap Priorization Assistant\". Inhalt: Ingest von 3–5 CSV‑Quellen (Kundenanfragen/Tickets, Service/Fehlerlogs, Sales/Pipeline, evtl. Downloadstatistiken), Berechnung von Impact‑ und Effort‑Scores (gewichtbar), automatische Prioritäten‑Rangliste mit erklärbaren Gründen (Feature‑Level), Sensitivitätsanalyse (Welche Inputs ändern Rangliste?), und ein interaktives Web‑Dashboard oder Jupyter Notebook plus ein kurzes Bedienungsblatt. Ziel: Entscheider erhalten eine begründete Top‑3 Prioritätenliste und können Gewichte/Prämissen anpassen (Human‑in‑the‑loop).",
+    "target_roles": [
+      "Product Manager / Head of Product",
+      "CTO / Head of R&D",
+      "Leiter Vertrieb / Business Development"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Welche spezifischen internen Datenquellen sind verfügbar und in welcher Form (CSV‑Export möglich)? Beispiele: CRM, Support‑Tickets, Feldfehlerlogs, Telemetrie‑Streams, Sales Pipeline.",
+      "Wie viele relevante Datensätze/Events sind vorhanden (z. B. Anzahl Tickets/Jahr, Anzahl installierter Geräte, Telemetrie‑Samples)?",
+      "Wer sind die Entscheidungsträger und wieviel Zeit können sie während des 2–4 Wochen Sprints für Workshops/Reviews bereitstellen?",
+      "Gibt es rechtliche oder NDA/Datenschutz‑Beschränkungen beim Teilen von Kunden- oder Felddaten mit einem Prototyp‑Team?",
+      "Welche konkreten Produkt-/Roadmap‑Fragestellungen sollen priorisiert werden (neue Features, Robustheitsverbesserungen, Marktregionen, Preismodelle)?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 75,\n  \"decision_summary\": \"SEBA Hydrometrie hat eine passende Domäne für einen Agentic Decision‑Support Prototyp zur Produkt-/Roadmap‑Priorisierung: es gibt wiederkehrende, anspruchsvolle Abwägungen (Funktionalität vs. Robustheit vs. Kosten) und plausibel verfügbare Signale (Felddaten, Service-/Fehlerlogs, Kundenanfragen). Mit einem schlanken, daten‑agnostischen Prototyp (CSV/Spreadsheets + evtl. öffentliche Hydrologie‑Daten) lässt sich in 2–4 Wochen ein erklärbarer Priorisierungsassistent liefern, solange kritische Integrations- oder Datenschutzhürden nicht auftreten.\",\n  \"why_good_fit\": [\n    \"Produkt- und Roadmap‑Entscheidungen sind bei Messgeräteherstellern regelmäßig komplex und geeignet für assistierte Priorisierung (Stakeholder, Unsicherheit, Trade-offs).\",\n    \"Vielseitige, plausibel vorhandene Signale: Sensor-/Felddaten, Servicefälle/Wartungslogs, Kundenanfragen/Downloads, Vertriebs‑/Leaddaten (können als CSV bereitgestellt werden).\",\n    \"Prototyp kann datenagnostisch gebaut werden (CSV/Excel‑Ingest, einfache Scoring‑Regeln, Shapley‑like Erklärungen) und braucht keine tiefe Systemintegration in 2–4 Wochen.\",\n    \"Klare Human‑in‑the‑loop‑Anforderungen: Empfehlungen mit Erklärungen, Sensitivitätsanalyse und Entscheidungsoptionen, nicht autonome Aktionen.\",\n    \"Risiko ist moderat handhabbar: keine direkte operative Automatisierung, Fokus auf Entscheidungsunterstützung reduziert rechtliche/sicherheitskritische Risiken.\"\n  ],\n  \"why_not\": [\n    \"Unklarheiten über vorhandene Datenqualität, Umfang und Zugänglichkeit (z. B. CRM, Telemetrie, Service‑Logs) — das kann Prototypeffektivität stark beeinflussen.\",\n    \"Unbekannte Software‑/IT‑Landschaft und Integrationsbereitschaft; wenn Daten nur in proprietären Systemen liegen, kann das den Zeitplan gefährden.\",\n    \"Keine Informationen zur Unternehmensgröße und zu verfügbaren Ressourcen (Product Owner, Datenverantwortliche) für Zusammenarbeit während des Sprint‑Zeitraums.\",\n    \"Mögliche Datenschutz- oder Kundenvertragsbeschränkungen beim Teilen von Feld- oder Kundendaten sind nicht bewertet.\"\n  ],\n  \"recommended_use_case\": \"2–4 Wochen Prototyp: \\\"Roadmap Priorization Assistant\\\". Inhalt: Ingest von 3–5 CSV‑Quellen (Kundenanfragen/Tickets, Service/Fehlerlogs, Sales/Pipeline, evtl. Downloadstatistiken), Berechnung von Impact‑ und Effort‑Scores (gewichtbar), automatische Prioritäten‑Rangliste mit erklärbaren Gründen (Feature‑Level), Sensitivitätsanalyse (Welche Inputs ändern Rangliste?), und ein interaktives Web‑Dashboard oder Jupyter Notebook plus ein kurzes Bedienungsblatt. Ziel: Entscheider erhalten eine begründete Top‑3 Prioritätenliste und können Gewichte/Prämissen anpassen (Human‑in‑the‑loop).\",\n  \"target_roles\": [\n    \"Product Manager / Head of Product\",\n    \"CTO / Head of R&D\",\n    \"Leiter Vertrieb / Business Development\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Welche spezifischen internen Datenquellen sind verfügbar und in welcher Form (CSV‑Export möglich)? Beispiele: CRM, Support‑Tickets, Feldfehlerlogs, Telemetrie‑Streams, Sales Pipeline.\",\n    \"Wie viele relevante Datensätze/Events sind vorhanden (z. B. Anzahl Tickets/Jahr, Anzahl installierter Geräte, Telemetrie‑Samples)?\",\n    \"Wer sind die Entscheidungsträger und wieviel Zeit können sie während des 2–4 Wochen Sprints für Workshops/Reviews bereitstellen?\",\n    \"Gibt es rechtliche oder NDA/Datenschutz‑Beschränkungen beim Teilen von Kunden- oder Felddaten mit einem Prototyp‑Team?\",\n    \"Welche konkreten Produkt-/Roadmap‑Fragestellungen sollen priorisiert werden (neue Features, Robustheitsverbesserungen, Marktregionen, Preismodelle)?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "Product / roadmap / prioritization decisions",
+    "risk_tolerance": "Medium",
+    "exclude_local_services": true,
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard"
+  }
+}

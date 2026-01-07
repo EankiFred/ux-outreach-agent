@@ -1,0 +1,27 @@
+{
+  "company_name": "NewFace",
+  "fit": {
+    "fit_score": 25,
+    "decision_summary": "Auf Grundlage der vorliegenden Informationen ist eine belastbare Einschätzung nicht möglich; die fehlenden Angaben zu Produkten, Kunden und Daten machen eine hohe Unsicherheit. Ohne Nachlieferung zentraler Informationen ist ein Agentic Decision‑Support Prototyp derzeit nur mit hohem Risiko umzusetzen.",
+    "why_good_fit": [
+      "Wachstums‑/Mittelstandsunternehmen haben häufig mehrstufige, cross‑funktionale Entscheidungen (Strategie, Produkt, Vertrieb), bei denen Decision‑Support Mehrwert schaffen kann.",
+      "Agentic Decision‑Support fokussiert auf Entscheidungsunterstützung statt Automatisierung — das passt gut zu Management‑Entscheidungen in Wachstumsphasen.",
+      "Bei vorhandenem Zugang zu relevanten Daten (Finanzen, KPIs, Kundenfeedback) lässt sich oft in 2–4 Wochen ein fokussierter Prototyp zur Priorisierung von Initiativen bauen.",
+      "Prototypen können niedrigschwellig gestaltet werden (Dashboard + LLM‑gestützte Szenarioanalyse), so dass Stakeholder schnell Feedback liefern und iteriert werden kann."
+    ],
+    "why_not": [
+      "Kritische Informationen fehlen: Produkte/Services, Zielgruppen, Geschäftsmodell und verfügbare Datenquellen sind nicht benannt.",
+      "Unklarheit über Ownership und Budget: ohne klaren internen Sponsor ist ein Prototyp schwer zu verankern.",
+      "Unbekannter Reifegrad: mögliches ‚Early Chaos‘ (keine stabilen Prozesse) oder ‚Enterprise‑Trägheit‘ können Implementierung blockieren.",
+      "Datenlage und Kultur sind unklar — hohes Risiko, dass notwendige Daten nicht zugänglich oder Entscheidungen nicht datengestützt akzeptiert werden."
+    ],
+    "recommended_use_case": "Fokussierter Prototyp zur Priorisierung von Wachstumsinitiativen: Aggregiere finanzielle KPIs, Kunden‑Feedback und operative Kennzahlen in einem Dashboard; ergänze eine LLM‑gestützte Szenario‑ und Trade‑off‑Analyse, die für 5–10 konkrete Initiativen eine Rangfolge und Entscheidungsargumente liefert.",
+    "target_roles": [
+      "Geschäftsführung / CEO",
+      "Head of Strategy / Chief of Staff",
+      "Head of Product / Produktmanagement"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 25,\n  \"decision_summary\": \"Auf Grundlage der vorliegenden Informationen ist eine belastbare Einschätzung nicht möglich; die fehlenden Angaben zu Produkten, Kunden und Daten machen eine hohe Unsicherheit. Ohne Nachlieferung zentraler Informationen ist ein Agentic Decision‑Support Prototyp derzeit nur mit hohem Risiko umzusetzen.\",\n  \"why_good_fit\": [\n    \"Wachstums‑/Mittelstandsunternehmen haben häufig mehrstufige, cross‑funktionale Entscheidungen (Strategie, Produkt, Vertrieb), bei denen Decision‑Support Mehrwert schaffen kann.\",\n    \"Agentic Decision‑Support fokussiert auf Entscheidungsunterstützung statt Automatisierung — das passt gut zu Management‑Entscheidungen in Wachstumsphasen.\",\n    \"Bei vorhandenem Zugang zu relevanten Daten (Finanzen, KPIs, Kundenfeedback) lässt sich oft in 2–4 Wochen ein fokussierter Prototyp zur Priorisierung von Initiativen bauen.\",\n    \"Prototypen können niedrigschwellig gestaltet werden (Dashboard + LLM‑gestützte Szenarioanalyse), so dass Stakeholder schnell Feedback liefern und iteriert werden kann.\"\n  ],\n  \"why_not\": [\n    \"Kritische Informationen fehlen: Produkte/Services, Zielgruppen, Geschäftsmodell und verfügbare Datenquellen sind nicht benannt.\",\n    \"Unklarheit über Ownership und Budget: ohne klaren internen Sponsor ist ein Prototyp schwer zu verankern.\",\n    \"Unbekannter Reifegrad: mögliches ‚Early Chaos‘ (keine stabilen Prozesse) oder ‚Enterprise‑Trägheit‘ können Implementierung blockieren.\",\n    \"Datenlage und Kultur sind unklar — hohes Risiko, dass notwendige Daten nicht zugänglich oder Entscheidungen nicht datengestützt akzeptiert werden.\"\n  ],\n  \"recommended_use_case\": \"Fokussierter Prototyp zur Priorisierung von Wachstumsinitiativen: Aggregiere finanzielle KPIs, Kunden‑Feedback und operative Kennzahlen in einem Dashboard; ergänze eine LLM‑gestützte Szenario‑ und Trade‑off‑Analyse, die für 5–10 konkrete Initiativen eine Rangfolge und Entscheidungsargumente liefert.\",\n  \"target_roles\": [\n    \"Geschäftsführung / CEO\",\n    \"Head of Strategy / Chief of Staff\",\n    \"Head of Product / Produktmanagement\"\n  ]\n}",
+  "from_cache": false
+}

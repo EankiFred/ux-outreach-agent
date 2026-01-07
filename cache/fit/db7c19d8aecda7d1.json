@@ -1,0 +1,28 @@
+{
+  "company_name": "Notion",
+  "fit": {
+    "fit_score": 0,
+    "decision_summary": "Notion hat viele Voraussetzungen (zentrale Datenhaltung, eingebaute AI‑Funktionen, Integrationen und Enterprise‑Security), die einen Agentic Decision‑Support Prototyp grundsätzlich attraktiv machen. Kritische Informationen sind jedoch unklar (Tarif‑Abgrenzungen der AI‑Features, Verfügbarkeit/Scope von Custom Agents, Datenweitergabe an Subprozessoren, Offline/Native‑Fähigkeiten), weshalb ohne diese Faktenlage kein positives Fit‑Rating möglich ist.",
+    "why_good_fit": [
+      "Konsolidierte Workspace‑Daten (Docs, KB, Projects, Mail, Calendar) bieten reichhaltige Inputs für Entscheidungs‑Zusammenfassungen.",
+      "Vorhandene AI‑Funktionen (Agents, AI Search, AI Meeting Notes) liefern Basisfunktionen für Entscheidungsunterstützung und schnelle Prototyp‑Iterationen.",
+      "API, Integrationen und Marketplace ermöglichen Anschluss externer Datenquellen und Erweiterungen für Domain‑Spezifikationen.",
+      "Enterprise‑Sicherheitszertifikate (SOC 2, ISO 27001) und Verwaltungsfunktionen reduzieren regulatorische Hürden für sensible Entscheidungsdaten.",
+      "Breite Zielgruppe (cross‑funktionale Teams, SMB bis Enterprise) schafft realistische Pilotgruppen mit hoher Entscheidungs‑Komplexität."
+    ],
+    "why_not": [
+      "Fehlende Angaben, welche AI‑Features in welchen Tarifstufen enthalten sind — ohne das keine Bewertung zu Budget/Scope möglich (INFORMATIONEN FEHLEN).",
+      "Unklarer Release‑Status und genaue Fähigkeiten von \"Custom Agents\" — zentral für Agentic Decision‑Support; Verfügbarkeit und Konfigurierbarkeit müssen bestätigt werden (INFORMATIONEN FEHLEN).",
+      "Keine präzisen Informationen zur Weitergabe von Daten an AI‑Subprozessoren, Aufbewahrung oder Logging — kritisch für Datenschutz/Risiko‑Bewertung des Prototyps (INFORMATIONEN FEHLEN).",
+      "Unklare native/offline Funktionalität und Details zur API‑Rate/Limitierung könnten Prototyp‑Integration und Performance einschränken (INFORMATIONEN FEHLEN)."
+    ],
+    "recommended_use_case": "Meeting→Decision Brief Agent: Ein Prototyp, der Meeting‑Notizen, verwandte Docs, Tasks und Kalenderdaten zusammenführt, kontextualisierte Entscheidungsoptionen mit Vor‑/Nachteilen und Risiken generiert sowie empfohlene nächste Schritte und benötigte Stakeholder identifiziert. Fokus auf Quellen‑Transparenz, erklärbare Begründungen und einfache Feedback‑Schleife für Nutzerkorrekturen.",
+    "target_roles": [
+      "Head of Product",
+      "Chief of Staff",
+      "Head of IT / Platform"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 0,\n  \"decision_summary\": \"Notion hat viele Voraussetzungen (zentrale Datenhaltung, eingebaute AI‑Funktionen, Integrationen und Enterprise‑Security), die einen Agentic Decision‑Support Prototyp grundsätzlich attraktiv machen. Kritische Informationen sind jedoch unklar (Tarif‑Abgrenzungen der AI‑Features, Verfügbarkeit/Scope von Custom Agents, Datenweitergabe an Subprozessoren, Offline/Native‑Fähigkeiten), weshalb ohne diese Faktenlage kein positives Fit‑Rating möglich ist.\",\n  \"why_good_fit\": [\n    \"Konsolidierte Workspace‑Daten (Docs, KB, Projects, Mail, Calendar) bieten reichhaltige Inputs für Entscheidungs‑Zusammenfassungen.\",\n    \"Vorhandene AI‑Funktionen (Agents, AI Search, AI Meeting Notes) liefern Basisfunktionen für Entscheidungsunterstützung und schnelle Prototyp‑Iterationen.\",\n    \"API, Integrationen und Marketplace ermöglichen Anschluss externer Datenquellen und Erweiterungen für Domain‑Spezifikationen.\",\n    \"Enterprise‑Sicherheitszertifikate (SOC 2, ISO 27001) und Verwaltungsfunktionen reduzieren regulatorische Hürden für sensible Entscheidungsdaten.\",\n    \"Breite Zielgruppe (cross‑funktionale Teams, SMB bis Enterprise) schafft realistische Pilotgruppen mit hoher Entscheidungs‑Komplexität.\"\n  ],\n  \"why_not\": [\n    \"Fehlende Angaben, welche AI‑Features in welchen Tarifstufen enthalten sind — ohne das keine Bewertung zu Budget/Scope möglich (INFORMATIONEN FEHLEN).\",\n    \"Unklarer Release‑Status und genaue Fähigkeiten von \\\"Custom Agents\\\" — zentral für Agentic Decision‑Support; Verfügbarkeit und Konfigurierbarkeit müssen bestätigt werden (INFORMATIONEN FEHLEN).\",\n    \"Keine präzisen Informationen zur Weitergabe von Daten an AI‑Subprozessoren, Aufbewahrung oder Logging — kritisch für Datenschutz/Risiko‑Bewertung des Prototyps (INFORMATIONEN FEHLEN).\",\n    \"Unklare native/offline Funktionalität und Details zur API‑Rate/Limitierung könnten Prototyp‑Integration und Performance einschränken (INFORMATIONEN FEHLEN).\"\n  ],\n  \"recommended_use_case\": \"Meeting→Decision Brief Agent: Ein Prototyp, der Meeting‑Notizen, verwandte Docs, Tasks und Kalenderdaten zusammenführt, kontextualisierte Entscheidungsoptionen mit Vor‑/Nachteilen und Risiken generiert sowie empfohlene nächste Schritte und benötigte Stakeholder identifiziert. Fokus auf Quellen‑Transparenz, erklärbare Begründungen und einfache Feedback‑Schleife für Nutzerkorrekturen.\",\n  \"target_roles\": [\n    \"Head of Product\",\n    \"Chief of Staff\",\n    \"Head of IT / Platform\"\n  ]\n}",
+  "from_cache": false
+}

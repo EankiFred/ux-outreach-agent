@@ -1,0 +1,28 @@
+{
+  "company_name": "Linear",
+  "fit": {
+    "fit_score": 0,
+    "decision_summary": "Linear scheint technisch und produktseitig ein guter Kandidat für einen Agentic Decision‑Support Prototyp zu sein (starke APIs, Integrationen, Fokus auf Produktteams). Allerdings fehlen zentrale kommerzielle und Service‑Informationen (Preisstruktur, Enterprise‑Grenzen, Kundenbasis, SLA/Onboarding), sodass eine belastbare Empfehlung für einen Pilot nicht möglich ist.",
+    "why_good_fit": [
+      "Produkt‑Fokus auf Produktteams, Roadmaps und Issue‑Tracking – klarer Anwendungsbereich für Entscheidungsunterstützung (Priorisierung, Triage, Roadmap‑Entscheidungen).",
+      "Vorhandene API/GraphQL und TypeScript‑SDK ermöglichen technischen Zugriff auf relevante Daten für einen Prototyp.",
+      "Bereits existierende KI‑Agenten/Automatisierungen zeigen organisatorische Bereitschaft, AI‑gestützte Workflows einzuführen.",
+      "Viele Integrationen (z. B. GitHub, Figma) erlauben das Zusammenführen von Signalen (Code, Design, Issues) für fundierte Empfehlungen.",
+      "Enterprise‑Fokus und Compliance (SOC 2, GDPR, HIPAA) reduzieren regulatorische Barrieren für datengetriebene Prototypen."
+    ],
+    "why_not": [
+      "Wesentliche kommerzielle Angaben fehlen: Preis‑ und Tarifstruktur ist unklar (wer zahlt, wer besitzt Budget?).",
+      "Unklare Enterprise‑Grenzen: Details zu Nutzerlimits, SSO/Identity, Admin‑Kontrollen und rechten Beschränkungen fehlen.",
+      "Keine Angaben zur Kundenbasis/Umsatz — unbekannt, ob ausreichend interne Sponsoren/Skalenschutz vorhanden sind.",
+      "Unklare Service‑Leistungen (Onboarding/Professional Services/SLA) – wichtig für Pilotverantwortung und Support während Prototyp‑Phase."
+    ],
+    "recommended_use_case": "Priorisierungs‑Assistent für Roadmaps und Backlog: Aggregiert Issue‑Daten, Cycle‑Time, P0‑Markers, Integrationssignale (GitHub/Feedback/Figma), schlägt priorisierte Top‑3 Initiatives vor mit erklärenden Gründen (historische Zuordnungen, ähnliches Kunden‑Impact, erwarteter Aufwand) und einer Confidence‑Angabe; UI zeigt Quelle jeder Empfehlung und ermöglicht Akzeptieren/Ändern/Rollback.",
+    "target_roles": [
+      "Head of Product",
+      "Product Ops / PMO Lead",
+      "Director of Engineering"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 0,\n  \"decision_summary\": \"Linear scheint technisch und produktseitig ein guter Kandidat für einen Agentic Decision‑Support Prototyp zu sein (starke APIs, Integrationen, Fokus auf Produktteams). Allerdings fehlen zentrale kommerzielle und Service‑Informationen (Preisstruktur, Enterprise‑Grenzen, Kundenbasis, SLA/Onboarding), sodass eine belastbare Empfehlung für einen Pilot nicht möglich ist.\",\n  \"why_good_fit\": [\n    \"Produkt‑Fokus auf Produktteams, Roadmaps und Issue‑Tracking – klarer Anwendungsbereich für Entscheidungsunterstützung (Priorisierung, Triage, Roadmap‑Entscheidungen).\",\n    \"Vorhandene API/GraphQL und TypeScript‑SDK ermöglichen technischen Zugriff auf relevante Daten für einen Prototyp.\",\n    \"Bereits existierende KI‑Agenten/Automatisierungen zeigen organisatorische Bereitschaft, AI‑gestützte Workflows einzuführen.\",\n    \"Viele Integrationen (z. B. GitHub, Figma) erlauben das Zusammenführen von Signalen (Code, Design, Issues) für fundierte Empfehlungen.\",\n    \"Enterprise‑Fokus und Compliance (SOC 2, GDPR, HIPAA) reduzieren regulatorische Barrieren für datengetriebene Prototypen.\"\n  ],\n  \"why_not\": [\n    \"Wesentliche kommerzielle Angaben fehlen: Preis‑ und Tarifstruktur ist unklar (wer zahlt, wer besitzt Budget?).\",\n    \"Unklare Enterprise‑Grenzen: Details zu Nutzerlimits, SSO/Identity, Admin‑Kontrollen und rechten Beschränkungen fehlen.\",\n    \"Keine Angaben zur Kundenbasis/Umsatz — unbekannt, ob ausreichend interne Sponsoren/Skalenschutz vorhanden sind.\",\n    \"Unklare Service‑Leistungen (Onboarding/Professional Services/SLA) – wichtig für Pilotverantwortung und Support während Prototyp‑Phase.\"\n  ],\n  \"recommended_use_case\": \"Priorisierungs‑Assistent für Roadmaps und Backlog: Aggregiert Issue‑Daten, Cycle‑Time, P0‑Markers, Integrationssignale (GitHub/Feedback/Figma), schlägt priorisierte Top‑3 Initiatives vor mit erklärenden Gründen (historische Zuordnungen, ähnliches Kunden‑Impact, erwarteter Aufwand) und einer Confidence‑Angabe; UI zeigt Quelle jeder Empfehlung und ermöglicht Akzeptieren/Ändern/Rollback.\",\n  \"target_roles\": [\n    \"Head of Product\",\n    \"Product Ops / PMO Lead\",\n    \"Director of Engineering\"\n  ]\n}",
+  "from_cache": false
+}

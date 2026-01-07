@@ -1,0 +1,42 @@
+{
+  "company_name": "Efficient and creative, with integrity - a global company ... - DACHSER",
+  "fit": {
+    "fit_score": 78,
+    "decision_summary": "DACHSER verfügt über eine klare, datenreiche Logistikdomäne mit wiederkehrenden, risikobehafteten Entscheidungen (z. B. Exception‑Handling, Konsolidierung, Modal‑Choice), die sich gut für einen agentic Decision‑Support Prototypen eignet. Ein schlanker, erklärbarer Prototyp für operative Entscheidungsunterstützung (z. B. Priorisierung von Temperaturexceptionen oder multimodale Routenauswahl) ist innerhalb von 4–6 Wochen realistisch, wenn Zugriff auf Standard‑Systemexports (TMS/WMS/Telematik) möglich ist.",
+    "why_good_fit": [
+      "Wiederkehrende, nicht‑triviale Entscheidungen sind offensichtlich vorhanden (z. B. Priorisierung von Störungen, Mode‑Tradeoffs, Konsolidierungsentscheidungen).",
+      "Hohe Wahrscheinlichkeit für relevante, strukturierte Datenquellen (TMS, WMS, Tracking & Tracing, Telematik, KPI‑Reports) zur Signalgewinnung.",
+      "Control‑Tower/operatives Netzwerk als bestehender organisatorischer Hebel — gute Chance auf konkrete Stakeholder und schnelle Feedback‑Zyklen.",
+      "Decision‑Support (nicht Automatisierung) passt zur Bedarfslage: Erklärbare Empfehlungen und Human‑in‑the‑loop Workflows sind operativ sinnvoll.",
+      "Prototyp mit CSV/API‑Ingest, Regelbasis + leichtgewichtiger ML/Heuristik und UI kann ohne tiefe Integrationen umgesetzt werden."
+    ],
+    "why_not": [
+      "Unklarheit über Verfügbarkeit/Zugriff auf live APIs oder historische Datensätze und deren Qualität kann Umsetzung verzögern.",
+      "Fehlende Details zu Preis‑/SLA‑Strukturen und regionalen Prozessunterschieden erschweren präzise Trade‑off‑Modelle.",
+      "Echtzeit‑Integration (z. B. Telemetrie‑Streams) könnte außerhalb des 4–6 Wochen‑Rahmens liegen, wenn keine einfache Exportoption existiert."
+    ],
+    "recommended_use_case": "4–6 Wochen Prototyp: \"Exception Triage Assistant\" für Food/temperature‑sensitive Shipments. Scope: Ingest von historischen Vorfällen + aktuellen Telematik‑/SLA‑Feeds per CSV oder vorhandener API; regelbasierte + leichtgewichtige ML‑Logik zur Priorisierung offener Ausnahmen (Risikowertung nach Produkt, Abweichungsgröße, Transitphase, Kunden‑SLA, verfügbare Recovery‑Optionen). Output: Priorisierte Aktionsliste mit erklärbaren Gründen (Feature‑Contributions), empfohlene nächste Schritte (z. B. Umschichtung, Remediation, Kunde informieren), geschätzte Auswirkungen auf SLA/CO2/Kosten und einfache UI zum Review & Entscheidung durch Dispatcher. Minimale Integrationen (Dateiuploads + optionale Webhook/CSV‑Export) ermöglichen schnellen Start.",
+    "target_roles": [
+      "Control Tower / Operations Manager",
+      "Head of Food Logistics / Temperature‑Controlled Operations",
+      "Regional Operations Director"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Können Sie Beispiel‑Exports/Schema (CSV/JSON) aus TMS, WMS und Telematik für Temperaturexceptionen und Stammdaten bereitstellen?",
+      "Wer sind die konkreten Entscheidungsinhaber / Stakeholder im operativen Prozess und wie sehen aktuelle SOPs/ESKALATIONEN für Exceptions aus?",
+      "Gibt es bestehende APIs oder automatisierte Exporte (vs. nur manueller CSV‑Export)?",
+      "Haben Sie historische Labels/Outcomes für vergangene Ausnahmen (z. B. getroffene Aktion, Kosten, SLA‑Verletzung), um Modell‑Evaluation zu ermöglichen?",
+      "Welche Akzeptanzkriterien / KPIs sollen erfüllt werden (z. B. Reduktion Reaktionszeit, Genauigkeit Priorisierung, Nutzerzufriedenheit) und welche Sicherheits/Privacy‑Constraints gelten?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 78,\n  \"decision_summary\": \"DACHSER verfügt über eine klare, datenreiche Logistikdomäne mit wiederkehrenden, risikobehafteten Entscheidungen (z. B. Exception‑Handling, Konsolidierung, Modal‑Choice), die sich gut für einen agentic Decision‑Support Prototypen eignet. Ein schlanker, erklärbarer Prototyp für operative Entscheidungsunterstützung (z. B. Priorisierung von Temperaturexceptionen oder multimodale Routenauswahl) ist innerhalb von 4–6 Wochen realistisch, wenn Zugriff auf Standard‑Systemexports (TMS/WMS/Telematik) möglich ist.\",\n  \"why_good_fit\": [\n    \"Wiederkehrende, nicht‑triviale Entscheidungen sind offensichtlich vorhanden (z. B. Priorisierung von Störungen, Mode‑Tradeoffs, Konsolidierungsentscheidungen).\",\n    \"Hohe Wahrscheinlichkeit für relevante, strukturierte Datenquellen (TMS, WMS, Tracking & Tracing, Telematik, KPI‑Reports) zur Signalgewinnung.\",\n    \"Control‑Tower/operatives Netzwerk als bestehender organisatorischer Hebel — gute Chance auf konkrete Stakeholder und schnelle Feedback‑Zyklen.\",\n    \"Decision‑Support (nicht Automatisierung) passt zur Bedarfslage: Erklärbare Empfehlungen und Human‑in‑the‑loop Workflows sind operativ sinnvoll.\",\n    \"Prototyp mit CSV/API‑Ingest, Regelbasis + leichtgewichtiger ML/Heuristik und UI kann ohne tiefe Integrationen umgesetzt werden.\"\n  ],\n  \"why_not\": [\n    \"Unklarheit über Verfügbarkeit/Zugriff auf live APIs oder historische Datensätze und deren Qualität kann Umsetzung verzögern.\",\n    \"Fehlende Details zu Preis‑/SLA‑Strukturen und regionalen Prozessunterschieden erschweren präzise Trade‑off‑Modelle.\",\n    \"Echtzeit‑Integration (z. B. Telemetrie‑Streams) könnte außerhalb des 4–6 Wochen‑Rahmens liegen, wenn keine einfache Exportoption existiert.\"\n  ],\n  \"recommended_use_case\": \"4–6 Wochen Prototyp: \\\"Exception Triage Assistant\\\" für Food/temperature‑sensitive Shipments. Scope: Ingest von historischen Vorfällen + aktuellen Telematik‑/SLA‑Feeds per CSV oder vorhandener API; regelbasierte + leichtgewichtige ML‑Logik zur Priorisierung offener Ausnahmen (Risikowertung nach Produkt, Abweichungsgröße, Transitphase, Kunden‑SLA, verfügbare Recovery‑Optionen). Output: Priorisierte Aktionsliste mit erklärbaren Gründen (Feature‑Contributions), empfohlene nächste Schritte (z. B. Umschichtung, Remediation, Kunde informieren), geschätzte Auswirkungen auf SLA/CO2/Kosten und einfache UI zum Review & Entscheidung durch Dispatcher. Minimale Integrationen (Dateiuploads + optionale Webhook/CSV‑Export) ermöglichen schnellen Start.\",\n  \"target_roles\": [\n    \"Control Tower / Operations Manager\",\n    \"Head of Food Logistics / Temperature‑Controlled Operations\",\n    \"Regional Operations Director\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Können Sie Beispiel‑Exports/Schema (CSV/JSON) aus TMS, WMS und Telematik für Temperaturexceptionen und Stammdaten bereitstellen?\",\n    \"Wer sind die konkreten Entscheidungsinhaber / Stakeholder im operativen Prozess und wie sehen aktuelle SOPs/ESKALATIONEN für Exceptions aus?\",\n    \"Gibt es bestehende APIs oder automatisierte Exporte (vs. nur manueller CSV‑Export)?\",\n    \"Haben Sie historische Labels/Outcomes für vergangene Ausnahmen (z. B. getroffene Aktion, Kosten, SLA‑Verletzung), um Modell‑Evaluation zu ermöglichen?\",\n    \"Welche Akzeptanzkriterien / KPIs sollen erfüllt werden (z. B. Reduktion Reaktionszeit, Genauigkeit Priorisierung, Nutzerzufriedenheit) und welche Sicherheits/Privacy‑Constraints gelten?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Medium",
+    "prototype_horizon": "4–6 weeks",
+    "detail_level": "Standard",
+    "exclude_local_services": true
+  }
+}

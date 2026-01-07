@@ -1,0 +1,32 @@
+{
+  "company_name": "Logistics+ | Global Logistics & Supply Chain Solutions",
+  "fit": {
+    "fit_score": 25,
+    "decision_summary": "Logistics Plus operates in a decision-rich domain (carrier selection, exception handling, customs decisions, facility allocation) and already runs digital platforms and BI tools, making an agentic decision-support prototype realistic. With a narrowly scoped, data-light use-case (e.g., shipment exception triage) a 2–4 week human-in-the-loop prototype is pragmatic without requiring deep system integration.",
+    "why_good_fit": [
+      "Kleine Stakeholder-Zahl erlaubt schnelle Abstimmung (aber begrenzter Hebel)."
+    ],
+    "why_not": [
+      "Begrenzte Entscheidungskomplexität und geringe Datenbasis für echten Decision Support.",
+      "Der Use-Case wäre eher klassische Automatisierung/CRM/Booking-Optimierung als agentische Entscheidungsvorbereitung."
+    ],
+    "recommended_use_case": "Nicht empfohlen (Scope passt eher zu klassischer Termin-/Marketing-Optimierung statt agentischem Decision Support).",
+    "target_roles": [
+      "Owner / Management"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Gibt es überhaupt strukturierte Daten (Booking/POS/CRM) und echten Entscheidungsdruck jenseits Terminplanung?",
+      "Was wäre der messbare Business-Hebel, der einen Prototyp rechtfertigt?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 78,\n  \"decision_summary\": \"Logistics Plus operates in a decision-rich domain (carrier selection, exception handling, customs decisions, facility allocation) and already runs digital platforms and BI tools, making an agentic decision-support prototype realistic. With a narrowly scoped, data-light use-case (e.g., shipment exception triage) a 2–4 week human-in-the-loop prototype is pragmatic without requiring deep system integration.\",\n  \"why_good_fit\": [\n    \"Repeated, non-trivial operational decisions (prioritizing at-risk shipments, rerouting, carrier/route trade-offs, customs resolution) where recommendations materially affect cost and SLAs.\",\n    \"Existing technology stack and BI products (eShipPlus, MyLogisticsPlus, BI) suggest event/log and transactional data are available to feed a decision model or rule set.\",\n    \"Global footprint and diverse service lines produce rich, heterogeneous signals (events, ETA deviations, port/weather tools, customs flags) enabling meaningful prioritization and explainability.\",\n    \"Medium risk tolerance aligns well: prototype delivers recommendations and rationale for human operators (no automation of controls), limiting operational exposure.\",\n    \"A focused scope can be prototyped with exported data, public feeds (weather/port), and minimal API work—reducing integration time for a 2–4 week horizon.\"\n  ],\n  \"why_not\": [\n    \"Unclear availability and quality of integration points/APIs for core systems—may force manual data exports or mocks.\",\n    \"Data quality and coverage (missing events, inconsistent timestamps across carriers/regions) are likely and can reduce model reliability.\",\n    \"Global/regulatory complexity (customs, bonded warehousing) may require domain-specific rules that increase scope beyond 2–4 weeks if included.\",\n    \"Organizational alignment (who owns the control-tower workflow, remediation authority) is unknown and could slow validation and adoption.\"\n  ],\n  \"recommended_use_case\": \"2–4 week prototype: 'Shipment Exception Triage & Next‑Best‑Action' — ingest a recent sample of shipment event logs (CSV export from eShipPlus/MyLogisticsPlus or BI) plus public port/weather feeds and SLA rules; produce a ranked list of at‑risk shipments with clear risk drivers (ETA variance, missing docs, port congestion, customs flags), an explainable scoring breakdown, and recommended human actions (contact carrier, escalate to customs, rebook) with canned message templates. Deliverable: interactive dashboard + API/CSV output for ops, with simple explainability and manual feedback loop to refine priorities.\",\n  \"target_roles\": [\n    \"Control Tower / Operations Manager\",\n    \"Head of Customer Success / Account Director\",\n    \"Compliance / Customs Lead\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Can you provide sample exports (CSV) of recent shipment event logs, including timestamps, status codes, ETAs, carrier IDs, and document flags?\",\n    \"Do eShipPlus/MyLogisticsPlus expose APIs or message streams for events, or would we rely on scheduled CSV/BI exports for the prototype?\",\n    \"What specific KPI(s) would define prototype success (e.g., % of critical exceptions identified, reduction in late deliveries, time-to-remediation)?\",\n    \"Who are the operational owners/stakeholders for exception handling (names/roles) and who can validate recommended actions during the prototype?\",\n    \"Are there any regulatory/contractual constraints (e.g., no external uploading of customs docs, data residency) that would limit using real data during the prototype?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Medium",
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard",
+    "exclude_local_services": true
+  }
+}
