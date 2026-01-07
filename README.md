@@ -1,6 +1,6 @@
 ![Admin UI – Decision Brief](./screenshots/Start.png)
 
-▶ **Watch the 90s demo video:** [YouTube – Agentic AI Decision Support Demo](https://youtu.be/dFhX0OC6vtw)
+▶ **Watch the 90s demo video:** [YouTube – Agentic AI Decision Support Demo](https://youtu.be/OGWK5m6Shi8)
 
 # Agentiq AI — Decision Support Agent (Demo)
 

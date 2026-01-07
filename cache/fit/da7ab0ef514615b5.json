@@ -1,0 +1,42 @@
+{
+  "company_name": "DACHSER",
+  "fit": {
+    "fit_score": 80,
+    "decision_summary": "DACHSER besitzt eine daten- und prozessreiche Logistikdomäne mit klar wiederkehrenden, komplexen Entscheidungen (z. B. Priorisierung von Ausnahmen, Routing-/Kapazitätsabwägungen, Verzollungsentscheidungen). Das macht das Unternehmen grundsätzlich gut geeignet für einen Agentic Decision‑Support Prototypen, der Menschen bei kritischen Handels- und Operativentscheidungen unterstützt — vorausgesetzt, es besteht praktikabler Zugriff auf relevante Systemdaten (TMS/WMS/Telematik/Tracking).",
+    "why_good_fit": [
+      "Wiederkehrende, nicht-triviale Entscheidungen: Exception‑Handling (verspätete/temperaturgefährdete Sendungen), Routing-/Konsolidierungs‑Entscheidungen, Kapazitätszuweisung und Zoll-/Compliance-Abwägungen sind regelmäßig und stakeholder‑reich.",
+      "Verfügbare Datenquellen wahrscheinlich vorhanden: integriertes Transport‑ und Lagernetz plus eigener IT‑Bereich -> praktikable Signale von TMS, WMS, Telematik/GPS, Tracking/Tracing, EDI/Dokumentenlogs und KPI‑Reporting.",
+      "Eigenes IT-/Digitalisierungs‑Team reduziert Integrationsbarrieren im Vergleich zu rein externen Dienstleistern; gute Voraussetzung für schnelle Prototyp‑Iterationen.",
+      "Agentic Decision‑Support passt: klarer Human‑in‑the‑loop-Bedarf (Entscheider brauchen Erklärungen, Prioritätenlisten und Handlungsvorschläge statt Vollautomatik).",
+      "Kurzfristiger Prototyp realistisch durch Scope‑Limiting (z. B. Control‑Tower Exception Triage für eine Region/Produktgruppe) und Nutzung von historischen Exportdaten oder anonymisierten Datasets."
+    ],
+    "why_not": [
+      "Unklare/fehlende Details zum konkreten Datenzugang (Welche Systeme, API‑Verfügbarkeit, Exportformate) — ohne das kann Realisierbarkeit stark variieren.",
+      "Regionale/geschäftsfeldliche Heterogenität (verschiedene Country‑Units, Regelungen und Prozesse) kann Prototypumfang vergrößern und Generalisierbarkeit reduzieren.",
+      "Mögliche Compliance- und Datenschutz-/Zollbeschränkungen beim Zugriff auf Sendungs- und Kundendaten, die Abstimmung brauchen."
+    ],
+    "recommended_use_case": "4–6 Wochen Prototyp: Control‑Tower Exception‑Triage für temperaturgeführte Sendungen in einer definierten Region/Transit‑Lane. Eingangsdatensatz: historische Sendungs‑Exports (TMS), Telematik/Temperatur‑Alarme, Planned vs. Actual ETAs, SLA‑Kriterien und Basiskundendaten (anonymisiert). Output: Priorisierte Liste ‚At‑Risk‘ Sendungen mit vorgeschlagenen Handlungsempfehlungen (Umverteilung, Umschlag, Priorisierung beim Carrier, Kundennotifikation), erwarteter Impact‑Schätzung (z. B. Reduktion Verspätungen/Schadenrisiko) und erklärbare Entscheidungsgründe. UI: einfache Prioritätenanzeige + Drill‑down mit Begründungen; menschliche Freigabe/Änderung als Workflow. Minimalintegration möglich mittels CSV/API‑Exports und interaktiver Web‑Mockup‑UI.",
+    "target_roles": [
+      "Head of Control Tower / Operations",
+      "Head of Digital / IT (eLogistics)",
+      "Head of Contract Logistics / Warehouse Services"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Welche konkreten Systeme sind im Einsatz (TMS‑Name, WMS, Telematik-/Fahrzeug‑Provider, Tracking‑Plattform) und gibt es APIs/Exportmöglichkeiten (CSV/REST)?",
+      "Können Sie Beispiel‑/Anonymisierte Datensets (1–3 Monate) mit Sendungs‑Metadaten, ETA‑Verläufen, Temperaturalarme und Abschlussstatus bereitstellen?",
+      "Welches Entscheidungsziel/KPI priorisieren Sie für den Prototyp (z. B. Reduktion Verderb/Claims für Food, % reduzierte Verspätungen, Kostenreduktion)?",
+      "Welche organisatorischen Entscheider müssen in den Loop (SLA für menschliche Freigabe) und wer trifft finale Entscheidungen bei vorgeschlagenen Maßnahmen?",
+      "Gibt es rechtliche/DSGVO- oder Zollbeschränkungen für die Nutzung/Anonymisierung der Sendungsdaten oder Vorgaben zur Datenspeicherung?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 80,\n  \"decision_summary\": \"DACHSER besitzt eine daten- und prozessreiche Logistikdomäne mit klar wiederkehrenden, komplexen Entscheidungen (z. B. Priorisierung von Ausnahmen, Routing-/Kapazitätsabwägungen, Verzollungsentscheidungen). Das macht das Unternehmen grundsätzlich gut geeignet für einen Agentic Decision‑Support Prototypen, der Menschen bei kritischen Handels- und Operativentscheidungen unterstützt — vorausgesetzt, es besteht praktikabler Zugriff auf relevante Systemdaten (TMS/WMS/Telematik/Tracking).\",\n  \"why_good_fit\": [\n    \"Wiederkehrende, nicht-triviale Entscheidungen: Exception‑Handling (verspätete/temperaturgefährdete Sendungen), Routing-/Konsolidierungs‑Entscheidungen, Kapazitätszuweisung und Zoll-/Compliance-Abwägungen sind regelmäßig und stakeholder‑reich.\",\n    \"Verfügbare Datenquellen wahrscheinlich vorhanden: integriertes Transport‑ und Lagernetz plus eigener IT‑Bereich -> praktikable Signale von TMS, WMS, Telematik/GPS, Tracking/Tracing, EDI/Dokumentenlogs und KPI‑Reporting.\",\n    \"Eigenes IT-/Digitalisierungs‑Team reduziert Integrationsbarrieren im Vergleich zu rein externen Dienstleistern; gute Voraussetzung für schnelle Prototyp‑Iterationen.\",\n    \"Agentic Decision‑Support passt: klarer Human‑in‑the‑loop-Bedarf (Entscheider brauchen Erklärungen, Prioritätenlisten und Handlungsvorschläge statt Vollautomatik).\",\n    \"Kurzfristiger Prototyp realistisch durch Scope‑Limiting (z. B. Control‑Tower Exception Triage für eine Region/Produktgruppe) und Nutzung von historischen Exportdaten oder anonymisierten Datasets.\"\n  ],\n  \"why_not\": [\n    \"Unklare/fehlende Details zum konkreten Datenzugang (Welche Systeme, API‑Verfügbarkeit, Exportformate) — ohne das kann Realisierbarkeit stark variieren.\",\n    \"Regionale/geschäftsfeldliche Heterogenität (verschiedene Country‑Units, Regelungen und Prozesse) kann Prototypumfang vergrößern und Generalisierbarkeit reduzieren.\",\n    \"Mögliche Compliance- und Datenschutz-/Zollbeschränkungen beim Zugriff auf Sendungs- und Kundendaten, die Abstimmung brauchen.\"\n  ],\n  \"recommended_use_case\": \"4–6 Wochen Prototyp: Control‑Tower Exception‑Triage für temperaturgeführte Sendungen in einer definierten Region/Transit‑Lane. Eingangsdatensatz: historische Sendungs‑Exports (TMS), Telematik/Temperatur‑Alarme, Planned vs. Actual ETAs, SLA‑Kriterien und Basiskundendaten (anonymisiert). Output: Priorisierte Liste ‚At‑Risk‘ Sendungen mit vorgeschlagenen Handlungsempfehlungen (Umverteilung, Umschlag, Priorisierung beim Carrier, Kundennotifikation), erwarteter Impact‑Schätzung (z. B. Reduktion Verspätungen/Schadenrisiko) und erklärbare Entscheidungsgründe. UI: einfache Prioritätenanzeige + Drill‑down mit Begründungen; menschliche Freigabe/Änderung als Workflow. Minimalintegration möglich mittels CSV/API‑Exports und interaktiver Web‑Mockup‑UI.\",\n  \"target_roles\": [\n    \"Head of Control Tower / Operations\",\n    \"Head of Digital / IT (eLogistics)\",\n    \"Head of Contract Logistics / Warehouse Services\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Welche konkreten Systeme sind im Einsatz (TMS‑Name, WMS, Telematik-/Fahrzeug‑Provider, Tracking‑Plattform) und gibt es APIs/Exportmöglichkeiten (CSV/REST)?\",\n    \"Können Sie Beispiel‑/Anonymisierte Datensets (1–3 Monate) mit Sendungs‑Metadaten, ETA‑Verläufen, Temperaturalarme und Abschlussstatus bereitstellen?\",\n    \"Welches Entscheidungsziel/KPI priorisieren Sie für den Prototyp (z. B. Reduktion Verderb/Claims für Food, % reduzierte Verspätungen, Kostenreduktion)?\",\n    \"Welche organisatorischen Entscheider müssen in den Loop (SLA für menschliche Freigabe) und wer trifft finale Entscheidungen bei vorgeschlagenen Maßnahmen?\",\n    \"Gibt es rechtliche/DSGVO- oder Zollbeschränkungen für die Nutzung/Anonymisierung der Sendungsdaten oder Vorgaben zur Datenspeicherung?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "High",
+    "prototype_horizon": "4–6 weeks",
+    "detail_level": "More detailed",
+    "exclude_local_services": true
+  }
+}
