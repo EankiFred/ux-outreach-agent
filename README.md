@@ -1,4 +1,5 @@
-![Admin UI – Decision Brief](./screenshots/Start.png) 
+![Admin UI – Decision Brief](./screenshots/Start.png)](./assets/AgenticAI_Video.mp4)
+▶ Watch the 90s demo video
 
 # Agentiq AI — Decision Support Agent (Demo)
 
