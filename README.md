@@ -6,7 +6,7 @@
 
 **Agentiq AI** is an agentic decision-support prototype for defining, constraining, and evaluating AI-driven decisions in complex, high-risk, or poorly specified domains.
 
-The focus is **not automation**, but **decision governance**:
+The focus is **decision governance for agentic systems**.
 
 - Structured research  
 - Explainable evaluation  
@@ -24,7 +24,7 @@ As agentic AI systems move into regulated and high-stakes environments, the core
 - What risks and uncertainties exist early on?
 - Which questions must be answered before execution?
 
-Agentiq AI explores how these questions can be addressed through a **clear, reproducible decision-support brief**, rather than ad-hoc judgments or hidden heuristics.
+Agentiq AI explores how these questions can be addressed through a **clear, reproducible decision-support brief**.
 
 ---
 
@@ -57,7 +57,6 @@ The output is designed to be:
 
 ### Step 4 — Decision-Support Brief
 - Structured, human-readable output
-- No raw JSON or debug artifacts in the default view
 
 ---
 
@@ -73,9 +72,6 @@ For each company, the system generates a grounded profile including:
 - Uncertainties and knowledge gaps
 - Transparent source references
 
-The UI intentionally avoids exposing raw model outputs.  
-All content is presented as structured text for human evaluation.
-
 ---
 
 ## Decision-Support Result
@@ -89,13 +85,11 @@ Based on the company profile, the system produces:
 - Risks and counterarguments
 - Open questions for next steps
 
-All recommendations are **explainable and contestable**, not final.
-
 ---
 
 ## UI & UX Principles
 
-This demo intentionally focuses on an **internal / admin-style interface** rather than a consumer-facing UI.
+This demo focuses on an **internal / admin-style interface** rather than a consumer-facing UI.
 
 **Design principles:**
 
@@ -144,10 +138,7 @@ The system answers questions instead of collecting inputs.
 Every score comes with reasoning, uncertainty, and context.
 
 ### Stepwise Progression
-Each screen represents a single decision context.
-
-### Human-Readable Outputs
-No JSON or debug views in the default flow.
+Each step represents a single decision context.
 
 ---
 
@@ -165,14 +156,14 @@ No JSON or debug views in the default flow.
 
 This is a **prototype**, not a production system.
 
-**Intentionally out of scope:**
+**Out of scope:**
 
 - Persistent storage
 - Multi-user authentication
 - Compliance guarantees
 - Production-grade scoring models
 
-The goal is to demonstrate how decision-support for agentic systems can be structured—not to ship a finished product.
+The goal is to demonstrate how decision-support for agentic systems can be structured.
 
 ---
 
