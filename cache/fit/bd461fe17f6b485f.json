@@ -1,0 +1,42 @@
+{
+  "company_name": "Figma: The Collaborative Interface Design Tool",
+  "fit": {
+    "fit_score": 82,
+    "decision_summary": "Figma ist grundsätzlich gut geeignet für einen agentic Decision‑Support‑Prototyp: Es gibt wiederkehrende, nicht‑triviale Entscheidungen (Design‑/Component‑Governance, Handoff‑Priorisierung etc.) und die Plattform bietet konkrete Artefakte/Signale (Design‑Dateien, Komponentenbibliotheken, Versionsverlauf, Kommentare/Anmerkungen), die eine erklärbare, human‑in‑the‑loop Empfehlung erlauben. Hauptgrenzen sind datenschutz/Enterprise‑Beschränkungen und unklare Details zu vorhandenen KI/Integrationsgrenzen — aber ein enger, daten‑leichter Pilot ist in 2–4 Wochen realistisch.",
+    "why_good_fit": [
+      "Wiederkehrende, multi‑stakeholder Entscheidungen vorhanden (z. B. Ob/Wie Komponenten aktualisiert/angenommen werden, welche Assets zu verwenden sind, Priorisierung von Handoffs).",
+      "Plattformnutzung erzeugt verwertbare Signale (Datei/Komponenten‑Metadaten, Versionsverlauf, Kommentare, Bibliotheksnutzung) über Integrationen/plugins verfügbar laut Produktbeschreibung.",
+      "Kleiner, explainable Prototyp (Plugin oder externes Dashboard mit exportierten Metadaten) ist in 2–4 Wochen umsetzbar, da keine tiefgreifende End‑to‑End‑Automatisierung nötig ist.",
+      "Entscheidungsunterstützung bleibt human‑in‑the‑loop und damit risikoarm; Ergebnisse können als Empfehlungen mit nachvollziehbarer Begründung geliefert werden.",
+      "Klare Nutzervorteile für Design‑/DesignOps‑Rollen und Engineering‑Handoff, somit gutes ROI‑Narrativ für einen Pilot."
+    ],
+    "why_not": [
+      "Enterprise‑Datenschutz, Compliance oder SLA‑Anforderungen könnten Zugang zu realen Projektdaten verhindern oder stark einschränken.",
+      "Die genaue Bandbreite bestehender KI/Automatisierungsfeatures und welche Telemetrie/Logs verfügbar sind, ist im Input unklar.",
+      "Starke Unterschiede zwischen Organisationen/Designsystemen können Generalisierbarkeit erschweren; Prototyp muss eng gescoped werden."
+    ],
+    "recommended_use_case": "Design System Update Impact Assistant — ein Decision‑Support Plugin/Dashboard, das für eine ausgewählte Komponentensammlung vorgeschlagene Änderungen analysiert: es sammelt Metadaten (Wer nutzt die Komponente, Anzahl betroffener Dateien/Seiten, letzte Änderungszeitpunkte, offene Kommentare), berechnet einen erklärbaren Impact‑Score (Verbreitung, Breaking‑change‑Risiko, benötigte Migrationsarbeit) und liefert eine empfohlene Aktion (approve / require migration plan / reject) plus eine kurze Begründung und Liste betroffener Dateien. Minimaler Umfang: nur Metadaten + Versionshinweise für eine Pilot‑Bibliothek; finale Entscheidungen bleiben bei den Menschen.",
+    "target_roles": [
+      "Design Systems / DesignOps Lead",
+      "Head of Product Design",
+      "Engineering Manager (Frontend)"
+    ],
+    "missing_critical_info": true,
+    "next_questions": [
+      "Können Pilotteams opt‑in Beispielprojekte, Komponentenbibliotheken und ggf. anonymisierte Metadaten zur Verfügung stellen?",
+      "Welche Daten/Signale sind über Plugins/integrations tatsächlich zugänglich (Komponenten‑Nutzungsstatistiken, Versionsverläufe, Kommentar‑Threads, Dateiverknüpfungen)?",
+      "Gibt es Enterprise‑Datenschutz/Legal/Compliance‑Vorgaben, die den Einsatz eines Prototyps mit echten Designs verhindern (z. B. kein Cloud‑Export, keine Drittanbieter‑Tools)?",
+      "Welche konkrete Entscheidungsfrage hat für die Organisation die höchste Priorität (z. B. Accept/Reject von Component Changes vs. Auswahl passender Komponenten für neue Screens)?",
+      "Wer trifft die finale Entscheidung im Workflow und wo soll die Unterstützung präsentiert werden (in‑tool Plugin vs. externes Dashboard vs. Slack/Email Alerts)?"
+    ]
+  },
+  "fit_raw": "{\n  \"fit_score\": 82,\n  \"decision_summary\": \"Figma ist grundsätzlich gut geeignet für einen agentic Decision‑Support‑Prototyp: Es gibt wiederkehrende, nicht‑triviale Entscheidungen (Design‑/Component‑Governance, Handoff‑Priorisierung etc.) und die Plattform bietet konkrete Artefakte/Signale (Design‑Dateien, Komponentenbibliotheken, Versionsverlauf, Kommentare/Anmerkungen), die eine erklärbare, human‑in‑the‑loop Empfehlung erlauben. Hauptgrenzen sind datenschutz/Enterprise‑Beschränkungen und unklare Details zu vorhandenen KI/Integrationsgrenzen — aber ein enger, daten‑leichter Pilot ist in 2–4 Wochen realistisch.\",\n  \"why_good_fit\": [\n    \"Wiederkehrende, multi‑stakeholder Entscheidungen vorhanden (z. B. Ob/Wie Komponenten aktualisiert/angenommen werden, welche Assets zu verwenden sind, Priorisierung von Handoffs).\",\n    \"Plattformnutzung erzeugt verwertbare Signale (Datei/Komponenten‑Metadaten, Versionsverlauf, Kommentare, Bibliotheksnutzung) über Integrationen/plugins verfügbar laut Produktbeschreibung.\",\n    \"Kleiner, explainable Prototyp (Plugin oder externes Dashboard mit exportierten Metadaten) ist in 2–4 Wochen umsetzbar, da keine tiefgreifende End‑to‑End‑Automatisierung nötig ist.\",\n    \"Entscheidungsunterstützung bleibt human‑in‑the‑loop und damit risikoarm; Ergebnisse können als Empfehlungen mit nachvollziehbarer Begründung geliefert werden.\",\n    \"Klare Nutzervorteile für Design‑/DesignOps‑Rollen und Engineering‑Handoff, somit gutes ROI‑Narrativ für einen Pilot.\"\n  ],\n  \"why_not\": [\n    \"Enterprise‑Datenschutz, Compliance oder SLA‑Anforderungen könnten Zugang zu realen Projektdaten verhindern oder stark einschränken.\",\n    \"Die genaue Bandbreite bestehender KI/Automatisierungsfeatures und welche Telemetrie/Logs verfügbar sind, ist im Input unklar.\",\n    \"Starke Unterschiede zwischen Organisationen/Designsystemen können Generalisierbarkeit erschweren; Prototyp muss eng gescoped werden.\"\n  ],\n  \"recommended_use_case\": \"Design System Update Impact Assistant — ein Decision‑Support Plugin/Dashboard, das für eine ausgewählte Komponentensammlung vorgeschlagene Änderungen analysiert: es sammelt Metadaten (Wer nutzt die Komponente, Anzahl betroffener Dateien/Seiten, letzte Änderungszeitpunkte, offene Kommentare), berechnet einen erklärbaren Impact‑Score (Verbreitung, Breaking‑change‑Risiko, benötigte Migrationsarbeit) und liefert eine empfohlene Aktion (approve / require migration plan / reject) plus eine kurze Begründung und Liste betroffener Dateien. Minimaler Umfang: nur Metadaten + Versionshinweise für eine Pilot‑Bibliothek; finale Entscheidungen bleiben bei den Menschen.\",\n  \"target_roles\": [\n    \"Design Systems / DesignOps Lead\",\n    \"Head of Product Design\",\n    \"Engineering Manager (Frontend)\"\n  ],\n  \"missing_critical_info\": true,\n  \"next_questions\": [\n    \"Können Pilotteams opt‑in Beispielprojekte, Komponentenbibliotheken und ggf. anonymisierte Metadaten zur Verfügung stellen?\",\n    \"Welche Daten/Signale sind über Plugins/integrations tatsächlich zugänglich (Komponenten‑Nutzungsstatistiken, Versionsverläufe, Kommentar‑Threads, Dateiverknüpfungen)?\",\n    \"Gibt es Enterprise‑Datenschutz/Legal/Compliance‑Vorgaben, die den Einsatz eines Prototyps mit echten Designs verhindern (z. B. kein Cloud‑Export, keine Drittanbieter‑Tools)?\",\n    \"Welche konkrete Entscheidungsfrage hat für die Organisation die höchste Priorität (z. B. Accept/Reject von Component Changes vs. Auswahl passender Komponenten für neue Screens)?\",\n    \"Wer trifft die finale Entscheidung im Workflow und wo soll die Unterstützung präsentiert werden (in‑tool Plugin vs. externes Dashboard vs. Slack/Email Alerts)?\"\n  ]\n}",
+  "from_cache": false,
+  "preferences": {
+    "decision_goal": "General decision-support (broad)",
+    "risk_tolerance": "Medium",
+    "prototype_horizon": "2–4 weeks (strict)",
+    "detail_level": "Standard",
+    "exclude_local_services": true
+  }
+}

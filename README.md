@@ -1,3 +1,5 @@
+![Admin UI – Decision Brief](./screenshots/Start.png) 
+
 # Agentiq AI — Decision Support Agent (Demo)
 
 **Agentiq AI** is an agentic decision-support prototype for defining, constraining, and evaluating AI-driven decisions in complex, high-risk, or poorly specified domains.
@@ -8,8 +10,6 @@ The focus is **not automation**, but **decision governance**:
 - Explainable evaluation  
 - Explicit trade-offs  
 - Human-in-the-loop decision support  
-
-Instead of opaque, black-box scores.
 
 ---
 
@@ -36,8 +36,6 @@ The output is designed to be:
 - Comparable  
 - Auditable  
 - Suitable for human review and approval  
-
-This is intentionally **decision framing**, not autonomous decision-making.
 
 ---
 
@@ -114,22 +112,22 @@ UI polish is secondary to clarity, structure, and governance.
 demo.py
 │
 ├─ UI / State Management (Streamlit)
-│   ├─ Step flow & navigation
-│   ├─ Session handling
-│   └─ Custom CSS styling
+│ ├─ Step-based decision flow
+│ ├─ Navigation & context separation
+│ └─ Minimal, functional styling
 │
-├─ Research Layer
-│   └─ build_company_profile()
+├─ Research layer
+│ └─ build_company_profile()
 │
-├─ Discovery Layer
-│   └─ discover_companies()
+├─ Discovery layer
+│ └─ discover_companies()
 │
-├─ Fit & Scoring Layer
-│   └─ score_company_fit()
+├─ Fit & scoring layer
+│ └─ score_company_fit()
 │
-└─ Session Cache
-    ├─ profiles_by_name
-    └─ fit_by_name
+└─ Session cache
+├─ profiles_by_name
+└─ fit_by_name
 
 ---
 
