@@ -1,5 +1,6 @@
 ![Admin UI – Decision Brief](./screenshots/Start.png)
-▶ **Watch the 90s demo video:** [AgenticAI_Video.mp4](./assets/AgenticAI_Video.mp4)
+
+▶ **Watch the 90s demo video:** [AgenticAI_Video.mp4](./assets/AgenticAI_Video.mov)
 
 
 # Agentiq AI — Decision Support Agent (Demo)
@@ -111,25 +112,27 @@ UI polish is secondary to clarity, structure, and governance.
 
 ##  High-Level Architecture
 
+```text
 demo.py
-│
-├─ UI / State Management (Streamlit)
-│ ├─ Step-based decision flow
-│ ├─ Navigation & context separation
-│ └─ Minimal, functional styling
-│
-├─ Research layer
-│ └─ build_company_profile()
-│
-├─ Discovery layer
-│ └─ discover_companies()
-│
-├─ Fit & scoring layer
-│ └─ score_company_fit()
-│
-└─ Session cache
-├─ profiles_by_name
-└─ fit_by_name
+|
++-- UI / State Management (Streamlit)
+|   +-- Step-based decision flow
+|   +-- Navigation & context separation
+|   `-- Minimal, functional styling
+|
++-- Research layer
+|   `-- build_company_profile()
+|
++-- Discovery layer
+|   `-- discover_companies()
+|
++-- Fit & scoring layer
+|   `-- score_company_fit()
+|
+`-- Session cache
+    +-- profiles_by_name
+    `-- fit_by_name
+```
 
 ---
 
